@@ -1,0 +1,2808 @@
+[
+  {
+    "run_at": "2026-05-15T19:44:56Z",
+    "symbols": [
+      "AAPL",
+      "MSFT",
+      "NVDA",
+      "AMZN",
+      "META",
+      "GOOGL",
+      "TSLA",
+      "AVGO",
+      "BRK-B",
+      "JPM",
+      "LLY",
+      "UNH",
+      "V",
+      "XOM",
+      "MA",
+      "COST",
+      "HD",
+      "PG",
+      "JNJ",
+      "ORCL",
+      "BAC",
+      "ABBV",
+      "KO",
+      "MRK",
+      "CVX",
+      "WMT",
+      "CRM",
+      "NFLX",
+      "AMD",
+      "ACN",
+      "ABT",
+      "QCOM",
+      "TXN",
+      "TMO",
+      "PEP",
+      "PM",
+      "LIN",
+      "DHR",
+      "ISRG",
+      "CSCO",
+      "GE",
+      "IBM",
+      "NOW",
+      "INTC",
+      "DIS",
+      "GS",
+      "BLK",
+      "SPGI",
+      "MU",
+      "SYK",
+      "REGN",
+      "ADP",
+      "VRTX",
+      "AMAT",
+      "ADI",
+      "BKNG",
+      "KLAC",
+      "MS",
+      "C",
+      "AMGN",
+      "TJX",
+      "MMC",
+      "DE",
+      "PANW",
+      "LRCX",
+      "BSX",
+      "CB",
+      "PLD",
+      "FI",
+      "ZTS",
+      "MO",
+      "COP",
+      "MDLZ",
+      "ICE",
+      "SO",
+      "SCHW",
+      "CMG",
+      "AON",
+      "HUM",
+      "CI",
+      "WM",
+      "MCK",
+      "CTAS",
+      "ITW",
+      "SHW",
+      "PNC",
+      "USB",
+      "TDG",
+      "EOG",
+      "MSI",
+      "WCN",
+      "NSC",
+      "APH",
+      "ECL",
+      "WELL",
+      "AJG",
+      "OTIS",
+      "CMI",
+      "FTNT",
+      "CRWD",
+      "NET",
+      "SNOW",
+      "DDOG",
+      "ZS",
+      "WDAY",
+      "TEAM",
+      "UBER",
+      "ABNB",
+      "DASH",
+      "RBLX",
+      "COIN"
+    ],
+    "threshold": 90.0,
+    "hold": 26,
+    "elapsed_s": 260.0,
+    "result": {
+      "meta": {
+        "symbols": 111,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-15",
+        "oos_start": "2025-09-16",
+        "elapsed_s": 259.7
+      },
+      "is": {
+        "n": 595,
+        "win_rate": 45.2,
+        "avg_pnl": -0.072,
+        "pf": 0.9,
+        "sharpe": -0.63,
+        "max_dd": 56.49
+      },
+      "oos": {
+        "n": 630,
+        "win_rate": 48.4,
+        "avg_pnl": -0.014,
+        "pf": 0.97,
+        "sharpe": -0.18,
+        "max_dd": 33.5
+      },
+      "by_symbol": [
+        {
+          "symbol": "INTC",
+          "n": 35,
+          "wr": 42.9,
+          "avg_pnl": -0.193,
+          "pf": 0.79,
+          "sharpe": -1.63,
+          "max_dd": 11.32
+        },
+        {
+          "symbol": "MU",
+          "n": 35,
+          "wr": 60.0,
+          "avg_pnl": 0.098,
+          "pf": 1.16,
+          "sharpe": 0.95,
+          "max_dd": 10.21
+        },
+        {
+          "symbol": "AMD",
+          "n": 32,
+          "wr": 46.9,
+          "avg_pnl": 0.161,
+          "pf": 1.26,
+          "sharpe": 1.58,
+          "max_dd": 12.96
+        },
+        {
+          "symbol": "TSLA",
+          "n": 30,
+          "wr": 53.3,
+          "avg_pnl": -0.024,
+          "pf": 0.96,
+          "sharpe": -0.28,
+          "max_dd": 13.01
+        },
+        {
+          "symbol": "AMAT",
+          "n": 28,
+          "wr": 67.9,
+          "avg_pnl": 0.487,
+          "pf": 5.55,
+          "sharpe": 8.5,
+          "max_dd": 1.37
+        },
+        {
+          "symbol": "ORCL",
+          "n": 23,
+          "wr": 56.5,
+          "avg_pnl": 0.302,
+          "pf": 1.53,
+          "sharpe": 2.81,
+          "max_dd": 9.69
+        },
+        {
+          "symbol": "NVDA",
+          "n": 21,
+          "wr": 42.9,
+          "avg_pnl": -0.143,
+          "pf": 0.73,
+          "sharpe": -2.1,
+          "max_dd": 7.52
+        },
+        {
+          "symbol": "DASH",
+          "n": 20,
+          "wr": 35.0,
+          "avg_pnl": -0.406,
+          "pf": 0.42,
+          "sharpe": -5.53,
+          "max_dd": 9.65
+        },
+        {
+          "symbol": "LLY",
+          "n": 16,
+          "wr": 56.2,
+          "avg_pnl": 0.194,
+          "pf": 1.47,
+          "sharpe": 2.47,
+          "max_dd": 3.41
+        },
+        {
+          "symbol": "GS",
+          "n": 14,
+          "wr": 35.7,
+          "avg_pnl": -0.396,
+          "pf": 0.37,
+          "sharpe": -6.7,
+          "max_dd": 5.78
+        },
+        {
+          "symbol": "AVGO",
+          "n": 13,
+          "wr": 46.2,
+          "avg_pnl": 0.011,
+          "pf": 1.04,
+          "sharpe": 0.24,
+          "max_dd": 2.83
+        },
+        {
+          "symbol": "WDAY",
+          "n": 13,
+          "wr": 38.5,
+          "avg_pnl": 0.113,
+          "pf": 1.23,
+          "sharpe": 1.22,
+          "max_dd": 6.37
+        },
+        {
+          "symbol": "ABNB",
+          "n": 13,
+          "wr": 30.8,
+          "avg_pnl": -0.592,
+          "pf": 0.22,
+          "sharpe": -10.01,
+          "max_dd": 8.44
+        },
+        {
+          "symbol": "RBLX",
+          "n": 13,
+          "wr": 46.2,
+          "avg_pnl": -0.217,
+          "pf": 0.73,
+          "sharpe": -2.02,
+          "max_dd": 6.86
+        },
+        {
+          "symbol": "AMZN",
+          "n": 12,
+          "wr": 41.7,
+          "avg_pnl": 0.047,
+          "pf": 1.1,
+          "sharpe": 0.55,
+          "max_dd": 3.36
+        },
+        {
+          "symbol": "CRM",
+          "n": 12,
+          "wr": 58.3,
+          "avg_pnl": -0.038,
+          "pf": 0.91,
+          "sharpe": -0.64,
+          "max_dd": 2.45
+        },
+        {
+          "symbol": "NOW",
+          "n": 12,
+          "wr": 25.0,
+          "avg_pnl": -0.441,
+          "pf": 0.37,
+          "sharpe": -6.23,
+          "max_dd": 6.8
+        },
+        {
+          "symbol": "NET",
+          "n": 12,
+          "wr": 50.0,
+          "avg_pnl": -0.209,
+          "pf": 0.66,
+          "sharpe": -2.45,
+          "max_dd": 4.59
+        },
+        {
+          "symbol": "UBER",
+          "n": 12,
+          "wr": 33.3,
+          "avg_pnl": -0.536,
+          "pf": 0.22,
+          "sharpe": -10.15,
+          "max_dd": 6.5
+        },
+        {
+          "symbol": "ZS",
+          "n": 11,
+          "wr": 63.6,
+          "avg_pnl": 0.665,
+          "pf": 3.69,
+          "sharpe": 7.44,
+          "max_dd": 2.55
+        },
+        {
+          "symbol": "VRTX",
+          "n": 10,
+          "wr": 20.0,
+          "avg_pnl": -0.524,
+          "pf": 0.31,
+          "sharpe": -7.47,
+          "max_dd": 5.68
+        },
+        {
+          "symbol": "PANW",
+          "n": 10,
+          "wr": 70.0,
+          "avg_pnl": 0.572,
+          "pf": 3.16,
+          "sharpe": 7.44,
+          "max_dd": 1.56
+        },
+        {
+          "symbol": "IBM",
+          "n": 9,
+          "wr": 66.7,
+          "avg_pnl": 0.157,
+          "pf": 1.45,
+          "sharpe": 2.45,
+          "max_dd": 1.38
+        },
+        {
+          "symbol": "CMI",
+          "n": 9,
+          "wr": 55.6,
+          "avg_pnl": -0.248,
+          "pf": 0.45,
+          "sharpe": -4.91,
+          "max_dd": 3.57
+        },
+        {
+          "symbol": "CRWD",
+          "n": 9,
+          "wr": 66.7,
+          "avg_pnl": 0.27,
+          "pf": 4.93,
+          "sharpe": 8.86,
+          "max_dd": 0.32
+        },
+        {
+          "symbol": "GOOGL",
+          "n": 8,
+          "wr": 25.0,
+          "avg_pnl": -0.842,
+          "pf": 0.03,
+          "sharpe": -19.27,
+          "max_dd": 6.74
+        },
+        {
+          "symbol": "QCOM",
+          "n": 8,
+          "wr": 50.0,
+          "avg_pnl": 0.8,
+          "pf": 3.29,
+          "sharpe": 6.89,
+          "max_dd": 1.33
+        },
+        {
+          "symbol": "COIN",
+          "n": 8,
+          "wr": 50.0,
+          "avg_pnl": 0.405,
+          "pf": 1.64,
+          "sharpe": 2.77,
+          "max_dd": 4.58
+        },
+        {
+          "symbol": "META",
+          "n": 7,
+          "wr": 28.6,
+          "avg_pnl": -0.071,
+          "pf": 0.79,
+          "sharpe": -1.41,
+          "max_dd": 1.61
+        },
+        {
+          "symbol": "NFLX",
+          "n": 7,
+          "wr": 42.9,
+          "avg_pnl": -0.057,
+          "pf": 0.86,
+          "sharpe": -0.91,
+          "max_dd": 1.84
+        },
+        {
+          "symbol": "BKNG",
+          "n": 7,
+          "wr": 85.7,
+          "avg_pnl": 0.542,
+          "pf": 4.21,
+          "sharpe": 8.03,
+          "max_dd": 1.18
+        },
+        {
+          "symbol": "CMG",
+          "n": 7,
+          "wr": 42.9,
+          "avg_pnl": -0.284,
+          "pf": 0.39,
+          "sharpe": -5.77,
+          "max_dd": 2.48
+        },
+        {
+          "symbol": "HUM",
+          "n": 7,
+          "wr": 71.4,
+          "avg_pnl": 0.321,
+          "pf": 2.07,
+          "sharpe": 3.94,
+          "max_dd": 2.09
+        },
+        {
+          "symbol": "APH",
+          "n": 7,
+          "wr": 42.9,
+          "avg_pnl": 0.013,
+          "pf": 1.03,
+          "sharpe": 0.2,
+          "max_dd": 2.44
+        },
+        {
+          "symbol": "MRK",
+          "n": 6,
+          "wr": 66.7,
+          "avg_pnl": 0.441,
+          "pf": 2.37,
+          "sharpe": 6.01,
+          "max_dd": 1.12
+        },
+        {
+          "symbol": "ACN",
+          "n": 6,
+          "wr": 66.7,
+          "avg_pnl": 0.029,
+          "pf": 1.1,
+          "sharpe": 0.6,
+          "max_dd": 1.3
+        },
+        {
+          "symbol": "ADI",
+          "n": 6,
+          "wr": 83.3,
+          "avg_pnl": 0.611,
+          "pf": 3.9,
+          "sharpe": 8.16,
+          "max_dd": 1.26
+        },
+        {
+          "symbol": "MS",
+          "n": 6,
+          "wr": 33.3,
+          "avg_pnl": -0.49,
+          "pf": 0.06,
+          "sharpe": -14.21,
+          "max_dd": 3.12
+        },
+        {
+          "symbol": "TEAM",
+          "n": 6,
+          "wr": 33.3,
+          "avg_pnl": -0.188,
+          "pf": 0.73,
+          "sharpe": -1.63,
+          "max_dd": 3.83
+        },
+        {
+          "symbol": "XOM",
+          "n": 5,
+          "wr": 20.0,
+          "avg_pnl": -0.241,
+          "pf": 0.46,
+          "sharpe": -5.22,
+          "max_dd": 2.21
+        },
+        {
+          "symbol": "BAC",
+          "n": 5,
+          "wr": 80.0,
+          "avg_pnl": 0.222,
+          "pf": 9.04,
+          "sharpe": 10.07,
+          "max_dd": 0.14
+        },
+        {
+          "symbol": "TXN",
+          "n": 5,
+          "wr": 20.0,
+          "avg_pnl": -0.516,
+          "pf": 0.16,
+          "sharpe": -12.03,
+          "max_dd": 2.6
+        },
+        {
+          "symbol": "KLAC",
+          "n": 5,
+          "wr": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        },
+        {
+          "symbol": "DDOG",
+          "n": 5,
+          "wr": 20.0,
+          "avg_pnl": 0.157,
+          "pf": 1.95,
+          "sharpe": 3.03,
+          "max_dd": 0.68
+        },
+        {
+          "symbol": "AAPL",
+          "n": 4,
+          "wr": 50.0,
+          "avg_pnl": -0.183,
+          "pf": 0.74,
+          "sharpe": -1.79,
+          "max_dd": 1.62
+        },
+        {
+          "symbol": "REGN",
+          "n": 4,
+          "wr": 75.0,
+          "avg_pnl": 0.397,
+          "pf": 245.17,
+          "sharpe": 12.16,
+          "max_dd": 0.01
+        },
+        {
+          "symbol": "C",
+          "n": 4,
+          "wr": 75.0,
+          "avg_pnl": 0.299,
+          "pf": 3.18,
+          "sharpe": 7.45,
+          "max_dd": 0.55
+        },
+        {
+          "symbol": "AMGN",
+          "n": 4,
+          "wr": 50.0,
+          "avg_pnl": 0.446,
+          "pf": 9.28,
+          "sharpe": 11.02,
+          "max_dd": 0.16
+        },
+        {
+          "symbol": "COP",
+          "n": 4,
+          "wr": 25.0,
+          "avg_pnl": -0.639,
+          "pf": 0.2,
+          "sharpe": -9.14,
+          "max_dd": 3.19
+        },
+        {
+          "symbol": "USB",
+          "n": 4,
+          "wr": 75.0,
+          "avg_pnl": 0.073,
+          "pf": 1.35,
+          "sharpe": 1.69,
+          "max_dd": 0.83
+        },
+        {
+          "symbol": "TDG",
+          "n": 4,
+          "wr": 25.0,
+          "avg_pnl": -0.74,
+          "pf": 0.07,
+          "sharpe": -16.67,
+          "max_dd": 2.96
+        },
+        {
+          "symbol": "MSFT",
+          "n": 3,
+          "wr": 0.0,
+          "avg_pnl": -1.025,
+          "pf": 0.0,
+          "sharpe": -78.68,
+          "max_dd": 3.08
+        },
+        {
+          "symbol": "TMO",
+          "n": 3,
+          "wr": 33.3,
+          "avg_pnl": -1.092,
+          "pf": 0.1,
+          "sharpe": -12.85,
+          "max_dd": 3.28
+        },
+        {
+          "symbol": "CSCO",
+          "n": 3,
+          "wr": 66.7,
+          "avg_pnl": 0.129,
+          "pf": 2.2,
+          "sharpe": 4.06,
+          "max_dd": 0.32
+        },
+        {
+          "symbol": "BLK",
+          "n": 3,
+          "wr": 66.7,
+          "avg_pnl": -0.053,
+          "pf": 0.73,
+          "sharpe": -1.72,
+          "max_dd": 0.6
+        },
+        {
+          "symbol": "SPGI",
+          "n": 3,
+          "wr": 33.3,
+          "avg_pnl": 0.084,
+          "pf": 2.0,
+          "sharpe": 3.65,
+          "max_dd": 0.16
+        },
+        {
+          "symbol": "LRCX",
+          "n": 3,
+          "wr": 33.3,
+          "avg_pnl": -0.099,
+          "pf": 0.69,
+          "sharpe": -2.11,
+          "max_dd": 0.97
+        },
+        {
+          "symbol": "SHW",
+          "n": 3,
+          "wr": 0.0,
+          "avg_pnl": -0.345,
+          "pf": 0.0,
+          "sharpe": -30.39,
+          "max_dd": 1.03
+        },
+        {
+          "symbol": "FTNT",
+          "n": 3,
+          "wr": 33.3,
+          "avg_pnl": -0.007,
+          "pf": 0.99,
+          "sharpe": -0.07,
+          "max_dd": 1.88
+        },
+        {
+          "symbol": "SNOW",
+          "n": 3,
+          "wr": 33.3,
+          "avg_pnl": 0.39,
+          "pf": 2.32,
+          "sharpe": 4.27,
+          "max_dd": 0.57
+        },
+        {
+          "symbol": "JPM",
+          "n": 2,
+          "wr": 0.0,
+          "avg_pnl": -0.2,
+          "pf": 0.0,
+          "sharpe": -15.48,
+          "max_dd": 0.4
+        },
+        {
+          "symbol": "MA",
+          "n": 2,
+          "wr": 50.0,
+          "avg_pnl": 0.051,
+          "pf": 4.55,
+          "sharpe": 7.18,
+          "max_dd": 0.03
+        },
+        {
+          "symbol": "HD",
+          "n": 2,
+          "wr": 50.0,
+          "avg_pnl": 0.6,
+          "pf": 5.4,
+          "sharpe": 7.71,
+          "max_dd": 0.27
+        },
+        {
+          "symbol": "PM",
+          "n": 2,
+          "wr": 100.0,
+          "avg_pnl": 0.979,
+          "pf": 999.0,
+          "sharpe": 18.56,
+          "max_dd": 0.0
+        },
+        {
+          "symbol": "ADP",
+          "n": 2,
+          "wr": 100.0,
+          "avg_pnl": 0.376,
+          "pf": 999.0,
+          "sharpe": 16.02,
+          "max_dd": 0.0
+        },
+        {
+          "symbol": "BSX",
+          "n": 2,
+          "wr": 0.0,
+          "avg_pnl": -1.289,
+          "pf": 0.0,
+          "sharpe": -367.38,
+          "max_dd": 2.58
+        },
+        {
+          "symbol": "MCK",
+          "n": 2,
+          "wr": 50.0,
+          "avg_pnl": 0.209,
+          "pf": 1.37,
+          "sharpe": 1.77,
+          "max_dd": 1.11
+        },
+        {
+          "symbol": "OTIS",
+          "n": 2,
+          "wr": 0.0,
+          "avg_pnl": -0.648,
+          "pf": 0.0,
+          "sharpe": -29.87,
+          "max_dd": 1.3
+        },
+        {
+          "symbol": "JNJ",
+          "n": 1,
+          "wr": 100.0,
+          "avg_pnl": 0.287,
+          "pf": 999.0,
+          "sharpe": 0.0,
+          "max_dd": 0.0
+        },
+        {
+          "symbol": "DHR",
+          "n": 1,
+          "wr": 0.0,
+          "avg_pnl": -0.571,
+          "pf": 0.0,
+          "sharpe": 0.0,
+          "max_dd": 0.57
+        },
+        {
+          "symbol": "ISRG",
+          "n": 1,
+          "wr": 0.0,
+          "avg_pnl": -1.497,
+          "pf": 0.0,
+          "sharpe": 0.0,
+          "max_dd": 1.5
+        },
+        {
+          "symbol": "GE",
+          "n": 1,
+          "wr": 0.0,
+          "avg_pnl": -0.587,
+          "pf": 0.0,
+          "sharpe": 0.0,
+          "max_dd": 0.59
+        },
+        {
+          "symbol": "DIS",
+          "n": 1,
+          "wr": 0.0,
+          "avg_pnl": -1.094,
+          "pf": 0.0,
+          "sharpe": 0.0,
+          "max_dd": 1.09
+        },
+        {
+          "symbol": "SYK",
+          "n": 1,
+          "wr": 0.0,
+          "avg_pnl": -1.317,
+          "pf": 0.0,
+          "sharpe": 0.0,
+          "max_dd": 1.32
+        },
+        {
+          "symbol": "DE",
+          "n": 1,
+          "wr": 100.0,
+          "avg_pnl": 0.566,
+          "pf": 999.0,
+          "sharpe": 0.0,
+          "max_dd": 0.0
+        },
+        {
+          "symbol": "PLD",
+          "n": 1,
+          "wr": 0.0,
+          "avg_pnl": -1.232,
+          "pf": 0.0,
+          "sharpe": 0.0,
+          "max_dd": 1.23
+        },
+        {
+          "symbol": "MDLZ",
+          "n": 1,
+          "wr": 0.0,
+          "avg_pnl": -1.167,
+          "pf": 0.0,
+          "sharpe": 0.0,
+          "max_dd": 1.17
+        },
+        {
+          "symbol": "CI",
+          "n": 1,
+          "wr": 100.0,
+          "avg_pnl": 0.079,
+          "pf": 999.0,
+          "sharpe": 0.0,
+          "max_dd": 0.0
+        },
+        {
+          "symbol": "PNC",
+          "n": 1,
+          "wr": 100.0,
+          "avg_pnl": 0.696,
+          "pf": 999.0,
+          "sharpe": 0.0,
+          "max_dd": 0.0
+        },
+        {
+          "symbol": "EOG",
+          "n": 1,
+          "wr": 0.0,
+          "avg_pnl": -1.197,
+          "pf": 0.0,
+          "sharpe": 0.0,
+          "max_dd": 1.2
+        },
+        {
+          "symbol": "NSC",
+          "n": 1,
+          "wr": 100.0,
+          "avg_pnl": 1.51,
+          "pf": 999.0,
+          "sharpe": 0.0,
+          "max_dd": 0.0
+        },
+        {
+          "symbol": "ECL",
+          "n": 1,
+          "wr": 100.0,
+          "avg_pnl": 0.226,
+          "pf": 999.0,
+          "sharpe": 0.0,
+          "max_dd": 0.0
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 630,
+          "win_rate": 48.4,
+          "avg_pnl": -0.014,
+          "pf": 0.97,
+          "sharpe": -0.18,
+          "max_dd": 33.5
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 630,
+          "win_rate": 48.4,
+          "avg_pnl": -0.014,
+          "pf": 0.97,
+          "sharpe": -0.18,
+          "max_dd": 33.5
+        },
+        "PUT": {}
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-15T21:18:40Z",
+    "symbols": [
+      "KLAC"
+    ],
+    "threshold": 90.0,
+    "hold": 26,
+    "elapsed_s": 1.2,
+    "result": {
+      "meta": {
+        "symbols": 1,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-15",
+        "oos_start": "2025-09-16",
+        "elapsed_s": 0.9
+      },
+      "is": {},
+      "oos": {
+        "n": 5,
+        "win_rate": 80.0,
+        "avg_pnl": 0.467,
+        "pf": 8.56,
+        "sharpe": 15.78,
+        "max_dd": 0.31
+      },
+      "by_symbol": [
+        {
+          "symbol": "KLAC",
+          "n": 5,
+          "wr": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 5,
+          "win_rate": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 5,
+          "win_rate": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        },
+        "PUT": {}
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-15T21:18:50Z",
+    "symbols": [
+      "KLAC"
+    ],
+    "threshold": 90.0,
+    "hold": 26,
+    "elapsed_s": 1.1,
+    "result": {
+      "meta": {
+        "symbols": 1,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-15",
+        "oos_start": "2025-09-16",
+        "elapsed_s": 0.9
+      },
+      "is": {},
+      "oos": {
+        "n": 5,
+        "win_rate": 80.0,
+        "avg_pnl": 0.467,
+        "pf": 8.56,
+        "sharpe": 15.78,
+        "max_dd": 0.31
+      },
+      "by_symbol": [
+        {
+          "symbol": "KLAC",
+          "n": 5,
+          "wr": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 5,
+          "win_rate": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 5,
+          "win_rate": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        },
+        "PUT": {}
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-15T21:19:03Z",
+    "symbols": [
+      "KLAC"
+    ],
+    "threshold": 90.0,
+    "hold": 8,
+    "elapsed_s": 1.1,
+    "result": {
+      "meta": {
+        "symbols": 1,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-15",
+        "oos_start": "2025-09-16",
+        "elapsed_s": 0.9
+      },
+      "is": {},
+      "oos": {
+        "n": 5,
+        "win_rate": 80.0,
+        "avg_pnl": 0.467,
+        "pf": 8.56,
+        "sharpe": 15.78,
+        "max_dd": 0.31
+      },
+      "by_symbol": [
+        {
+          "symbol": "KLAC",
+          "n": 5,
+          "wr": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 5,
+          "win_rate": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 5,
+          "win_rate": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        },
+        "PUT": {}
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-15T21:19:22Z",
+    "symbols": [
+      "KLAC"
+    ],
+    "threshold": 90.0,
+    "hold": 14,
+    "elapsed_s": 1.1,
+    "result": {
+      "meta": {
+        "symbols": 1,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-15",
+        "oos_start": "2025-09-16",
+        "elapsed_s": 0.9
+      },
+      "is": {},
+      "oos": {
+        "n": 5,
+        "win_rate": 80.0,
+        "avg_pnl": 0.467,
+        "pf": 8.56,
+        "sharpe": 15.78,
+        "max_dd": 0.31
+      },
+      "by_symbol": [
+        {
+          "symbol": "KLAC",
+          "n": 5,
+          "wr": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 5,
+          "win_rate": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 5,
+          "win_rate": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        },
+        "PUT": {}
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-15T21:19:29Z",
+    "symbols": [
+      "KLAC"
+    ],
+    "threshold": 90.0,
+    "hold": 26,
+    "elapsed_s": 1.1,
+    "result": {
+      "meta": {
+        "symbols": 1,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-15",
+        "oos_start": "2025-09-16",
+        "elapsed_s": 0.9
+      },
+      "is": {},
+      "oos": {
+        "n": 5,
+        "win_rate": 80.0,
+        "avg_pnl": 0.467,
+        "pf": 8.56,
+        "sharpe": 15.78,
+        "max_dd": 0.31
+      },
+      "by_symbol": [
+        {
+          "symbol": "KLAC",
+          "n": 5,
+          "wr": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 5,
+          "win_rate": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 5,
+          "win_rate": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        },
+        "PUT": {}
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-15T21:19:59Z",
+    "symbols": [
+      "QCOM"
+    ],
+    "threshold": 90.0,
+    "hold": 26,
+    "elapsed_s": 5.8,
+    "result": {
+      "meta": {
+        "symbols": 1,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-14",
+        "oos_start": "2025-09-15",
+        "elapsed_s": 5.5
+      },
+      "is": {
+        "n": 16,
+        "win_rate": 56.2,
+        "avg_pnl": 0.001,
+        "pf": 1.0,
+        "sharpe": 0.01,
+        "max_dd": 6.62
+      },
+      "oos": {
+        "n": 8,
+        "win_rate": 50.0,
+        "avg_pnl": 0.8,
+        "pf": 3.29,
+        "sharpe": 6.89,
+        "max_dd": 1.33
+      },
+      "by_symbol": [
+        {
+          "symbol": "QCOM",
+          "n": 8,
+          "wr": 50.0,
+          "avg_pnl": 0.8,
+          "pf": 3.29,
+          "sharpe": 6.89,
+          "max_dd": 1.33
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 8,
+          "win_rate": 50.0,
+          "avg_pnl": 0.8,
+          "pf": 3.29,
+          "sharpe": 6.89,
+          "max_dd": 1.33
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 8,
+          "win_rate": 50.0,
+          "avg_pnl": 0.8,
+          "pf": 3.29,
+          "sharpe": 6.89,
+          "max_dd": 1.33
+        },
+        "PUT": {}
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-15T21:20:10Z",
+    "symbols": [
+      "QCOM"
+    ],
+    "threshold": 95.0,
+    "hold": 26,
+    "elapsed_s": 5.7,
+    "result": {
+      "meta": {
+        "symbols": 1,
+        "threshold": 95.0,
+        "date_range": "2024-05-15 to 2026-05-14",
+        "oos_start": "2025-09-15",
+        "elapsed_s": 5.5
+      },
+      "is": {
+        "n": 15,
+        "win_rate": 53.3,
+        "avg_pnl": -0.019,
+        "pf": 0.97,
+        "sharpe": -0.14,
+        "max_dd": 6.62
+      },
+      "oos": {
+        "n": 7,
+        "win_rate": 57.1,
+        "avg_pnl": 0.926,
+        "pf": 3.38,
+        "sharpe": 7.52,
+        "max_dd": 1.33
+      },
+      "by_symbol": [
+        {
+          "symbol": "QCOM",
+          "n": 7,
+          "wr": 57.1,
+          "avg_pnl": 0.926,
+          "pf": 3.38,
+          "sharpe": 7.52,
+          "max_dd": 1.33
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 7,
+          "win_rate": 57.1,
+          "avg_pnl": 0.926,
+          "pf": 3.38,
+          "sharpe": 7.52,
+          "max_dd": 1.33
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 7,
+          "win_rate": 57.1,
+          "avg_pnl": 0.926,
+          "pf": 3.38,
+          "sharpe": 7.52,
+          "max_dd": 1.33
+        },
+        "PUT": {}
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-18T18:04:57Z",
+    "symbols": [
+      "KLAC",
+      "ODFL",
+      "BAC",
+      "CRWD",
+      "AMAT",
+      "ADI",
+      "BKNG",
+      "ZM",
+      "BA",
+      "ZS",
+      "PANW",
+      "QCOM",
+      "ASTS",
+      "GFS",
+      "ROKU",
+      "MRK",
+      "ON",
+      "ILMN",
+      "HOOD",
+      "CAT",
+      "HUM",
+      "DXCM",
+      "MMM",
+      "SNPS",
+      "ORCL",
+      "COIN",
+      "LLY",
+      "IBM",
+      "AMD",
+      "WDAY"
+    ],
+    "threshold": 90.0,
+    "hold": 26,
+    "elapsed_s": 74.8,
+    "result": {
+      "meta": {
+        "symbols": 30,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-18",
+        "oos_start": "2025-09-18",
+        "elapsed_s": 74.5
+      },
+      "is": {
+        "n": 461,
+        "win_rate": 44.5,
+        "avg_pnl": -0.058,
+        "pf": 0.91,
+        "sharpe": -0.59,
+        "max_dd": 40.37
+      },
+      "oos": {
+        "n": 647,
+        "win_rate": 50.9,
+        "avg_pnl": 0.123,
+        "pf": 1.23,
+        "sharpe": 1.27,
+        "max_dd": 35.39
+      },
+      "by_symbol": [
+        {
+          "symbol": "AMD",
+          "n": 66,
+          "wr": 53.0,
+          "avg_pnl": 0.112,
+          "pf": 1.17,
+          "sharpe": 1.03,
+          "max_dd": 16.83
+        },
+        {
+          "symbol": "AMAT",
+          "n": 55,
+          "wr": 54.5,
+          "avg_pnl": 0.255,
+          "pf": 1.71,
+          "sharpe": 3.22,
+          "max_dd": 6.75
+        },
+        {
+          "symbol": "ORCL",
+          "n": 54,
+          "wr": 42.6,
+          "avg_pnl": -0.16,
+          "pf": 0.8,
+          "sharpe": -1.56,
+          "max_dd": 22.32
+        },
+        {
+          "symbol": "HOOD",
+          "n": 32,
+          "wr": 50.0,
+          "avg_pnl": -0.142,
+          "pf": 0.83,
+          "sharpe": -1.27,
+          "max_dd": 16.64
+        },
+        {
+          "symbol": "BA",
+          "n": 28,
+          "wr": 46.4,
+          "avg_pnl": 0.216,
+          "pf": 1.51,
+          "sharpe": 2.66,
+          "max_dd": 2.69
+        },
+        {
+          "symbol": "ASTS",
+          "n": 28,
+          "wr": 50.0,
+          "avg_pnl": 0.502,
+          "pf": 1.53,
+          "sharpe": 2.7,
+          "max_dd": 12.29
+        },
+        {
+          "symbol": "CAT",
+          "n": 28,
+          "wr": 57.1,
+          "avg_pnl": 0.205,
+          "pf": 1.48,
+          "sharpe": 2.63,
+          "max_dd": 4.46
+        },
+        {
+          "symbol": "LLY",
+          "n": 24,
+          "wr": 50.0,
+          "avg_pnl": 0.057,
+          "pf": 1.11,
+          "sharpe": 0.7,
+          "max_dd": 5.87
+        },
+        {
+          "symbol": "ILMN",
+          "n": 21,
+          "wr": 57.1,
+          "avg_pnl": 0.149,
+          "pf": 1.44,
+          "sharpe": 2.12,
+          "max_dd": 6.14
+        },
+        {
+          "symbol": "QCOM",
+          "n": 20,
+          "wr": 50.0,
+          "avg_pnl": 0.678,
+          "pf": 2.87,
+          "sharpe": 5.67,
+          "max_dd": 4.58
+        },
+        {
+          "symbol": "COIN",
+          "n": 20,
+          "wr": 35.0,
+          "avg_pnl": -0.58,
+          "pf": 0.51,
+          "sharpe": -4.29,
+          "max_dd": 19.4
+        },
+        {
+          "symbol": "IBM",
+          "n": 20,
+          "wr": 65.0,
+          "avg_pnl": 0.325,
+          "pf": 1.87,
+          "sharpe": 4.27,
+          "max_dd": 2.55
+        },
+        {
+          "symbol": "GFS",
+          "n": 19,
+          "wr": 47.4,
+          "avg_pnl": 0.321,
+          "pf": 1.56,
+          "sharpe": 2.8,
+          "max_dd": 4.08
+        },
+        {
+          "symbol": "ODFL",
+          "n": 18,
+          "wr": 55.6,
+          "avg_pnl": 0.076,
+          "pf": 1.18,
+          "sharpe": 0.93,
+          "max_dd": 3.94
+        },
+        {
+          "symbol": "CRWD",
+          "n": 18,
+          "wr": 50.0,
+          "avg_pnl": -0.03,
+          "pf": 0.94,
+          "sharpe": -0.36,
+          "max_dd": 4.48
+        },
+        {
+          "symbol": "ROKU",
+          "n": 18,
+          "wr": 50.0,
+          "avg_pnl": 0.319,
+          "pf": 2.23,
+          "sharpe": 4.65,
+          "max_dd": 1.98
+        },
+        {
+          "symbol": "ZS",
+          "n": 17,
+          "wr": 41.2,
+          "avg_pnl": 0.215,
+          "pf": 1.41,
+          "sharpe": 2.04,
+          "max_dd": 6.41
+        },
+        {
+          "symbol": "ON",
+          "n": 17,
+          "wr": 52.9,
+          "avg_pnl": 0.194,
+          "pf": 1.37,
+          "sharpe": 1.98,
+          "max_dd": 3.68
+        },
+        {
+          "symbol": "WDAY",
+          "n": 17,
+          "wr": 35.3,
+          "avg_pnl": -0.026,
+          "pf": 0.96,
+          "sharpe": -0.26,
+          "max_dd": 6.27
+        },
+        {
+          "symbol": "SNPS",
+          "n": 16,
+          "wr": 43.8,
+          "avg_pnl": -0.164,
+          "pf": 0.7,
+          "sharpe": -2.17,
+          "max_dd": 7.49
+        },
+        {
+          "symbol": "BKNG",
+          "n": 15,
+          "wr": 66.7,
+          "avg_pnl": 0.312,
+          "pf": 1.98,
+          "sharpe": 4.48,
+          "max_dd": 2.35
+        },
+        {
+          "symbol": "PANW",
+          "n": 14,
+          "wr": 42.9,
+          "avg_pnl": 0.198,
+          "pf": 1.58,
+          "sharpe": 2.76,
+          "max_dd": 3.57
+        },
+        {
+          "symbol": "KLAC",
+          "n": 12,
+          "wr": 75.0,
+          "avg_pnl": 0.283,
+          "pf": 2.14,
+          "sharpe": 4.72,
+          "max_dd": 1.83
+        },
+        {
+          "symbol": "ZM",
+          "n": 11,
+          "wr": 45.5,
+          "avg_pnl": 0.019,
+          "pf": 1.03,
+          "sharpe": 0.22,
+          "max_dd": 3.69
+        },
+        {
+          "symbol": "HUM",
+          "n": 11,
+          "wr": 45.5,
+          "avg_pnl": -0.089,
+          "pf": 0.85,
+          "sharpe": -1.01,
+          "max_dd": 4.96
+        },
+        {
+          "symbol": "BAC",
+          "n": 10,
+          "wr": 50.0,
+          "avg_pnl": -0.118,
+          "pf": 0.64,
+          "sharpe": -2.66,
+          "max_dd": 2.97
+        },
+        {
+          "symbol": "ADI",
+          "n": 10,
+          "wr": 60.0,
+          "avg_pnl": 0.135,
+          "pf": 1.34,
+          "sharpe": 1.84,
+          "max_dd": 1.89
+        },
+        {
+          "symbol": "MRK",
+          "n": 10,
+          "wr": 70.0,
+          "avg_pnl": 0.366,
+          "pf": 2.69,
+          "sharpe": 6.39,
+          "max_dd": 1.36
+        },
+        {
+          "symbol": "DXCM",
+          "n": 9,
+          "wr": 44.4,
+          "avg_pnl": 0.134,
+          "pf": 1.35,
+          "sharpe": 1.58,
+          "max_dd": 3.0
+        },
+        {
+          "symbol": "MMM",
+          "n": 9,
+          "wr": 55.6,
+          "avg_pnl": 0.091,
+          "pf": 1.28,
+          "sharpe": 1.53,
+          "max_dd": 1.43
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 647,
+          "win_rate": 50.9,
+          "avg_pnl": 0.123,
+          "pf": 1.23,
+          "sharpe": 1.27,
+          "max_dd": 35.39
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 327,
+          "win_rate": 59.9,
+          "avg_pnl": 0.399,
+          "pf": 2.11,
+          "sharpe": 4.45,
+          "max_dd": 12.96
+        },
+        "PUT": {
+          "n": 320,
+          "win_rate": 41.6,
+          "avg_pnl": -0.159,
+          "pf": 0.78,
+          "sharpe": -1.57,
+          "max_dd": 60.35
+        }
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-18T18:05:54Z",
+    "symbols": [
+      "KLAC",
+      "ODFL",
+      "BAC",
+      "CRWD",
+      "AMAT",
+      "ADI",
+      "BKNG",
+      "ZM",
+      "BA",
+      "ZS",
+      "PANW",
+      "QCOM",
+      "ASTS",
+      "GFS",
+      "ROKU",
+      "MRK",
+      "ON",
+      "ILMN",
+      "HOOD",
+      "CAT",
+      "HUM",
+      "DXCM",
+      "MMM",
+      "SNPS",
+      "ORCL",
+      "COIN",
+      "LLY",
+      "IBM",
+      "AMD",
+      "WDAY"
+    ],
+    "threshold": 90.0,
+    "hold": 26,
+    "elapsed_s": 73.1,
+    "result": {
+      "meta": {
+        "symbols": 30,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-18",
+        "oos_start": "2025-09-18",
+        "elapsed_s": 72.8
+      },
+      "is": {
+        "n": 461,
+        "win_rate": 44.5,
+        "avg_pnl": -0.058,
+        "pf": 0.91,
+        "sharpe": -0.59,
+        "max_dd": 40.37
+      },
+      "oos": {
+        "n": 647,
+        "win_rate": 50.9,
+        "avg_pnl": 0.122,
+        "pf": 1.23,
+        "sharpe": 1.26,
+        "max_dd": 35.39
+      },
+      "by_symbol": [
+        {
+          "symbol": "AMD",
+          "n": 66,
+          "wr": 53.0,
+          "avg_pnl": 0.112,
+          "pf": 1.17,
+          "sharpe": 1.03,
+          "max_dd": 16.83
+        },
+        {
+          "symbol": "AMAT",
+          "n": 55,
+          "wr": 54.5,
+          "avg_pnl": 0.255,
+          "pf": 1.71,
+          "sharpe": 3.22,
+          "max_dd": 6.75
+        },
+        {
+          "symbol": "ORCL",
+          "n": 54,
+          "wr": 42.6,
+          "avg_pnl": -0.16,
+          "pf": 0.8,
+          "sharpe": -1.56,
+          "max_dd": 22.32
+        },
+        {
+          "symbol": "HOOD",
+          "n": 32,
+          "wr": 50.0,
+          "avg_pnl": -0.142,
+          "pf": 0.83,
+          "sharpe": -1.27,
+          "max_dd": 16.64
+        },
+        {
+          "symbol": "BA",
+          "n": 28,
+          "wr": 46.4,
+          "avg_pnl": 0.216,
+          "pf": 1.51,
+          "sharpe": 2.66,
+          "max_dd": 2.69
+        },
+        {
+          "symbol": "ASTS",
+          "n": 28,
+          "wr": 50.0,
+          "avg_pnl": 0.502,
+          "pf": 1.53,
+          "sharpe": 2.7,
+          "max_dd": 12.29
+        },
+        {
+          "symbol": "CAT",
+          "n": 28,
+          "wr": 57.1,
+          "avg_pnl": 0.205,
+          "pf": 1.48,
+          "sharpe": 2.63,
+          "max_dd": 4.46
+        },
+        {
+          "symbol": "LLY",
+          "n": 24,
+          "wr": 50.0,
+          "avg_pnl": 0.057,
+          "pf": 1.11,
+          "sharpe": 0.7,
+          "max_dd": 5.87
+        },
+        {
+          "symbol": "ILMN",
+          "n": 21,
+          "wr": 57.1,
+          "avg_pnl": 0.149,
+          "pf": 1.44,
+          "sharpe": 2.12,
+          "max_dd": 6.14
+        },
+        {
+          "symbol": "QCOM",
+          "n": 20,
+          "wr": 50.0,
+          "avg_pnl": 0.678,
+          "pf": 2.87,
+          "sharpe": 5.67,
+          "max_dd": 4.58
+        },
+        {
+          "symbol": "COIN",
+          "n": 20,
+          "wr": 35.0,
+          "avg_pnl": -0.58,
+          "pf": 0.51,
+          "sharpe": -4.29,
+          "max_dd": 19.4
+        },
+        {
+          "symbol": "IBM",
+          "n": 20,
+          "wr": 65.0,
+          "avg_pnl": 0.325,
+          "pf": 1.87,
+          "sharpe": 4.27,
+          "max_dd": 2.55
+        },
+        {
+          "symbol": "GFS",
+          "n": 19,
+          "wr": 47.4,
+          "avg_pnl": 0.321,
+          "pf": 1.56,
+          "sharpe": 2.8,
+          "max_dd": 4.08
+        },
+        {
+          "symbol": "ODFL",
+          "n": 18,
+          "wr": 55.6,
+          "avg_pnl": 0.076,
+          "pf": 1.18,
+          "sharpe": 0.93,
+          "max_dd": 3.94
+        },
+        {
+          "symbol": "CRWD",
+          "n": 18,
+          "wr": 50.0,
+          "avg_pnl": -0.031,
+          "pf": 0.94,
+          "sharpe": -0.38,
+          "max_dd": 4.48
+        },
+        {
+          "symbol": "ROKU",
+          "n": 18,
+          "wr": 50.0,
+          "avg_pnl": 0.313,
+          "pf": 2.17,
+          "sharpe": 4.54,
+          "max_dd": 2.09
+        },
+        {
+          "symbol": "ZS",
+          "n": 17,
+          "wr": 41.2,
+          "avg_pnl": 0.215,
+          "pf": 1.41,
+          "sharpe": 2.04,
+          "max_dd": 6.41
+        },
+        {
+          "symbol": "ON",
+          "n": 17,
+          "wr": 52.9,
+          "avg_pnl": 0.194,
+          "pf": 1.37,
+          "sharpe": 1.98,
+          "max_dd": 3.68
+        },
+        {
+          "symbol": "WDAY",
+          "n": 17,
+          "wr": 35.3,
+          "avg_pnl": -0.026,
+          "pf": 0.96,
+          "sharpe": -0.26,
+          "max_dd": 6.27
+        },
+        {
+          "symbol": "SNPS",
+          "n": 16,
+          "wr": 43.8,
+          "avg_pnl": -0.164,
+          "pf": 0.7,
+          "sharpe": -2.17,
+          "max_dd": 7.49
+        },
+        {
+          "symbol": "BKNG",
+          "n": 15,
+          "wr": 66.7,
+          "avg_pnl": 0.312,
+          "pf": 1.98,
+          "sharpe": 4.48,
+          "max_dd": 2.35
+        },
+        {
+          "symbol": "PANW",
+          "n": 14,
+          "wr": 42.9,
+          "avg_pnl": 0.182,
+          "pf": 1.51,
+          "sharpe": 2.52,
+          "max_dd": 3.57
+        },
+        {
+          "symbol": "KLAC",
+          "n": 12,
+          "wr": 75.0,
+          "avg_pnl": 0.283,
+          "pf": 2.14,
+          "sharpe": 4.72,
+          "max_dd": 1.83
+        },
+        {
+          "symbol": "ZM",
+          "n": 11,
+          "wr": 45.5,
+          "avg_pnl": 0.019,
+          "pf": 1.03,
+          "sharpe": 0.22,
+          "max_dd": 3.69
+        },
+        {
+          "symbol": "HUM",
+          "n": 11,
+          "wr": 45.5,
+          "avg_pnl": -0.089,
+          "pf": 0.85,
+          "sharpe": -1.01,
+          "max_dd": 4.96
+        },
+        {
+          "symbol": "BAC",
+          "n": 10,
+          "wr": 50.0,
+          "avg_pnl": -0.118,
+          "pf": 0.64,
+          "sharpe": -2.66,
+          "max_dd": 2.97
+        },
+        {
+          "symbol": "ADI",
+          "n": 10,
+          "wr": 60.0,
+          "avg_pnl": 0.135,
+          "pf": 1.34,
+          "sharpe": 1.84,
+          "max_dd": 1.89
+        },
+        {
+          "symbol": "MRK",
+          "n": 10,
+          "wr": 70.0,
+          "avg_pnl": 0.366,
+          "pf": 2.69,
+          "sharpe": 6.39,
+          "max_dd": 1.36
+        },
+        {
+          "symbol": "DXCM",
+          "n": 9,
+          "wr": 44.4,
+          "avg_pnl": 0.134,
+          "pf": 1.35,
+          "sharpe": 1.58,
+          "max_dd": 3.0
+        },
+        {
+          "symbol": "MMM",
+          "n": 9,
+          "wr": 55.6,
+          "avg_pnl": 0.091,
+          "pf": 1.28,
+          "sharpe": 1.53,
+          "max_dd": 1.43
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 647,
+          "win_rate": 50.9,
+          "avg_pnl": 0.122,
+          "pf": 1.23,
+          "sharpe": 1.26,
+          "max_dd": 35.39
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 327,
+          "win_rate": 59.9,
+          "avg_pnl": 0.398,
+          "pf": 2.11,
+          "sharpe": 4.43,
+          "max_dd": 12.96
+        },
+        "PUT": {
+          "n": 320,
+          "win_rate": 41.6,
+          "avg_pnl": -0.159,
+          "pf": 0.78,
+          "sharpe": -1.57,
+          "max_dd": 60.35
+        }
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-18T18:07:27Z",
+    "symbols": [
+      "KLAC",
+      "ODFL",
+      "BAC",
+      "CRWD",
+      "AMAT",
+      "ADI",
+      "BKNG",
+      "ZM",
+      "BA",
+      "ZS",
+      "PANW",
+      "QCOM",
+      "ASTS",
+      "GFS",
+      "ROKU",
+      "MRK",
+      "ON",
+      "ILMN",
+      "HOOD",
+      "CAT",
+      "HUM",
+      "DXCM",
+      "MMM",
+      "SNPS",
+      "ORCL",
+      "COIN",
+      "LLY",
+      "IBM",
+      "AMD",
+      "WDAY"
+    ],
+    "threshold": 90.0,
+    "hold": 26,
+    "elapsed_s": 74.7,
+    "result": {
+      "meta": {
+        "symbols": 30,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-18",
+        "oos_start": "2025-09-18",
+        "elapsed_s": 74.4
+      },
+      "is": {
+        "n": 185,
+        "win_rate": 44.3,
+        "avg_pnl": -0.045,
+        "pf": 0.94,
+        "sharpe": -0.39,
+        "max_dd": 21.51
+      },
+      "oos": {
+        "n": 329,
+        "win_rate": 59.9,
+        "avg_pnl": 0.397,
+        "pf": 2.11,
+        "sharpe": 4.43,
+        "max_dd": 12.96
+      },
+      "by_symbol": [
+        {
+          "symbol": "AMD",
+          "n": 32,
+          "wr": 46.9,
+          "avg_pnl": 0.161,
+          "pf": 1.26,
+          "sharpe": 1.58,
+          "max_dd": 12.96
+        },
+        {
+          "symbol": "AMAT",
+          "n": 28,
+          "wr": 67.9,
+          "avg_pnl": 0.487,
+          "pf": 5.55,
+          "sharpe": 8.5,
+          "max_dd": 1.37
+        },
+        {
+          "symbol": "ORCL",
+          "n": 23,
+          "wr": 56.5,
+          "avg_pnl": 0.302,
+          "pf": 1.53,
+          "sharpe": 2.81,
+          "max_dd": 9.69
+        },
+        {
+          "symbol": "LLY",
+          "n": 16,
+          "wr": 56.2,
+          "avg_pnl": 0.194,
+          "pf": 1.47,
+          "sharpe": 2.47,
+          "max_dd": 3.41
+        },
+        {
+          "symbol": "HOOD",
+          "n": 13,
+          "wr": 61.5,
+          "avg_pnl": 0.552,
+          "pf": 2.23,
+          "sharpe": 5.1,
+          "max_dd": 4.78
+        },
+        {
+          "symbol": "CAT",
+          "n": 13,
+          "wr": 53.8,
+          "avg_pnl": 0.292,
+          "pf": 2.2,
+          "sharpe": 4.85,
+          "max_dd": 1.68
+        },
+        {
+          "symbol": "BA",
+          "n": 12,
+          "wr": 50.0,
+          "avg_pnl": 0.683,
+          "pf": 3.37,
+          "sharpe": 7.61,
+          "max_dd": 1.51
+        },
+        {
+          "symbol": "ASTS",
+          "n": 12,
+          "wr": 58.3,
+          "avg_pnl": 0.711,
+          "pf": 1.74,
+          "sharpe": 3.55,
+          "max_dd": 6.99
+        },
+        {
+          "symbol": "WDAY",
+          "n": 12,
+          "wr": 33.3,
+          "avg_pnl": 0.101,
+          "pf": 1.19,
+          "sharpe": 1.05,
+          "max_dd": 6.37
+        },
+        {
+          "symbol": "ZS",
+          "n": 11,
+          "wr": 63.6,
+          "avg_pnl": 0.907,
+          "pf": 4.67,
+          "sharpe": 8.78,
+          "max_dd": 2.55
+        },
+        {
+          "symbol": "ROKU",
+          "n": 11,
+          "wr": 54.5,
+          "avg_pnl": 0.186,
+          "pf": 1.74,
+          "sharpe": 3.27,
+          "max_dd": 1.24
+        },
+        {
+          "symbol": "ILMN",
+          "n": 11,
+          "wr": 54.5,
+          "avg_pnl": 0.263,
+          "pf": 2.5,
+          "sharpe": 4.22,
+          "max_dd": 1.35
+        },
+        {
+          "symbol": "SNPS",
+          "n": 11,
+          "wr": 54.5,
+          "avg_pnl": 0.209,
+          "pf": 1.62,
+          "sharpe": 2.98,
+          "max_dd": 2.53
+        },
+        {
+          "symbol": "CRWD",
+          "n": 10,
+          "wr": 70.0,
+          "avg_pnl": 0.323,
+          "pf": 6.22,
+          "sharpe": 10.54,
+          "max_dd": 0.32
+        },
+        {
+          "symbol": "PANW",
+          "n": 10,
+          "wr": 60.0,
+          "avg_pnl": 0.462,
+          "pf": 2.59,
+          "sharpe": 5.91,
+          "max_dd": 1.56
+        },
+        {
+          "symbol": "ODFL",
+          "n": 9,
+          "wr": 88.9,
+          "avg_pnl": 0.313,
+          "pf": 5.55,
+          "sharpe": 11.29,
+          "max_dd": 0.62
+        },
+        {
+          "symbol": "ON",
+          "n": 9,
+          "wr": 55.6,
+          "avg_pnl": 0.503,
+          "pf": 2.6,
+          "sharpe": 5.38,
+          "max_dd": 1.5
+        },
+        {
+          "symbol": "IBM",
+          "n": 9,
+          "wr": 66.7,
+          "avg_pnl": 0.157,
+          "pf": 1.45,
+          "sharpe": 2.45,
+          "max_dd": 1.38
+        },
+        {
+          "symbol": "QCOM",
+          "n": 8,
+          "wr": 50.0,
+          "avg_pnl": 0.8,
+          "pf": 3.29,
+          "sharpe": 6.89,
+          "max_dd": 1.33
+        },
+        {
+          "symbol": "GFS",
+          "n": 8,
+          "wr": 75.0,
+          "avg_pnl": 0.79,
+          "pf": 2.55,
+          "sharpe": 6.08,
+          "max_dd": 4.08
+        },
+        {
+          "symbol": "COIN",
+          "n": 8,
+          "wr": 50.0,
+          "avg_pnl": 0.405,
+          "pf": 1.64,
+          "sharpe": 2.77,
+          "max_dd": 4.58
+        },
+        {
+          "symbol": "BKNG",
+          "n": 7,
+          "wr": 85.7,
+          "avg_pnl": 0.542,
+          "pf": 4.21,
+          "sharpe": 8.03,
+          "max_dd": 1.18
+        },
+        {
+          "symbol": "ZM",
+          "n": 7,
+          "wr": 71.4,
+          "avg_pnl": 0.656,
+          "pf": 3.2,
+          "sharpe": 7.81,
+          "max_dd": 2.09
+        },
+        {
+          "symbol": "ADI",
+          "n": 6,
+          "wr": 83.3,
+          "avg_pnl": 0.611,
+          "pf": 3.9,
+          "sharpe": 8.16,
+          "max_dd": 1.26
+        },
+        {
+          "symbol": "MRK",
+          "n": 6,
+          "wr": 66.7,
+          "avg_pnl": 0.441,
+          "pf": 2.37,
+          "sharpe": 6.01,
+          "max_dd": 1.12
+        },
+        {
+          "symbol": "HUM",
+          "n": 6,
+          "wr": 66.7,
+          "avg_pnl": 0.317,
+          "pf": 1.9,
+          "sharpe": 3.55,
+          "max_dd": 2.09
+        },
+        {
+          "symbol": "MMM",
+          "n": 6,
+          "wr": 50.0,
+          "avg_pnl": 0.18,
+          "pf": 1.66,
+          "sharpe": 3.15,
+          "max_dd": 1.01
+        },
+        {
+          "symbol": "KLAC",
+          "n": 5,
+          "wr": 80.0,
+          "avg_pnl": 0.467,
+          "pf": 8.56,
+          "sharpe": 15.78,
+          "max_dd": 0.31
+        },
+        {
+          "symbol": "BAC",
+          "n": 5,
+          "wr": 80.0,
+          "avg_pnl": 0.222,
+          "pf": 9.04,
+          "sharpe": 10.07,
+          "max_dd": 0.14
+        },
+        {
+          "symbol": "DXCM",
+          "n": 5,
+          "wr": 60.0,
+          "avg_pnl": 0.403,
+          "pf": 2.0,
+          "sharpe": 3.67,
+          "max_dd": 1.91
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 329,
+          "win_rate": 59.9,
+          "avg_pnl": 0.397,
+          "pf": 2.11,
+          "sharpe": 4.43,
+          "max_dd": 12.96
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 329,
+          "win_rate": 59.9,
+          "avg_pnl": 0.397,
+          "pf": 2.11,
+          "sharpe": 4.43,
+          "max_dd": 12.96
+        },
+        "PUT": {}
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-18T18:12:36Z",
+    "symbols": [
+      "NVDA"
+    ],
+    "threshold": 90.0,
+    "hold": 26,
+    "elapsed_s": 5.8,
+    "result": {
+      "meta": {
+        "symbols": 1,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-14",
+        "oos_start": "2025-09-15",
+        "elapsed_s": 5.6
+      },
+      "is": {
+        "n": 104,
+        "win_rate": 42.3,
+        "avg_pnl": -0.257,
+        "pf": 0.68,
+        "sharpe": -2.59,
+        "max_dd": 32.89
+      },
+      "oos": {
+        "n": 43,
+        "win_rate": 46.5,
+        "avg_pnl": -0.008,
+        "pf": 0.99,
+        "sharpe": -0.1,
+        "max_dd": 10.02
+      },
+      "by_symbol": [
+        {
+          "symbol": "NVDA",
+          "n": 43,
+          "wr": 46.5,
+          "avg_pnl": -0.008,
+          "pf": 0.99,
+          "sharpe": -0.1,
+          "max_dd": 10.02
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 43,
+          "win_rate": 46.5,
+          "avg_pnl": -0.008,
+          "pf": 0.99,
+          "sharpe": -0.1,
+          "max_dd": 10.02
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 21,
+          "win_rate": 42.9,
+          "avg_pnl": -0.143,
+          "pf": 0.73,
+          "sharpe": -2.1,
+          "max_dd": 7.52
+        },
+        "PUT": {
+          "n": 22,
+          "win_rate": 50.0,
+          "avg_pnl": 0.12,
+          "pf": 1.2,
+          "sharpe": 1.22,
+          "max_dd": 3.78
+        }
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-18T18:12:48Z",
+    "symbols": [
+      "AMD"
+    ],
+    "threshold": 90.0,
+    "hold": 26,
+    "elapsed_s": 5.3,
+    "result": {
+      "meta": {
+        "symbols": 1,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-14",
+        "oos_start": "2025-09-15",
+        "elapsed_s": 5.1
+      },
+      "is": {
+        "n": 119,
+        "win_rate": 42.0,
+        "avg_pnl": -0.128,
+        "pf": 0.82,
+        "sharpe": -1.3,
+        "max_dd": 21.43
+      },
+      "oos": {
+        "n": 68,
+        "win_rate": 51.5,
+        "avg_pnl": 0.073,
+        "pf": 1.11,
+        "sharpe": 0.67,
+        "max_dd": 16.83
+      },
+      "by_symbol": [
+        {
+          "symbol": "AMD",
+          "n": 68,
+          "wr": 51.5,
+          "avg_pnl": 0.073,
+          "pf": 1.11,
+          "sharpe": 0.67,
+          "max_dd": 16.83
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 68,
+          "win_rate": 51.5,
+          "avg_pnl": 0.073,
+          "pf": 1.11,
+          "sharpe": 0.67,
+          "max_dd": 16.83
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 32,
+          "win_rate": 46.9,
+          "avg_pnl": 0.161,
+          "pf": 1.26,
+          "sharpe": 1.58,
+          "max_dd": 12.96
+        },
+        "PUT": {
+          "n": 36,
+          "win_rate": 55.6,
+          "avg_pnl": -0.005,
+          "pf": 0.99,
+          "sharpe": -0.05,
+          "max_dd": 6.36
+        }
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-18T18:12:57Z",
+    "symbols": [
+      "AMD"
+    ],
+    "threshold": 90.0,
+    "hold": 26,
+    "elapsed_s": 5.6,
+    "result": {
+      "meta": {
+        "symbols": 1,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-14",
+        "oos_start": "2025-09-15",
+        "elapsed_s": 5.4
+      },
+      "is": {
+        "n": 56,
+        "win_rate": 37.5,
+        "avg_pnl": -0.275,
+        "pf": 0.65,
+        "sharpe": -2.62,
+        "max_dd": 17.72
+      },
+      "oos": {
+        "n": 33,
+        "win_rate": 48.5,
+        "avg_pnl": 0.176,
+        "pf": 1.3,
+        "sharpe": 1.75,
+        "max_dd": 12.96
+      },
+      "by_symbol": [
+        {
+          "symbol": "AMD",
+          "n": 33,
+          "wr": 48.5,
+          "avg_pnl": 0.176,
+          "pf": 1.3,
+          "sharpe": 1.75,
+          "max_dd": 12.96
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 33,
+          "win_rate": 48.5,
+          "avg_pnl": 0.176,
+          "pf": 1.3,
+          "sharpe": 1.75,
+          "max_dd": 12.96
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 33,
+          "win_rate": 48.5,
+          "avg_pnl": 0.176,
+          "pf": 1.3,
+          "sharpe": 1.75,
+          "max_dd": 12.96
+        },
+        "PUT": {}
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-18T18:13:39Z",
+    "symbols": [
+      "TSLA"
+    ],
+    "threshold": 90.0,
+    "hold": 26,
+    "elapsed_s": 5.5,
+    "result": {
+      "meta": {
+        "symbols": 1,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-14",
+        "oos_start": "2025-09-15",
+        "elapsed_s": 5.3
+      },
+      "is": {
+        "n": 69,
+        "win_rate": 49.3,
+        "avg_pnl": 0.001,
+        "pf": 1.0,
+        "sharpe": 0.01,
+        "max_dd": 13.96
+      },
+      "oos": {
+        "n": 30,
+        "win_rate": 53.3,
+        "avg_pnl": -0.024,
+        "pf": 0.96,
+        "sharpe": -0.28,
+        "max_dd": 13.01
+      },
+      "by_symbol": [
+        {
+          "symbol": "TSLA",
+          "n": 30,
+          "wr": 53.3,
+          "avg_pnl": -0.024,
+          "pf": 0.96,
+          "sharpe": -0.28,
+          "max_dd": 13.01
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 30,
+          "win_rate": 53.3,
+          "avg_pnl": -0.024,
+          "pf": 0.96,
+          "sharpe": -0.28,
+          "max_dd": 13.01
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 30,
+          "win_rate": 53.3,
+          "avg_pnl": -0.024,
+          "pf": 0.96,
+          "sharpe": -0.28,
+          "max_dd": 13.01
+        },
+        "PUT": {}
+      }
+    }
+  },
+  {
+    "run_at": "2026-05-18T18:14:01Z",
+    "symbols": [
+      "JNJ"
+    ],
+    "threshold": 90.0,
+    "hold": 26,
+    "elapsed_s": 5.9,
+    "result": {
+      "meta": {
+        "symbols": 1,
+        "threshold": 90.0,
+        "date_range": "2024-05-15 to 2026-05-14",
+        "oos_start": "2025-09-15",
+        "elapsed_s": 5.7
+      },
+      "is": {
+        "n": 1,
+        "win_rate": 0.0,
+        "avg_pnl": -1.927,
+        "pf": 0.0,
+        "sharpe": 0.0,
+        "max_dd": 1.93
+      },
+      "oos": {
+        "n": 1,
+        "win_rate": 100.0,
+        "avg_pnl": 0.287,
+        "pf": 999.0,
+        "sharpe": 0.0,
+        "max_dd": 0.0
+      },
+      "by_symbol": [
+        {
+          "symbol": "JNJ",
+          "n": 1,
+          "wr": 100.0,
+          "avg_pnl": 0.287,
+          "pf": 999.0,
+          "sharpe": 0.0,
+          "max_dd": 0.0
+        }
+      ],
+      "by_grade": {
+        "S": {
+          "n": 1,
+          "win_rate": 100.0,
+          "avg_pnl": 0.287,
+          "pf": 999.0,
+          "sharpe": 0.0,
+          "max_dd": 0.0
+        },
+        "A": {},
+        "B": {},
+        "C": {}
+      },
+      "by_direction": {
+        "CALL": {
+          "n": 1,
+          "win_rate": 100.0,
+          "avg_pnl": 0.287,
+          "pf": 999.0,
+          "sharpe": 0.0,
+          "max_dd": 0.0
+        },
+        "PUT": {}
+      }
+    }
+  }
+]

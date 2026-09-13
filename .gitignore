@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Frontend build artifacts / deps
+web/node_modules/
+web/dist/
+.vite/
+
+# Generated logs, caches, and scan output — not source, regenerated at runtime
+scripts/__pycache__/
+scripts/bar_cache/
+scripts/logs/
+scripts/scan_results/
+scripts/sweep_results/
+data/bars/
+
+# Personal config (ntfy topic) — copy data/config.env.example instead
+data/config.env
+
+.DS_Store

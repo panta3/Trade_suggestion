@@ -1,0 +1,594 @@
+[
+  {
+    "date": "2026-05-14",
+    "n": 40,
+    "win_rate": 47.5,
+    "avg_pnl": -0.53,
+    "profit_factor": 0.41,
+    "expectancy": -0.527
+  },
+  {
+    "date": "2026-05-14",
+    "n": 40,
+    "win_rate": 47.5,
+    "avg_pnl": -0.53,
+    "profit_factor": 0.41,
+    "expectancy": -0.527
+  },
+  {
+    "date": "2026-05-14",
+    "n": 40,
+    "win_rate": 47.5,
+    "avg_pnl": -0.53,
+    "profit_factor": 0.41,
+    "expectancy": -0.527
+  },
+  {
+    "date": "2026-05-15",
+    "n": 42,
+    "win_rate": 45.2,
+    "avg_pnl": -0.59,
+    "profit_factor": 0.37,
+    "expectancy": -0.59
+  },
+  {
+    "date": "2026-05-15",
+    "n": 42,
+    "win_rate": 45.2,
+    "avg_pnl": -0.59,
+    "profit_factor": 0.37,
+    "expectancy": -0.59
+  },
+  {
+    "date": "2026-05-15",
+    "n": 42,
+    "win_rate": 45.2,
+    "avg_pnl": -0.59,
+    "profit_factor": 0.37,
+    "expectancy": -0.59
+  },
+  {
+    "date": "2026-05-18",
+    "n": 45,
+    "win_rate": 42.2,
+    "avg_pnl": -1.51,
+    "profit_factor": 0.18,
+    "expectancy": -1.515
+  },
+  {
+    "date": "2026-05-18",
+    "n": 54,
+    "win_rate": 38.9,
+    "avg_pnl": -1.34,
+    "profit_factor": 0.2,
+    "expectancy": -1.343
+  },
+  {
+    "date": "2026-05-18",
+    "n": 54,
+    "win_rate": 38.9,
+    "avg_pnl": -1.34,
+    "profit_factor": 0.2,
+    "expectancy": -1.343
+  },
+  {
+    "date": "2026-05-18",
+    "n": 54,
+    "win_rate": 38.9,
+    "avg_pnl": -1.34,
+    "profit_factor": 0.2,
+    "expectancy": -1.343
+  },
+  {
+    "date": "2026-05-18",
+    "n": 54,
+    "win_rate": 38.9,
+    "avg_pnl": -1.34,
+    "profit_factor": 0.2,
+    "expectancy": -1.343
+  },
+  {
+    "date": "2026-05-19",
+    "n": 4,
+    "win_rate": 0.0,
+    "avg_pnl": -1.5,
+    "profit_factor": 0.0,
+    "expectancy": -1.5
+  },
+  {
+    "date": "2026-05-19",
+    "n": 5,
+    "win_rate": 0.0,
+    "avg_pnl": -1.55,
+    "profit_factor": 0.0,
+    "expectancy": -1.55
+  },
+  {
+    "date": "2026-05-20",
+    "n": 7,
+    "win_rate": 14.3,
+    "avg_pnl": -1.0,
+    "profit_factor": 0.2,
+    "expectancy": -0.997
+  },
+  {
+    "date": "2026-05-21",
+    "n": 7,
+    "win_rate": 14.3,
+    "avg_pnl": -1.0,
+    "profit_factor": 0.2,
+    "expectancy": -0.997
+  },
+  {
+    "date": "2026-05-25",
+    "n": 9,
+    "win_rate": 22.2,
+    "avg_pnl": -0.76,
+    "profit_factor": 0.22,
+    "expectancy": -0.759
+  },
+  {
+    "date": "2026-05-25",
+    "n": 7,
+    "win_rate": 14.3,
+    "avg_pnl": -1.0,
+    "profit_factor": 0.2,
+    "expectancy": -0.997
+  },
+  {
+    "date": "2026-05-25",
+    "n": 9,
+    "win_rate": 22.2,
+    "avg_pnl": -0.76,
+    "profit_factor": 0.22,
+    "expectancy": -0.759
+  },
+  {
+    "date": "2026-05-26",
+    "n": 13,
+    "win_rate": 30.8,
+    "avg_pnl": -0.57,
+    "profit_factor": 0.28,
+    "expectancy": -0.575
+  },
+  {
+    "date": "2026-05-29",
+    "n": 15,
+    "win_rate": 33.3,
+    "avg_pnl": -0.57,
+    "profit_factor": 0.27,
+    "expectancy": -0.567
+  },
+  {
+    "date": "2026-05-29",
+    "n": 15,
+    "win_rate": 33.3,
+    "avg_pnl": -0.57,
+    "profit_factor": 0.27,
+    "expectancy": -0.567
+  },
+  {
+    "date": "2026-06-01",
+    "n": 16,
+    "win_rate": 37.5,
+    "avg_pnl": -0.48,
+    "profit_factor": 0.33,
+    "expectancy": -0.485
+  },
+  {
+    "date": "2026-06-02",
+    "n": 18,
+    "win_rate": 44.4,
+    "avg_pnl": -0.33,
+    "profit_factor": 0.49,
+    "expectancy": -0.33
+  },
+  {
+    "date": "2026-06-04",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-05",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-05",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-09",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-09",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-10",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-10",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-11",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-12",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-12",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-15",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-16",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-19",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-22",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-23",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-25",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-27",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-29",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-06-30",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-07-03",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-07-03",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-07-07",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-07-09",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-07-11",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-07-14",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-07-15",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-07-20",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-07-23",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-07-25",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-07-25",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-07-27",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-07-30",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-07-31",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-08-05",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-08-06",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-08-07",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-08-07",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-08-11",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-08-12",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-08-14",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-08-19",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-08-20",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-08-22",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-08-24",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-08-26",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-08-27",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-08-31",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-09-01",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-09-08",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-09-10",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  },
+  {
+    "date": "2026-09-11",
+    "n": 22,
+    "win_rate": 40.9,
+    "avg_pnl": -0.35,
+    "profit_factor": 0.48,
+    "expectancy": -0.354
+  }
+]

@@ -1,0 +1,290 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{mdframed}
+\usepackage{fontenc}
+\usepackage{inputenc}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{hyperref}
+
+% ── Colours ──────────────────────────────────────────────────────────────────
+\definecolor{accent}{RGB}{30,100,200}
+\definecolor{green}{RGB}{22,163,74}
+\definecolor{orange}{RGB}{234,88,12}
+\definecolor{red}{RGB}{185,28,28}
+\definecolor{lightgray}{RGB}{248,249,250}
+\definecolor{darkgray}{RGB}{55,65,81}
+\definecolor{rowblue}{RGB}{239,246,255}
+\definecolor{rowgreen}{RGB}{240,253,244}
+\definecolor{roworange}{RGB}{255,247,237}
+
+% ── Section Styling ───────────────────────────────────────────────────────────
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[\color{accent}\rule{\linewidth}{1.2pt}]
+\titleformat{\subsection}{\normalsize\bfseries\color{darkgray}}{}{0em}{}
+\titlespacing{\section}{0pt}{18pt}{6pt}
+\titlespacing{\subsection}{0pt}{10pt}{4pt}
+
+% ── Header / Footer ───────────────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}\textbf{GapFade Algo — Operations Runbook}}
+\fancyhead[R]{\small\color{darkgray}Aarav Pant}
+\fancyfoot[C]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ── Boxes ────────────────────────────────────────────────────────────────────
+\newmdenv[backgroundcolor=rowblue, linecolor=accent, linewidth=1pt,
+  innerleftmargin=10pt, innerrightmargin=10pt, innertopmargin=6pt, innerbottommargin=6pt]{infobox}
+\newmdenv[backgroundcolor=rowgreen, linecolor=green, linewidth=1pt,
+  innerleftmargin=10pt, innerrightmargin=10pt, innertopmargin=6pt, innerbottommargin=6pt]{greenbox}
+\newmdenv[backgroundcolor=roworange, linecolor=orange, linewidth=1pt,
+  innerleftmargin=10pt, innerrightmargin=10pt, innertopmargin=6pt, innerbottommargin=6pt]{warnbox}
+
+\hypersetup{colorlinks=true,linkcolor=accent,urlcolor=accent}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\begin{document}
+
+% ── TITLE PAGE ────────────────────────────────────────────────────────────────
+\begin{center}
+  {\Huge\bfseries\color{accent} GapFade Algo}\\[4pt]
+  {\large\color{darkgray} Operations Runbook \& Daily Schedule}\\[10pt]
+  {\normalsize\color{darkgray} Aarav Pant \quad|\quad May 2026 \quad|\quad v1.1}\\[6pt]
+  \color{accent}\rule{0.6\linewidth}{1.5pt}
+\end{center}
+
+\vspace{6pt}
+
+\begin{infobox}
+\textbf{System Overview} --- Two parallel strategies run fully automated via Windows Task Scheduler.
+The \textbf{Swing algo} scans 65+ symbols on daily bars for multi-day momentum trades (hold 3--15 days).
+The \textbf{Intraday algo} scans the same universe on 5-min bars for same-day CALL/PUT signals (hold minutes to hours).
+Both log paper trades to JSON files and validate P\&L nightly. Push notifications fire on Grade~S/A signals via ntfy.sh.
+\end{infobox}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Daily Automated Schedule}
+
+\renewcommand{\arraystretch}{1.55}
+\begin{tabularx}{\linewidth}{>{\bfseries}p{2.5cm} >{\bfseries\color{accent}}p{2.4cm} p{3.8cm} X}
+  \toprule
+  \rowcolor{accent}\color{white}\textbf{Time (ET)} & \color{white}\textbf{Task Name} & \color{white}\textbf{Script} & \color{white}\textbf{What It Does} \\
+  \midrule
+  \rowcolor{rowblue}
+  Login & GapFadeAlgo\_Start & api.py & Starts the web dashboard + intraday scanner. Loads config.env (ntfy topic). \\
+  \rowcolor{lightgray}
+  9:30 AM & GapFadeAlgo\_DailyScan\_Open & scripts/daily\_scan.py & Swing scan: scores all symbols on daily bars, logs CALL/PUT signals to paper\_trades.json. \\
+  \rowcolor{rowblue}
+  Continuous & api.py scanner & day\_trading.py & Every 5 min: pre-screens top 45 symbols by rel-vol, scores on 5-min bars, fires ntfy push for Grade S/A. \\
+  \rowcolor{lightgray}
+  3:45 PM & GapFadeAlgo\_DailyScan\_Close & scripts/daily\_scan.py \texttt{-{}-close} & Swing close scan: checks open swing trades, marks exits. \\
+  \rowcolor{rowblue}
+  4:00 PM & GapFadeAlgo\_SwingValidate & scripts/daily\_validate.py & Fetches real P\&L for closed swing trades, prints win rate / profit factor. \\
+  \rowcolor{lightgray}
+  4:15 PM & GapFadeAlgo\_IntradayValidate & scripts/intraday\_validate.py \texttt{-{}-close-eod} & Closes open intraday trades via EOD daily OHLC simulation, logs accuracy stats. \\
+  \rowcolor{rowblue}
+  Friday 4:30 PM & GapFadeAlgo\_WeeklyReview & scripts/weekly\_review.sh & Runs all three validators + threshold optimizer, prints full week summary. \\
+  \bottomrule
+\end{tabularx}
+
+\vspace{8pt}
+\begin{warnbox}
+\textbf{Days that run:} Swing tasks run Mon--Fri. Intraday validate runs Mon--Fri. Weekly review runs \textbf{Friday only}.
+The scanner (api.py) runs whenever you start it -- it self-guards against after-hours signals using a wall-clock ET check.
+\end{warnbox}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Weekly Manual Checklist (5 min every Friday)}
+
+\begin{enumerate}[leftmargin=1.4em, label=\textbf{\arabic*.}]
+  \item \textbf{Read the weekly review output} --- check validate.log or re-run:
+        \texttt{bash scripts/weekly\_review.sh}
+  \item \textbf{Check the threshold recommendation} from \texttt{scripts/optimize\_threshold.py}.
+        If it suggests a new threshold, update \texttt{day\_trading.py}: \texttt{SIGNAL\_THRESHOLD = XX}
+  \item \textbf{Scan for any Grade S/A signals} you may have missed. Open the web dashboard
+        (\texttt{python3 api.py} then \texttt{http://localhost:5000}).
+  \item \textbf{Review swing trades} still open: check \texttt{data/paper\_trades.json} for trades
+        open longer than 15 days --- consider manually closing.
+  \item \textbf{Review intraday accuracy}: \texttt{data/accuracy\_stats.json} --- track win rate trend
+        week over week.
+\end{enumerate}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Key Files Reference}
+
+\renewcommand{\arraystretch}{1.45}
+\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{5.2cm} X}
+  \toprule
+  \rowcolor{accent}\color{white}\textbf{File} & \color{white}\textbf{Purpose} \\
+  \midrule
+  \rowcolor{lightgray} data/day\_trades.json & All intraday paper trades (open + closed) \\
+  data/paper\_trades.json & All swing paper trades (open + closed) \\
+  \rowcolor{lightgray} data/accuracy\_stats.json & Historical accuracy runs (win rate, avg P\&L, profit factor) \\
+  data/config.env & Push notification topic (\texttt{NTFY\_TOPIC=aarav-scanner-9274}) \\
+  \rowcolor{lightgray} data/scanner.log & Rolling log from api.py scanner (5 MB $\times$ 3 backups) \\
+  data/validate.log & Output from each scheduled validate run \\
+  \rowcolor{lightgray} data/portfolio.json & Paper cash balance (used for position sizing) \\
+  scripts/intraday\_validate.py & Close-EOD simulator \& accuracy reporter \\
+  \rowcolor{lightgray} scripts/optimize\_threshold.py & Finds best signal threshold from closed trade history \\
+  scripts/intraday\_backtest.py & Walk-forward backtest on 2 years of hourly bars \\
+  \rowcolor{lightgray} scripts/weekly\_review.sh & Friday master report script \\
+  day\_trading.py & Intraday scanner: indicators, scoring engine, signal grader \\
+  \rowcolor{lightgray} core\_signals.py & Shared math: RSI, EMA, CMF, OBV, MFI, BB \\
+  Backtest.py & Walk-forward backtest for the swing algo \\
+  \bottomrule
+\end{tabularx}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Signal Grading System}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\linewidth}{>{\bfseries\centering}p{1.4cm} >{\centering}p{2.4cm} >{\centering}p{2.4cm} X}
+  \toprule
+  \rowcolor{accent}\color{white}\textbf{Grade} & \color{white}\textbf{Score} & \color{white}\textbf{ntfy Push} & \color{white}\textbf{Meaning} \\
+  \midrule
+  \rowcolor{rowgreen} S & $\geq 90$ & Yes (High priority) & Exceptional confluence --- strongest possible setup \\
+  \rowcolor{rowblue}  A & $\geq 80$ & Yes (Normal) & High conviction --- all major factors aligned \\
+  \rowcolor{lightgray} B & $\geq 68$ & No & Above threshold --- take selectively \\
+  \rowcolor{roworange} C & $\geq 55$ & No & Below threshold --- logged but not actioned \\
+  \rowcolor{lightgray} D & $< 55$   & No & Noise --- ignored \\
+  \bottomrule
+\end{tabularx}
+
+\vspace{6pt}
+\begin{infobox}
+\textbf{Current threshold:} 68 (Grade B and above fire signals). \\
+\textbf{Trade management:} Stop = entry $\pm$ ATR $\times$ 2.0 \quad Target = entry $\pm$ ATR $\times$ 3.0 \quad Minimum R:R = 1.5
+\end{infobox}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Scoring Engine --- What Gives Points}
+
+\begin{tabularx}{\linewidth}{X >{\centering\arraybackslash}p{2cm}}
+  \toprule
+  \rowcolor{accent}\color{white}\textbf{Signal Factor} & \color{white}\textbf{Points} \\
+  \midrule
+  \rowcolor{lightgray} EMA9 $>$ EMA21 \textit{and} price above VWAP (full trend) & $+20$ \\
+  Price above/below VWAP & $+8$ \\
+  \rowcolor{lightgray} 15-min HTF EMA uptrend / downtrend confirmation & $+10$ \\
+  RSI momentum ($> 58$ bull / $< 42$ bear) & $+15$ \\
+  \rowcolor{lightgray} ADX $> 30$ (strong trend) & $+15$ \\
+  15-bar high breakout / low breakdown & $+15$ \\
+  \rowcolor{lightgray} Opening Range Breakout (ORB) & $+25$ \\
+  Momentum continuation (price + EMA9 + volume) & $+10$ \\
+  \rowcolor{lightgray} EMA9 cross-up / cross-down reversal & $+20$ \\
+  Liquidity sweep + engulfing candle & $+15$ \\
+  \rowcolor{lightgray} Explosive candle ($>$ ATR $\times$ 0.4) & $+15$ \\
+  Volume $> 2\times$ average & $+18$ \\
+  \rowcolor{lightgray} Full smart money confluence (vol + CMF + OBV + MFI) & $+18$ \\
+  Trend day setup (ADX $> 30$ + VWAP + EMA aligned) & $+20$ \\
+  \rowcolor{lightgray} RS vs SPY $> 2\%$ outperformance & $+12$ \\
+  \midrule
+  \rowcolor{roworange} RSI exhausted ($> 78$ overbought) & $-10$ to $-20$ \\
+  \rowcolor{roworange} Midday chop window (11am--1pm ET) & $-15$ \\
+  \rowcolor{roworange} Too extended from EMA9 ($>$ ATR $\times$ 1.5) & $-20$ \\
+  \rowcolor{roworange} Liquidity sweep trap (bull/bear trap) & $-10$ \\
+  \rowcolor{roworange} Bear market regime (SPY trend down) & $-15$ \\
+  \bottomrule
+\end{tabularx}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Universe \& Pre-Screener}
+
+The scanner starts with \textbf{65 symbols} across 9 sectors. Before full evaluation, a parallel
+pre-screener fetches relative volume for all symbols in $\sim$3 seconds and keeps only the
+\textbf{top 45 by relative volume} (minimum rel-vol 0.6$\times$). This reduces noise and focuses
+compute on the most active names each session.
+
+\textbf{Sectors covered:} Index ETFs (SPY, QQQ, IWM, TQQQ) --- Mega-cap tech (TSLA, NVDA, AAPL, MSFT, META, GOOGL, AMZN) ---
+Semiconductors (NVDA, AMD, INTC, QCOM, MU) --- Financials (JPM, GS, COIN) ---
+Energy (XOM, CVX, OXY) --- Healthcare (LLY, MRNA) --- Consumer/Internet (UBER, ABNB, ROKU) ---
+High-beta / Speculative (MARA, RIOT, PLTR, SOFI, RIVN, UPST).
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Performance Benchmarks --- What to Look For}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\linewidth}{>{\bfseries}p{2.8cm} >{\centering\color{red}\bfseries}p{2.2cm} >{\centering\color{orange}\bfseries}p{2.4cm} >{\centering\color{green}\bfseries}p{2.4cm} X}
+  \toprule
+  \rowcolor{accent}\color{white}\textbf{Metric} & \color{white}\textbf{Fail} & \color{white}\textbf{Borderline} & \color{white}\textbf{Pass} & \color{white}\textbf{Notes} \\
+  \midrule
+  \rowcolor{lightgray} Win Rate & $< 45\%$ & 45--55\% & $> 55\%$ & Aim $> 55\%$ on Grade A/S \\
+  Profit Factor & $< 1.0$ & 1.0--1.3 & $> 1.3$ & Gross wins $\div$ gross losses \\
+  \rowcolor{lightgray} Avg P\&L/trade & $< -0.1\%$ & $-0.1$ to $0\%$ & $> 0\%$ & After 0.10\% slippage \\
+  Expectancy$\times\sqrt{n}$ & $< 0$ & 0--2 & $> 2$ & Used by optimizer \\
+  \bottomrule
+\end{tabularx}
+
+\vspace{6pt}
+\begin{greenbox}
+\textbf{Current live results (as of May 2026):} Win rate 50\%, Profit Factor 1.78 on closed intraday trades.
+This is early data --- aim for \textbf{3--4 weeks} (50+ closed trades) before drawing conclusions.
+Grade S/A signals are the primary focus; Grade B is secondary.
+\end{greenbox}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Useful Commands}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\linewidth}{>{\ttfamily\small}p{7.5cm} X}
+  \toprule
+  \rowcolor{accent}\color{white}\textbf{Command} & \color{white}\textbf{Does} \\
+  \midrule
+  \rowcolor{lightgray}\small python3 api.py & Start scanner + web dashboard (localhost:5000) \\
+  \small python3 day\_trading.py -{}-once & Single snapshot scan, prints to terminal \\
+  \rowcolor{lightgray}\small python3 scripts/intraday\_validate.py -{}-close-eod & Close open intraday trades + print accuracy \\
+  \small python3 scripts/intraday\_validate.py & Just print accuracy (no closing) \\
+  \rowcolor{lightgray}\small python3 scripts/optimize\_threshold.py & Find best signal threshold \\
+  \small python3 scripts/intraday\_backtest.py & 2-year walk-forward backtest (hourly proxy) \\
+  \rowcolor{lightgray}\small python3 Backtest.py & Walk-forward backtest for swing algo \\
+  \small bash scripts/weekly\_review.sh & Full Friday report \\
+  \rowcolor{lightgray}\small python3 day\_trading.py -{}-symbols TSLA NVDA & Scan specific symbols only \\
+  \bottomrule
+\end{tabularx}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Push Notifications Setup}
+
+\begin{enumerate}[leftmargin=1.4em, label=\textbf{\arabic*.}]
+  \item App: \textbf{ntfy} (free, no account) --- iOS App Store / Google Play
+  \item Your topic: \texttt{aarav-scanner-9274} (configured in \texttt{data/config.env})
+  \item Fires on \textbf{Grade S} (high priority) and \textbf{Grade A} (normal) signals only
+  \item Format: \texttt{TSLA CALL  Grade S  score=94  entry=\$312.40  stop=\$308.20  target=\$318.90}
+  \item To test: run \texttt{python3 day\_trading.py -{}-once} during market hours
+\end{enumerate}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Next 3--4 Weeks: What to Track}
+
+\begin{enumerate}[leftmargin=1.4em, label=\textbf{Week \arabic*:}]
+  \item \textbf{Validate data pipeline.} Confirm validate.log is updating at 4:15 PM each day.
+        Check that closed trade P\&Ls make sense (not all 0\%). Monitor ntfy alerts.
+  \item \textbf{First performance read.} After 20+ closed intraday trades, check win rate and profit factor.
+        Run \texttt{optimize\_threshold.py} --- adjust threshold if recommended.
+  \item \textbf{Grade breakdown.} Separate Grade S/A from Grade B trades. If S/A WR $\geq 60\%$,
+        the high-conviction filter is working.
+  \item \textbf{Decision point.} With 50+ closed trades: does the algo have a confirmed edge?
+        If WR $> 55\%$ and PF $> 1.3$ --- consider whether to adjust position sizing or universe.
+\end{enumerate}
+
+\vspace{4pt}
+\begin{warnbox}
+\textbf{Remember:} The intraday backtest on hourly bars showed no edge because hourly bars $\neq$ 5-min intraday bars.
+The live paper trade data over the next 3--4 weeks is the real signal. Do not tune the algo
+based on fewer than 30 closed trades --- that is not enough data to be statistically meaningful.
+\end{warnbox}
+
+\vspace{12pt}
+\begin{center}
+\color{darkgray}\small Generated May 2026 \quad|\quad GapFade Algo v1.1 \quad|\quad Paper trading only --- not financial advice
+\end{center}
+
+\end{document}

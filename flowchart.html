@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Trade Suggestion — System Flowchart</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #050505;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    color: #ddd;
+    padding: 40px 32px 80px;
+    min-width: 1100px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 11px;
+    color: #444;
+    margin-bottom: 48px;
+    letter-spacing: 0.5px;
+  }
+
+  /* ── Layout ── */
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 0;
+  }
+  .col { display: flex; flex-direction: column; align-items: center; gap: 0; }
+  .spacer { height: 36px; }
+  .spacer-sm { height: 20px; }
+
+  /* ── Boxes ── */
+  .box {
+    border-radius: 10px;
+    padding: 14px 18px;
+    border: 1px solid #222;
+    background: #0d0d0d;
+    min-width: 160px;
+    text-align: center;
+  }
+  .box .title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .box .desc {
+    font-size: 10px;
+    color: #555;
+    line-height: 1.6;
+  }
+  .box.wide  { min-width: 240px; }
+  .box.xwide { min-width: 340px; }
+  .box.full  { width: 100%; max-width: 900px; }
+
+  /* colour themes */
+  .blue   { border-color: #1e3a5f; background: #060e18; }
+  .blue   .title { color: #60a5fa; }
+  .green  { border-color: #1a3d1a; background: #060f06; }
+  .green  .title { color: #4ade80; }
+  .amber  { border-color: #3d2e00; background: #100c00; }
+  .amber  .title { color: #fbbf24; }
+  .purple { border-color: #2e1a3d; background: #0c060f; }
+  .purple .title { color: #c084fc; }
+  .red    { border-color: #3d1a1a; background: #0f0606; }
+  .red    .title { color: #f87171; }
+  .teal   { border-color: #0f2e2a; background: #030c0a; }
+  .teal   .title { color: #2dd4bf; }
+  .gray   { border-color: #1e1e1e; background: #0a0a0a; }
+  .gray   .title { color: #9ca3af; }
+
+  /* ── Arrows ── */
+  .arrow-down {
+    width: 2px;
+    background: #1e1e1e;
+    position: relative;
+    align-self: center;
+  }
+  .arrow-down::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #1e1e1e;
+  }
+  .arrow-h {
+    height: 2px;
+    background: #1e1e1e;
+    align-self: center;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .arrow-h::after {
+    content: "";
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid #1e1e1e;
+  }
+
+  /* ── Fan connector ── */
+  .fan {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .fan-line {
+    height: 36px;
+    border-left: 2px solid #1e1e1e;
+    border-bottom: 2px solid #1e1e1e;
+    flex: 1;
+  }
+  .fan-line:last-child {
+    border-left: none;
+    border-right: 2px solid #1e1e1e;
+  }
+  .fan-cap {
+    width: 2px;
+    height: 36px;
+    background: #1e1e1e;
+    align-self: flex-start;
+  }
+
+  /* ── Tabs grid in web box ── */
+  .tabs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .tab-chip {
+    border-radius: 6px;
+    padding: 8px 6px;
+    font-size: 10px;
+    line-height: 1.5;
+    border: 1px solid #1a1a1a;
+    background: #111;
+    text-align: left;
+  }
+  .tab-chip .ch { font-weight: 700; font-size: 11px; margin-bottom: 3px; }
+
+  /* ── Daily flow ── */
+  .flow-strip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-wrap: nowrap;
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+  .step {
+    flex: 1;
+    text-align: center;
+    padding: 10px 6px;
+    border-radius: 8px;
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    font-size: 10px;
+    line-height: 1.6;
+    min-width: 0;
+  }
+  .step .time { font-size: 11px; font-weight: 700; color: #fbbf24; display: block; margin-bottom: 3px; }
+  .flow-arrow {
+    font-size: 16px;
+    color: #2a2a2a;
+    flex-shrink: 0;
+    padding: 0 4px;
+  }
+
+  .section-label {
+    font-size: 10px;
+    color: #333;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 40px;
+  }
+  .divider {
+    width: 100%;
+    max-width: 900px;
+    height: 1px;
+    background: #111;
+    margin: 40px auto;
+  }
+</style>
+</head>
+<body>
+
+<h1>TRADE SUGGESTION SYSTEM</h1>
+<div class="subtitle">Full architecture — top-down overview</div>
+
+<!-- ═══ ROW 1: DATA SOURCES ═══ -->
+<div class="section-label">Data Sources</div>
+<div class="row">
+  <div class="box blue wide">
+    <div class="title">IBKR (Interactive Brokers)</div>
+    <div class="desc">
+      Live prices · 1m / 5m / 15m / 1h bars<br>
+      Pre-market + after-hours bars<br>
+      Options chains · Index tickers
+    </div>
+  </div>
+  <div class="box wide" style="min-width:40px;border:none;background:none;"></div>
+  <div class="box gray wide">
+    <div class="title">Yahoo Finance (fallback)</div>
+    <div class="desc">
+      Historical bars when IBKR unavailable<br>
+      Pre/post market prices<br>
+      Options chains
+    </div>
+  </div>
+</div>
+
+<!-- arrows down to ibkr_data.py -->
+<div class="col" style="align-items:center;">
+  <div class="arrow-down" style="height:32px;"></div>
+</div>
+
+<!-- ═══ ROW 2: ibkr_data.py ═══ -->
+<div class="section-label" style="margin-top:0">Data Layer</div>
+<div class="row">
+  <div class="box teal xwide full" style="max-width:560px;">
+    <div class="title">ibkr_data.py</div>
+    <div class="desc" style="text-align:left;display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;margin-top:4px;">
+      <span>get_intraday_bars() → RTH bars for scoring</span>
+      <span>get_extended_hours_bars() → charts</span>
+      <span>get_premarket_gap() → gap% + vol ratio</span>
+      <span>get_index_tickers() → SP500 / NDX / DJ30</span>
+    </div>
+  </div>
+</div>
+
+<!-- fan out to 3 python files -->
+<div style="display:flex;justify-content:center;">
+  <div style="width:560px;position:relative;height:40px;">
+    <div style="position:absolute;left:50%;top:0;width:2px;height:40px;background:#1e1e1e;transform:translateX(-50%);"></div>
+    <div style="position:absolute;left:15%;top:20px;right:15%;height:2px;background:#1e1e1e;"></div>
+    <div style="position:absolute;left:15%;top:20px;width:2px;height:20px;background:#1e1e1e;"></div>
+    <div style="position:absolute;right:15%;top:20px;width:2px;height:20px;background:#1e1e1e;"></div>
+  </div>
+</div>
+
+<!-- ═══ ROW 3: Python engines ═══ -->
+<div class="section-label" style="margin-top:0">Python Engines (run during market hours)</div>
+<div class="row" style="align-items:stretch;">
+
+  <div class="box green" style="min-width:220px;flex:1;max-width:280px;">
+    <div class="title">day_trading.py</div>
+    <div class="desc" style="text-align:left;margin-top:6px;">
+      Chloe Protocol scoring:<br>
+      · VWAP + ORB breakout<br>
+      · PDH / PDL levels<br>
+      · Weekly 10-day bias<br>
+      · Level confluence (+8)<br>
+      · Pullback entry (+12)<br>
+      · Grade S/A/B/C<br><br>
+      <b style="color:#4ade8088">score_intraday() → signal</b>
+    </div>
+  </div>
+
+  <div class="box amber" style="min-width:200px;flex:1;max-width:240px;">
+    <div class="title">core_signals.py</div>
+    <div class="desc" style="text-align:left;margin-top:6px;">
+      Runs every 5 min<br>
+      during market hours<br><br>
+      Calls day_trading for<br>
+      all 65 symbols<br><br>
+      Writes results to:<br>
+      <b style="color:#fbbf2488">day_trades.json</b>
+    </div>
+  </div>
+
+  <div class="box purple" style="min-width:200px;flex:1;max-width:240px;">
+    <div class="title">premarket_scan.py</div>
+    <div class="desc" style="text-align:left;margin-top:6px;">
+      Run once at 9:00 AM ET<br><br>
+      Scans 65 symbols for:<br>
+      · Gap % from prev close<br>
+      · Pre-market vol ratio<br><br>
+      Ranks by gap × vol<br>
+      → ★★★ watchlist
+    </div>
+  </div>
+
+</div>
+
+<!-- arrows down to api.py -->
+<div class="col" style="align-items:center;">
+  <div class="arrow-down" style="height:32px;"></div>
+</div>
+
+<!-- ═══ ROW 4: api.py ═══ -->
+<div class="section-label" style="margin-top:0">API Layer</div>
+<div class="row">
+  <div class="box blue full" style="max-width:820px;">
+    <div class="title">api.py — Flask REST  ·  localhost:5000</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px;text-align:left;">
+      <div style="font-size:10px;color:#555;line-height:1.8;">
+        <span style="color:#60a5fa">/api/premarket_scan/run</span><br>
+        Background scan job<br>
+        → ranked watchlist JSON
+      </div>
+      <div style="font-size:10px;color:#555;line-height:1.8;">
+        <span style="color:#60a5fa">/api/today_signals</span><br>
+        Reads day_trades.json<br>
+        → live signals for UI
+      </div>
+      <div style="font-size:10px;color:#555;line-height:1.8;">
+        <span style="color:#60a5fa">/api/intraday_chart/:sym</span><br>
+        OHLCV bars + levels<br>
+        tf=1m / 5m / 1h / 1d
+      </div>
+      <div style="font-size:10px;color:#555;line-height:1.8;">
+        <span style="color:#60a5fa">/api/backtest/run</span><br>
+        Async backtest job<br>
+        → IS + OOS stats
+      </div>
+      <div style="font-size:10px;color:#555;line-height:1.8;">
+        <span style="color:#60a5fa">/api/precache/run</span><br>
+        Pre-download bars<br>
+        → weekly bar cache
+      </div>
+      <div style="font-size:10px;color:#555;line-height:1.8;">
+        <span style="color:#60a5fa">/api/live_performance</span><br>
+        Win/loss per symbol<br>
+        → KEEP / WATCH / REMOVE
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- arrow down -->
+<div class="col" style="align-items:center;">
+  <div class="arrow-down" style="height:32px;"></div>
+</div>
+
+<!-- ═══ ROW 5: Web App ═══ -->
+<div class="section-label" style="margin-top:0">Web App — React (Vite)  ·  localhost:5173</div>
+<div class="row">
+  <div class="box green full" style="max-width:900px;">
+    <div class="title">Browser Tabs</div>
+    <div class="tabs-grid" style="margin-top:12px;">
+
+      <div class="tab-chip" style="border-color:#2e1a3d;">
+        <div class="ch" style="color:#c084fc;">🌅 Pre-market</div>
+        Run scan at 9 AM<br>
+        Ranked ★★★ list<br>
+        Click → loads chart
+      </div>
+
+      <div class="tab-chip" style="border-color:#1e3a5f;">
+        <div class="ch" style="color:#60a5fa;">🕯️ Chart (Levels)</div>
+        1-MIN · 5-MIN · 1-HOUR<br>
+        PDH/PDL/PMH/PML lines<br>
+        Pre + after hours
+      </div>
+
+      <div class="tab-chip" style="border-color:#1a3d1a;">
+        <div class="ch" style="color:#4ade80;">🕐 Today's Signals</div>
+        Live signals every 5m<br>
+        Chloe badges ✓<br>
+        Click → opens chart
+      </div>
+
+      <div class="tab-chip" style="border-color:#1e1e1e;">
+        <div class="ch" style="color:#9ca3af;">📈 Day Scanner</div>
+        Large cap scanner<br>
+        SPX / TSX / Small cap<br>
+        Swing setups
+      </div>
+
+      <div class="tab-chip" style="border-color:#3d2e00;">
+        <div class="ch" style="color:#fbbf24;">🔬 Backtest</div>
+        2-year walk-forward<br>
+        IS + OOS stats<br>
+        Prune weak symbols
+      </div>
+
+      <div class="tab-chip" style="border-color:#1a3d1a;">
+        <div class="ch" style="color:#4ade80;">📊 Live Perf</div>
+        Per-symbol P&amp;L<br>
+        KEEP / WATCH / REMOVE<br>
+        2-week pruning tool
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══ DIVIDER ═══ -->
+<div class="divider"></div>
+
+<!-- ═══ OFFLINE SCRIPT ═══ -->
+<div class="section-label" style="margin-top:0">Offline / Weekend</div>
+<div class="row">
+  <div class="box red full" style="max-width:700px;">
+    <div class="title">scripts/intraday_backtest_2yr.py</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px;text-align:left;font-size:10px;color:#555;line-height:1.8;">
+      <div>
+        <b style="color:#f87171">bar_cache/</b><br>
+        15-min bars × 2 years<br>
+        Weekly cache key<br>
+        5 parallel workers
+      </div>
+      <div>
+        <b style="color:#f87171">Walk-forward output</b><br>
+        67% in-sample train<br>
+        33% out-of-sample test<br>
+        Win rate · PF · Sharpe · DD
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ DAILY FLOW ═══ -->
+<div class="divider"></div>
+<div class="section-label" style="margin-top:0">Your Daily Flow</div>
+
+<div class="flow-strip">
+  <div class="step">
+    <span class="time">9:00 AM</span>
+    🌅 Pre-market tab<br>
+    Run Scan<br>
+    Pick top 3 ★★★
+  </div>
+  <div class="flow-arrow">→</div>
+  <div class="step">
+    <span class="time">9:15 AM</span>
+    Start servers<br>
+    api.py<br>
+    day_trading.py<br>
+    core_signals.py
+  </div>
+  <div class="flow-arrow">→</div>
+  <div class="step">
+    <span class="time">9:25 AM</span>
+    🕯️ Chart tab<br>
+    Check 1-HOUR<br>
+    trend + levels<br>
+    for your 3 names
+  </div>
+  <div class="flow-arrow">→</div>
+  <div class="step">
+    <span class="time">9:35 AM</span>
+    🕐 Today Signals<br>
+    Wait for signal<br>
+    on your watchlist<br>
+    ✓ Chloe badge
+  </div>
+  <div class="flow-arrow">→</div>
+  <div class="step">
+    <span class="time">~10 AM</span>
+    Click symbol<br>
+    Check 1-MIN<br>
+    pullback to level<br>
+    → Enter trade
+  </div>
+  <div class="flow-arrow">→</div>
+  <div class="step">
+    <span class="time">4:00 PM</span>
+    Market closes<br>
+    Ctrl+C servers<br>
+    Done for day
+  </div>
+  <div class="flow-arrow">→</div>
+  <div class="step" style="border-color:#1a3d1a;">
+    <span class="time" style="color:#4ade80;">Weekend</span>
+    Run Backtest<br>
+    Check Live Perf<br>
+    Prune symbols<br>
+    with low WR
+  </div>
+</div>
+
+</body>
+</html>

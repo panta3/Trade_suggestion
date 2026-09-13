@@ -1,0 +1,151 @@
+========================================================================
+ INTRADAY BACKTEST 2YR  |  30 symbols  |  threshold=90  |  CALLS only
+ Data: IBKR 15-min bars × 2 years  (Yahoo 60-day fallback if unavailable)
+ Slippage: 0.10% RT  |  MaxHold: 26 bars (6h)  |  Cooldown: 8 bars (2h)
+ Primary window: 130 15-min bars  |  HTF: 1-hour (aggregated)
+ Cache: 0 hits / 31 need fetch
+ Estimated runtime: ~41m 35s  (fetch 155s + walk 2340s)
+========================================================================
+  0/31 cached  |  31 need IBKR/Yahoo fetch
+  Fetching 31 symbols in parallel (5 workers)…
+    [  1/31] SPY     12931 bars  (IBKR)
+    [  2/31] AMGN    12954 bars  (IBKR)
+    [  3/31] AAPL    12932 bars  (IBKR)
+    [  4/31] BA      12954 bars  (IBKR)
+    [  5/31] AXP     12954 bars  (IBKR)
+    [  6/31] CAT     12954 bars  (IBKR)
+    [  7/31] CSCO    12954 bars  (IBKR)
+    [  8/31] CRM     12932 bars  (IBKR)
+    [  9/31] HD      12954 bars  (IBKR)
+    [ 10/31] DIS     12954 bars  (IBKR)
+    [ 11/31] CVX     12933 bars  (IBKR)
+    [ 12/31] DOW     12954 bars  (IBKR)
+    [ 13/31] GS      12933 bars  (IBKR)
+    [ 14/31] IBM     12954 bars  (IBKR)
+    [ 15/31] HON     12954 bars  (IBKR)
+    [ 16/31] INTC    12954 bars  (IBKR)
+    [ 18/31] JPM     12933 bars  (IBKR)
+    [ 18/31] JNJ     12954 bars  (IBKR)
+    [ 19/31] KO      12954 bars  (IBKR)
+    [ 20/31] MCD     12954 bars  (IBKR)
+    [ 21/31] MMM     12954 bars  (IBKR)
+    [ 22/31] MSFT    12932 bars  (IBKR)
+    [ 23/31] MRK     12954 bars  (IBKR)
+    [ 24/31] NKE     12954 bars  (IBKR)
+    [ 25/31] PG      12953 bars  (IBKR)
+    [ 26/31] V       12932 bars  (IBKR)
+    [ 27/31] WBA       no data  (Yahoo)
+    [ 28/31] TRV      1560 bars  (IBKR)
+    [ 29/31] VZ       1560 bars  (IBKR)
+    [ 30/31] WMT      1560 bars  (IBKR)
+    [ 31/31] UNH      1560 bars  (IBKR)
+  Done: 30/31 symbols returned data
+
+ Date range : 2024-05-15 → 2026-05-15  (730 days)
+ IS cutoff  : 2024-05-15 → 2025-09-15
+ OOS period : 2025-09-16 → 2026-05-15
+
+ Fetch done in 1s
+ Running walk-forward on 30 symbols…
+   AAPL     13 trades  (4 OOS)
+   AMGN      7 trades  (4 OOS)
+   AXP      13 trades  (8 OOS)
+   BA       40 trades  (12 OOS)
+   CAT      16 trades  (13 OOS)
+   CRM      26 trades  (12 OOS)
+   CSCO      7 trades  (3 OOS)
+   CVX       2 trades  (0 OOS)
+   DIS       6 trades  (1 OOS)
+   DOW      43 trades  (24 OOS)
+   GS       26 trades  (14 OOS)
+   HD        5 trades  (2 OOS)
+   HON       5 trades  (1 OOS)
+   IBM      16 trades  (9 OOS)
+   INTC     89 trades  (35 OOS)
+   JNJ       2 trades  (1 OOS)
+   JPM       6 trades  (2 OOS)
+   KO        1 trades  (0 OOS)
+   MCD       2 trades  (0 OOS)
+   MMM      13 trades  (6 OOS)
+   MRK      13 trades  (6 OOS)
+   MSFT      6 trades  (3 OOS)
+   NKE      14 trades  (8 OOS)
+   PG        1 trades  (0 OOS)
+   V         1 trades  (0 OOS)
+
+ Total trades: 373   IS: 205   OOS: 168
+
+────────────────────────────────────────────────────────────────────────
+ OVERALL
+────────────────────────────────────────────────────────────────────────
+  In-sample                 n= 205  WR= 42.9%  PF= 1.03  Sharpe= 0.21  MaxDD= 23.25%  AvgP=+0.025% ✗
+  Out-of-sample             n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Combined                  n= 373  WR= 44.5%  PF= 0.99  Sharpe=-0.04  MaxDD= 24.67%  AvgP=-0.005% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY GRADE
+────────────────────────────────────────────────────────────────────────
+  Grade S                   n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Grade A                   —
+  Grade B                   —
+  Grade C                   —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY REGIME
+────────────────────────────────────────────────────────────────────────
+  Bull (CALL only)          n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Bear (PUT only)           —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY DIRECTION
+────────────────────────────────────────────────────────────────────────
+  CALL                      n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  PUT                       —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY SIGNAL HOUR (ET)
+────────────────────────────────────────────────────────────────────────
+  10:xx ET                  n= 100  WR= 46.0%  PF= 0.85  Sharpe=-1.11  MaxDD= 21.97%  AvgP=-0.102% ✗
+  11:xx ET                  n=  16  WR= 43.8%  PF= 0.88  Sharpe=-0.74  MaxDD=  7.36%  AvgP=-0.068% ✗
+  12:xx ET                  n=  17  WR= 58.8%  PF= 2.62  Sharpe= 5.92  MaxDD=  1.66%  AvgP=+0.292% ✓
+  13:xx ET                  n=   4  WR= 75.0%  PF= 2.55  Sharpe= 6.57  MaxDD=  2.13%  AvgP=+0.827% ✓
+  14:xx ET                  n=  13  WR= 46.2%  PF= 0.87  Sharpe=-0.80  MaxDD=  3.31%  AvgP=-0.043% ✗
+  15:xx ET                  n=  18  WR= 33.3%  PF= 0.29  Sharpe=-6.69  MaxDD=  3.22%  AvgP=-0.179% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY EXIT TYPE
+────────────────────────────────────────────────────────────────────────
+  target                    n=  20  WR=100.0%  PF=999.00  Sharpe=49.43  MaxDD=  0.00%  AvgP=+2.057% ✓
+  stop                      n=  41  WR=  0.0%  PF= 0.00  Sharpe=-48.41  MaxDD= 67.42%  AvgP=-1.644% ✗
+  timeout                   n= 107  WR= 54.2%  PF= 1.83  Sharpe= 3.69  MaxDD=  4.91%  AvgP=+0.182%
+
+────────────────────────────────────────────────────────────────────────
+ OOS TOP SYMBOLS (by trade count)
+────────────────────────────────────────────────────────────────────────
+  INTC                      n=  35  WR= 42.9%  PF= 0.79  Sharpe=-1.63  MaxDD= 11.32%  AvgP=-0.193% ✗
+  DOW                       n=  24  WR= 41.7%  PF= 0.62  Sharpe=-3.04  MaxDD=  7.57%  AvgP=-0.256% ✗
+  GS                        n=  14  WR= 35.7%  PF= 0.37  Sharpe=-6.70  MaxDD=  5.78%  AvgP=-0.396% ✗
+  CAT                       n=  13  WR= 53.8%  PF= 2.20  Sharpe= 4.85  MaxDD=  1.68%  AvgP=+0.292%
+  BA                        n=  12  WR= 50.0%  PF= 3.37  Sharpe= 7.61  MaxDD=  1.51%  AvgP=+0.683%
+  CRM                       n=  12  WR= 58.3%  PF= 0.91  Sharpe=-0.64  MaxDD=  2.45%  AvgP=-0.038%
+  IBM                       n=   9  WR= 66.7%  PF= 1.45  Sharpe= 2.45  MaxDD=  1.38%  AvgP=+0.157% ✓
+  AXP                       n=   8  WR= 37.5%  PF= 0.99  Sharpe=-0.04  MaxDD=  1.69%  AvgP=-0.002% ✗
+  NKE                       n=   8  WR= 37.5%  PF= 0.44  Sharpe=-5.01  MaxDD=  4.62%  AvgP=-0.447% ✗
+  MMM                       n=   6  WR= 50.0%  PF= 1.66  Sharpe= 3.15  MaxDD=  1.01%  AvgP=+0.180%
+  MRK                       n=   6  WR= 66.7%  PF= 2.37  Sharpe= 6.01  MaxDD=  1.12%  AvgP=+0.441% ✓
+  AAPL                      n=   4  WR= 50.0%  PF= 0.74  Sharpe=-1.79  MaxDD=  1.62%  AvgP=-0.183% ✗
+  AMGN                      n=   4  WR= 50.0%  PF= 9.28  Sharpe=11.02  MaxDD=  0.16%  AvgP=+0.446%
+  CSCO                      n=   3  WR= 66.7%  PF= 2.20  Sharpe= 4.06  MaxDD=  0.32%  AvgP=+0.129% ✓
+  MSFT                      n=   3  WR=  0.0%  PF= 0.00  Sharpe=-78.68  MaxDD=  3.08%  AvgP=-1.025% ✗
+  HD                        n=   2  WR= 50.0%  PF= 5.40  Sharpe= 7.71  MaxDD=  0.27%  AvgP=+0.600%
+  JPM                       n=   2  WR=  0.0%  PF= 0.00  Sharpe=-15.48  MaxDD=  0.40%  AvgP=-0.200% ✗
+  DIS                       n=   1  WR=  0.0%  PF= 0.00  Sharpe= 0.00  MaxDD=  1.09%  AvgP=-1.094% ✗
+  HON                       n=   1  WR=100.0%  PF=999.00  Sharpe= 0.00  MaxDD=  0.00%  AvgP=+0.209% ✓
+  JNJ                       n=   1  WR=100.0%  PF=999.00  Sharpe= 0.00  MaxDD=  0.00%  AvgP=+0.287% ✓
+
+========================================================================
+ VERDICT: FAIL — no confirmed OOS edge  (PF 0.93  Sharpe -0.49  WR 46.4%)
+ OOS MaxDD=23.04%  AvgP=-0.040%/trade  n=168
+ Total runtime: 2m 23s  (fetch 1s + walk 143s)
+========================================================================
+{"meta": {"symbols": 30, "threshold": 90.0, "date_range": "2024-05-15 to 2026-05-15", "oos_start": "2025-09-16", "elapsed_s": 143.7}, "is": {"n": 205, "win_rate": 42.9, "avg_pnl": 0.025, "pf": 1.03, "sharpe": 0.21, "max_dd": 23.25}, "oos": {"n": 168, "win_rate": 46.4, "avg_pnl": -0.04, "pf": 0.93, "sharpe": -0.49, "max_dd": 23.04}, "by_symbol": [{"symbol": "INTC", "n": 35, "wr": 42.9, "avg_pnl": -0.193, "pf": 0.79, "sharpe": -1.63, "max_dd": 11.32}, {"symbol": "DOW", "n": 24, "wr": 41.7, "avg_pnl": -0.256, "pf": 0.62, "sharpe": -3.04, "max_dd": 7.57}, {"symbol": "GS", "n": 14, "wr": 35.7, "avg_pnl": -0.396, "pf": 0.37, "sharpe": -6.7, "max_dd": 5.78}, {"symbol": "CAT", "n": 13, "wr": 53.8, "avg_pnl": 0.292, "pf": 2.2, "sharpe": 4.85, "max_dd": 1.68}, {"symbol": "BA", "n": 12, "wr": 50.0, "avg_pnl": 0.683, "pf": 3.37, "sharpe": 7.61, "max_dd": 1.51}, {"symbol": "CRM", "n": 12, "wr": 58.3, "avg_pnl": -0.038, "pf": 0.91, "sharpe": -0.64, "max_dd": 2.45}, {"symbol": "IBM", "n": 9, "wr": 66.7, "avg_pnl": 0.157, "pf": 1.45, "sharpe": 2.45, "max_dd": 1.38}, {"symbol": "AXP", "n": 8, "wr": 37.5, "avg_pnl": -0.002, "pf": 0.99, "sharpe": -0.04, "max_dd": 1.69}, {"symbol": "NKE", "n": 8, "wr": 37.5, "avg_pnl": -0.447, "pf": 0.44, "sharpe": -5.01, "max_dd": 4.62}, {"symbol": "MMM", "n": 6, "wr": 50.0, "avg_pnl": 0.18, "pf": 1.66, "sharpe": 3.15, "max_dd": 1.01}, {"symbol": "MRK", "n": 6, "wr": 66.7, "avg_pnl": 0.441, "pf": 2.37, "sharpe": 6.01, "max_dd": 1.12}, {"symbol": "AAPL", "n": 4, "wr": 50.0, "avg_pnl": -0.183, "pf": 0.74, "sharpe": -1.79, "max_dd": 1.62}, {"symbol": "AMGN", "n": 4, "wr": 50.0, "avg_pnl": 0.446, "pf": 9.28, "sharpe": 11.02, "max_dd": 0.16}, {"symbol": "CSCO", "n": 3, "wr": 66.7, "avg_pnl": 0.129, "pf": 2.2, "sharpe": 4.06, "max_dd": 0.32}, {"symbol": "MSFT", "n": 3, "wr": 0.0, "avg_pnl": -1.025, "pf": 0.0, "sharpe": -78.68, "max_dd": 3.08}, {"symbol": "HD", "n": 2, "wr": 50.0, "avg_pnl": 0.6, "pf": 5.4, "sharpe": 7.71, "max_dd": 0.27}, {"symbol": "JPM", "n": 2, "wr": 0.0, "avg_pnl": -0.2, "pf": 0.0, "sharpe": -15.48, "max_dd": 0.4}, {"symbol": "DIS", "n": 1, "wr": 0.0, "avg_pnl": -1.094, "pf": 0.0, "sharpe": 0.0, "max_dd": 1.09}, {"symbol": "HON", "n": 1, "wr": 100.0, "avg_pnl": 0.209, "pf": 999.0, "sharpe": 0.0, "max_dd": 0.0}, {"symbol": "JNJ", "n": 1, "wr": 100.0, "avg_pnl": 0.287, "pf": 999.0, "sharpe": 0.0, "max_dd": 0.0}], "by_grade": {"S": {"n": 168, "win_rate": 46.4, "avg_pnl": -0.04, "pf": 0.93, "sharpe": -0.49, "max_dd": 23.04}, "A": {}, "B": {}, "C": {}}, "by_direction": {"CALL": {"n": 168, "win_rate": 46.4, "avg_pnl": -0.04, "pf": 0.93, "sharpe": -0.49, "max_dd": 23.04}, "PUT": {}}}

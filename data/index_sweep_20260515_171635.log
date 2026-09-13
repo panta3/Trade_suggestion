@@ -1,0 +1,3173 @@
+================================================================
+ Index Sweep (DJ30 + NASDAQ-100 + S&P 500) — Fri May 15 17:16:35 EDT 2026
+ threshold=90  holds=15m 1h 2h EOD  top=30  puts=no
+================================================================
+
+▶ Fetching index constituents...
+  DJ30:       30 symbols
+  NASDAQ-100: 100 symbols
+  S&P 500:    111 symbols
+  Union:      184 unique symbols
+
+▶ Pre-caching 2yr IBKR bars for 184 symbols (skips already-cached)...
+========================================================================
+ INTRADAY BACKTEST 2YR  |  184 symbols  |  threshold=90  |  CALLS only
+ Data: IBKR 15-min bars × 2 years  (Yahoo 60-day fallback if unavailable)
+ Slippage: 0.10% RT  |  MaxHold: 26 bars (6h)  |  Cooldown: 8 bars (2h)
+ Primary window: 130 15-min bars  |  HTF: 1-hour (aggregated)
+ Cache: 0 hits / 185 need fetch
+ Estimated runtime: ~254m 37s  (fetch 925s + walk 14352s)
+========================================================================
+PRE-CACHE MODE — fetching 185 symbols, no backtest
+  0/185 cached  |  185 need IBKR/Yahoo fetch
+  Fetching 185 symbols in parallel (5 workers)…
+    [  1/185] ABNB    12933 bars  (IBKR)
+    [  2/185] AAPL    12932 bars  (IBKR)
+    [  3/185] SPY     12931 bars  (IBKR)
+    [  4/185] ADBE    12932 bars  (IBKR)
+    [  5/185] ADI      1560 bars  (IBKR)
+    [  6/185] ABBV     1560 bars  (IBKR)
+    [  7/185] ADP      1560 bars  (IBKR)
+    [  8/185] ABT      1560 bars  (IBKR)
+    [  9/185] AMAT    12933 bars  (IBKR)
+    [ 10/185] AMD     12932 bars  (IBKR)
+    [ 11/185] AMGN    12954 bars  (IBKR)
+    [ 12/185] AMZN    12932 bars  (IBKR)
+    [ 13/185] ACN      1560 bars  (IBKR)
+    [ 14/185] ALGN     1560 bars  (IBKR)
+    [ 15/185] ANSS      no data  (Yahoo)
+    [ 16/185] AJG      1560 bars  (IBKR)
+    [ 17/185] AEP      1560 bars  (IBKR)
+    [ 18/185] AON      1560 bars  (IBKR)
+    [ 19/185] APH      1560 bars  (IBKR)
+    [ 20/185] APP      1560 bars  (IBKR)
+    [ 21/185] AXP     12954 bars  (IBKR)
+    [ 22/185] BA      12954 bars  (IBKR)
+    [ 23/185] BAC     12933 bars  (IBKR)
+    [ 24/185] BIIB    12933 bars  (IBKR)
+    [ 25/185] ARM      1560 bars  (IBKR)
+    [ 26/185] ASML     1560 bars  (IBKR)
+    [ 27/185] ASTS     1560 bars  (IBKR)
+    [ 28/185] AVGO     1560 bars  (IBKR)
+    [ 29/185] BLK      1560 bars  (IBKR)
+    [ 30/185] CAT     12954 bars  (IBKR)
+    [ 31/185] BRK-B    1560 bars  (IBKR)
+    [ 32/185] BSX      1560 bars  (IBKR)
+    [ 33/185] BKNG     1560 bars  (IBKR)
+    [ 34/185] C        1560 bars  (IBKR)
+    [ 35/185] CDNS     1560 bars  (IBKR)
+    [ 36/185] CEG      1560 bars  (IBKR)
+    [ 37/185] CMG      1560 bars  (IBKR)
+    [ 38/185] CI       1560 bars  (IBKR)
+    [ 39/185] CB       1560 bars  (IBKR)
+    [ 40/185] COP      1560 bars  (IBKR)
+    [ 41/185] COST     1560 bars  (IBKR)
+    [ 42/185] CRM     12932 bars  (IBKR)
+    [ 43/185] CMI      1560 bars  (IBKR)
+    [ 44/185] CSCO    12954 bars  (IBKR)
+    [ 45/185] CPRT     1560 bars  (IBKR)
+    [ 46/185] COIN     1560 bars  (IBKR)
+    [ 47/185] CVX     12933 bars  (IBKR)
+    [ 48/185] DASH    12933 bars  (IBKR)
+    [ 49/185] CRWD     1560 bars  (IBKR)
+    [ 50/185] CSGP     1560 bars  (IBKR)
+    [ 51/185] CTAS     1560 bars  (IBKR)
+    [ 52/185] DIS     12954 bars  (IBKR)
+    [ 53/185] CTSH     1560 bars  (IBKR)
+    [ 54/185] DHR      1560 bars  (IBKR)
+    [ 55/185] DOW     12954 bars  (IBKR)
+    [ 56/185] DDOG     1560 bars  (IBKR)
+    [ 57/185] DLTR     1560 bars  (IBKR)
+    [ 58/185] DE       1560 bars  (IBKR)
+    [ 59/185] DOCU     1560 bars  (IBKR)
+    [ 60/185] DXCM     1560 bars  (IBKR)
+    [ 61/185] EBAY     1560 bars  (IBKR)
+    [ 62/185] EA       1560 bars  (IBKR)
+    [ 63/185] ECL      1560 bars  (IBKR)
+    [ 64/185] EOG      1560 bars  (IBKR)
+    [ 65/185] FI        no data  (Yahoo)
+    [ 66/185] EXC      1560 bars  (IBKR)
+    [ 67/185] FAST     1560 bars  (IBKR)
+    [ 68/185] FTNT     1560 bars  (IBKR)
+    [ 69/185] FANG     1560 bars  (IBKR)
+    [ 70/185] GE       1560 bars  (IBKR)
+    [ 71/185] GEHC     1560 bars  (IBKR)
+    [ 72/185] GOOGL   12932 bars  (IBKR)
+    [ 73/185] GS      12933 bars  (IBKR)
+    [ 74/185] HD      12954 bars  (IBKR)
+    [ 75/185] HON     12954 bars  (IBKR)
+    [ 76/185] GILD     1560 bars  (IBKR)
+    [ 77/185] IBM     12954 bars  (IBKR)
+    [ 78/185] GFS      1560 bars  (IBKR)
+    [ 79/185] GOOG     1560 bars  (IBKR)
+    [ 80/185] HUM      1560 bars  (IBKR)
+    [ 81/185] INTC    12954 bars  (IBKR)
+    [ 82/185] HOOD     1560 bars  (IBKR)
+    [ 83/185] ICE      1560 bars  (IBKR)
+    [ 84/185] IDXX     1560 bars  (IBKR)
+    [ 85/185] ILMN     1560 bars  (IBKR)
+    [ 86/185] JNJ     12954 bars  (IBKR)
+    [ 87/185] INTU     1560 bars  (IBKR)
+    [ 88/185] JPM     12933 bars  (IBKR)
+    [ 89/185] ISRG     1560 bars  (IBKR)
+    [ 90/185] KO      12954 bars  (IBKR)
+    [ 91/185] IONQ     1560 bars  (IBKR)
+    [ 92/185] LLY     12933 bars  (IBKR)
+    [ 93/185] ITW      1560 bars  (IBKR)
+    [ 94/185] KDP      1560 bars  (IBKR)
+    [ 95/185] LYFT    12934 bars  (IBKR)
+    [ 96/185] LIN      1560 bars  (IBKR)
+    [ 97/185] MA      12933 bars  (IBKR)
+    [ 98/185] MCD     12954 bars  (IBKR)
+    [ 99/185] KLAC     1560 bars  (IBKR)
+    [100/185] LULU     1560 bars  (IBKR)
+    [101/185] MCK      1560 bars  (IBKR)
+    [102/185] META    12932 bars  (IBKR)
+    [103/185] MCHP     1560 bars  (IBKR)
+    [104/185] MMM     12954 bars  (IBKR)
+    [105/185] MDB      1560 bars  (IBKR)
+    [106/185] MMC       no data  (Yahoo)
+    [107/185] MRK     12954 bars  (IBKR)
+    [108/185] MRVL    12932 bars  (IBKR)
+    [109/185] MDLZ     1560 bars  (IBKR)
+    [110/185] MS      12933 bars  (IBKR)
+    [111/185] MSFT    12932 bars  (IBKR)
+    [112/185] MNST     1560 bars  (IBKR)
+    [113/185] MO       1560 bars  (IBKR)
+    [114/185] MU      12933 bars  (IBKR)
+    [115/185] MSTR     1560 bars  (IBKR)
+    [116/185] NFLX    12932 bars  (IBKR)
+    [117/185] MTCH     1560 bars  (IBKR)
+    [118/185] NOW     12932 bars  (IBKR)
+    [119/185] MSI      1560 bars  (IBKR)
+    [120/185] NKE     12954 bars  (IBKR)
+    [121/185] NVDA    12932 bars  (IBKR)
+    [122/185] NET      1560 bars  (IBKR)
+    [123/185] ORCL    12931 bars  (IBKR)
+    [124/185] LRCX     1560 bars  (IBKR)
+    [125/185] NSC      1560 bars  (IBKR)
+    [126/185] ON       1560 bars  (IBKR)
+    [127/185] ODFL     1560 bars  (IBKR)
+    [128/185] ORLY     1560 bars  (IBKR)
+    [129/185] OTIS     1560 bars  (IBKR)
+    [130/185] PG      12953 bars  (IBKR)
+    [131/185] PAYX     1560 bars  (IBKR)
+    [132/185] PLTR    12954 bars  (IBKR)
+    [133/185] PANW     1560 bars  (IBKR)
+    [134/185] PCAR     1560 bars  (IBKR)
+    [135/185] PM       1560 bars  (IBKR)
+    [136/185] PEP      1560 bars  (IBKR)
+    [137/185] QCOM    12932 bars  (IBKR)
+    [138/185] PLD      1560 bars  (IBKR)
+    [139/185] PNC      1560 bars  (IBKR)
+    [140/185] PTON     1560 bars  (IBKR)
+    [141/185] RBLX     1560 bars  (IBKR)
+    [142/185] REGN     1560 bars  (IBKR)
+    [143/185] RDDT     1560 bars  (IBKR)
+    [144/185] ROKU     1560 bars  (IBKR)
+    [145/185] SBUX     1560 bars  (IBKR)
+    [146/185] SMCI    12954 bars  (IBKR)
+    [147/185] SGEN      no data  (Yahoo)
+    [148/185] SCHW     1560 bars  (IBKR)
+    [149/185] SHW      1560 bars  (IBKR)
+    [150/185] SIRI     1560 bars  (IBKR)
+    [151/185] SNOW     1560 bars  (IBKR)
+    [152/185] SNPS     1560 bars  (IBKR)
+    [153/185] SO       1560 bars  (IBKR)
+    [154/185] SPLK      no data  (Yahoo)
+    [155/185] SPGI     1560 bars  (IBKR)
+    [156/185] TDG      1560 bars  (IBKR)
+    [157/185] TEAM     1560 bars  (IBKR)
+    [158/185] TSLA    12932 bars  (IBKR)
+    [159/185] SYK      1560 bars  (IBKR)
+    [160/185] TMO      1560 bars  (IBKR)
+    [161/185] TJX      1560 bars  (IBKR)
+    [162/185] UBER    12932 bars  (IBKR)
+    [163/185] TRV      1560 bars  (IBKR)
+    [164/185] TTWO     1560 bars  (IBKR)
+    [165/185] V       12932 bars  (IBKR)
+    [166/185] TXN      1560 bars  (IBKR)
+    [167/185] TTD      1560 bars  (IBKR)
+    [168/185] VRTX    12933 bars  (IBKR)
+    [169/185] UNH      1560 bars  (IBKR)
+    [170/185] USB      1560 bars  (IBKR)
+    [171/185] WBA       no data  (Yahoo)
+    [172/185] VRSK     1560 bars  (IBKR)
+    [173/185] VZ       1560 bars  (IBKR)
+    [174/185] WBD      1560 bars  (IBKR)
+    [175/185] VRSN     1560 bars  (IBKR)
+    [176/185] WCN      1560 bars  (IBKR)
+    [177/185] WDAY     1560 bars  (IBKR)
+    [178/185] XOM     12932 bars  (IBKR)
+    [179/185] WELL     1560 bars  (IBKR)
+    [180/185] WM       1560 bars  (IBKR)
+    [181/185] WMT      1560 bars  (IBKR)
+    [182/185] XEL      1560 bars  (IBKR)
+    [183/185] ZS       1560 bars  (IBKR)
+    [184/185] ZM       1560 bars  (IBKR)
+    [185/185] ZTS      1560 bars  (IBKR)
+  Done: 179/185 symbols returned data
+PRECACHE_DONE:179/185
+
+▶ Running backtests (3 indices × 4 hold times = 12 runs)...
+
+Index        Hold         n     WR%      PF    Sharpe
+----------------------------------------------
+========================================================================
+ INTRADAY BACKTEST 2YR  |  30 symbols  |  threshold=90  |  CALLS only
+ Data: IBKR 15-min bars × 2 years  (Yahoo 60-day fallback if unavailable)
+ Slippage: 0.10% RT  |  MaxHold: 26 bars (6h)  |  Cooldown: 8 bars (2h)
+ Primary window: 130 15-min bars  |  HTF: 1-hour (aggregated)
+ Cache: 0 hits / 31 need fetch
+ Estimated runtime: ~41m 35s  (fetch 155s + walk 2340s)
+========================================================================
+  0/31 cached  |  31 need IBKR/Yahoo fetch
+  Fetching 31 symbols in parallel (5 workers)…
+    [  1/31] SPY     12931 bars  (IBKR)
+    [  2/31] BA      12954 bars  (IBKR)
+    [  3/31] AMGN    12954 bars  (IBKR)
+    [  4/31] AAPL    12932 bars  (IBKR)
+    [  5/31] AXP     12954 bars  (IBKR)
+    [  6/31] CAT     12954 bars  (IBKR)
+    [  7/31] CSCO    12954 bars  (IBKR)
+    [  8/31] CRM     12932 bars  (IBKR)
+    [  9/31] DIS     12954 bars  (IBKR)
+    [ 10/31] CVX     12933 bars  (IBKR)
+    [ 11/31] DOW     12954 bars  (IBKR)
+    [ 12/31] HD      12954 bars  (IBKR)
+    [ 13/31] HON     12954 bars  (IBKR)
+    [ 14/31] GS      12933 bars  (IBKR)
+    [ 15/31] IBM     12954 bars  (IBKR)
+    [ 16/31] INTC    12954 bars  (IBKR)
+    [ 17/31] JNJ     12954 bars  (IBKR)
+    [ 18/31] JPM     12933 bars  (IBKR)
+    [ 19/31] MCD     12954 bars  (IBKR)
+    [ 20/31] KO      12954 bars  (IBKR)
+    [ 21/31] NKE     12954 bars  (IBKR)
+    [ 22/31] MMM     12954 bars  (IBKR)
+    [ 23/31] MRK     12954 bars  (IBKR)
+    [ 24/31] PG      12953 bars  (IBKR)
+    [ 25/31] V       12932 bars  (IBKR)
+    [ 26/31] MSFT    12932 bars  (IBKR)
+    [ 27/31] VZ       1560 bars  (IBKR)
+    [ 28/31] WBA       no data  (Yahoo)
+    [ 29/31] TRV      1560 bars  (IBKR)
+    [ 30/31] UNH      1560 bars  (IBKR)
+    [ 31/31] WMT      1560 bars  (IBKR)
+  Done: 30/31 symbols returned data
+
+ Date range : 2024-05-15 → 2026-05-15  (730 days)
+ IS cutoff  : 2024-05-15 → 2025-09-15
+ OOS period : 2025-09-16 → 2026-05-15
+
+ Fetch done in 1s
+ Running walk-forward on 30 symbols…
+   AAPL     13 trades  (4 OOS)
+   AMGN      7 trades  (4 OOS)
+   AXP      13 trades  (8 OOS)
+   BA       40 trades  (12 OOS)
+   CAT      16 trades  (13 OOS)
+   CRM      26 trades  (12 OOS)
+   CSCO      7 trades  (3 OOS)
+   CVX       2 trades  (0 OOS)
+   DIS       6 trades  (1 OOS)
+   DOW      43 trades  (24 OOS)
+   GS       26 trades  (14 OOS)
+   HD        5 trades  (2 OOS)
+   HON       5 trades  (1 OOS)
+   IBM      16 trades  (9 OOS)
+   INTC     89 trades  (35 OOS)
+   JNJ       2 trades  (1 OOS)
+   JPM       6 trades  (2 OOS)
+   KO        1 trades  (0 OOS)
+   MCD       2 trades  (0 OOS)
+   MMM      13 trades  (6 OOS)
+   MRK      13 trades  (6 OOS)
+   MSFT      6 trades  (3 OOS)
+   NKE      14 trades  (8 OOS)
+   PG        1 trades  (0 OOS)
+   V         1 trades  (0 OOS)
+
+ Total trades: 373   IS: 205   OOS: 168
+
+────────────────────────────────────────────────────────────────────────
+ OVERALL
+────────────────────────────────────────────────────────────────────────
+  In-sample                 n= 205  WR= 42.9%  PF= 1.03  Sharpe= 0.21  MaxDD= 23.25%  AvgP=+0.025% ✗
+  Out-of-sample             n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Combined                  n= 373  WR= 44.5%  PF= 0.99  Sharpe=-0.04  MaxDD= 24.67%  AvgP=-0.005% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY GRADE
+────────────────────────────────────────────────────────────────────────
+  Grade S                   n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Grade A                   —
+  Grade B                   —
+  Grade C                   —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY REGIME
+────────────────────────────────────────────────────────────────────────
+  Bull (CALL only)          n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Bear (PUT only)           —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY DIRECTION
+────────────────────────────────────────────────────────────────────────
+  CALL                      n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  PUT                       —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY SIGNAL HOUR (ET)
+────────────────────────────────────────────────────────────────────────
+  10:xx ET                  n= 100  WR= 46.0%  PF= 0.85  Sharpe=-1.11  MaxDD= 21.97%  AvgP=-0.102% ✗
+  11:xx ET                  n=  16  WR= 43.8%  PF= 0.88  Sharpe=-0.74  MaxDD=  7.36%  AvgP=-0.068% ✗
+  12:xx ET                  n=  17  WR= 58.8%  PF= 2.62  Sharpe= 5.92  MaxDD=  1.66%  AvgP=+0.292% ✓
+  13:xx ET                  n=   4  WR= 75.0%  PF= 2.55  Sharpe= 6.57  MaxDD=  2.13%  AvgP=+0.827% ✓
+  14:xx ET                  n=  13  WR= 46.2%  PF= 0.87  Sharpe=-0.80  MaxDD=  3.31%  AvgP=-0.043% ✗
+  15:xx ET                  n=  18  WR= 33.3%  PF= 0.29  Sharpe=-6.69  MaxDD=  3.22%  AvgP=-0.179% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY EXIT TYPE
+────────────────────────────────────────────────────────────────────────
+  target                    n=  20  WR=100.0%  PF=999.00  Sharpe=49.43  MaxDD=  0.00%  AvgP=+2.057% ✓
+  stop                      n=  41  WR=  0.0%  PF= 0.00  Sharpe=-48.41  MaxDD= 67.42%  AvgP=-1.644% ✗
+  timeout                   n= 107  WR= 54.2%  PF= 1.83  Sharpe= 3.69  MaxDD=  4.91%  AvgP=+0.182%
+
+────────────────────────────────────────────────────────────────────────
+ OOS TOP SYMBOLS (by trade count)
+────────────────────────────────────────────────────────────────────────
+  INTC                      n=  35  WR= 42.9%  PF= 0.79  Sharpe=-1.63  MaxDD= 11.32%  AvgP=-0.193% ✗
+  DOW                       n=  24  WR= 41.7%  PF= 0.62  Sharpe=-3.04  MaxDD=  7.57%  AvgP=-0.256% ✗
+  GS                        n=  14  WR= 35.7%  PF= 0.37  Sharpe=-6.70  MaxDD=  5.78%  AvgP=-0.396% ✗
+  CAT                       n=  13  WR= 53.8%  PF= 2.20  Sharpe= 4.85  MaxDD=  1.68%  AvgP=+0.292%
+  BA                        n=  12  WR= 50.0%  PF= 3.37  Sharpe= 7.61  MaxDD=  1.51%  AvgP=+0.683%
+  CRM                       n=  12  WR= 58.3%  PF= 0.91  Sharpe=-0.64  MaxDD=  2.45%  AvgP=-0.038%
+  IBM                       n=   9  WR= 66.7%  PF= 1.45  Sharpe= 2.45  MaxDD=  1.38%  AvgP=+0.157% ✓
+  AXP                       n=   8  WR= 37.5%  PF= 0.99  Sharpe=-0.04  MaxDD=  1.69%  AvgP=-0.002% ✗
+  NKE                       n=   8  WR= 37.5%  PF= 0.44  Sharpe=-5.01  MaxDD=  4.62%  AvgP=-0.447% ✗
+  MMM                       n=   6  WR= 50.0%  PF= 1.66  Sharpe= 3.15  MaxDD=  1.01%  AvgP=+0.180%
+  MRK                       n=   6  WR= 66.7%  PF= 2.37  Sharpe= 6.01  MaxDD=  1.12%  AvgP=+0.441% ✓
+  AAPL                      n=   4  WR= 50.0%  PF= 0.74  Sharpe=-1.79  MaxDD=  1.62%  AvgP=-0.183% ✗
+  AMGN                      n=   4  WR= 50.0%  PF= 9.28  Sharpe=11.02  MaxDD=  0.16%  AvgP=+0.446%
+  CSCO                      n=   3  WR= 66.7%  PF= 2.20  Sharpe= 4.06  MaxDD=  0.32%  AvgP=+0.129% ✓
+  MSFT                      n=   3  WR=  0.0%  PF= 0.00  Sharpe=-78.68  MaxDD=  3.08%  AvgP=-1.025% ✗
+  HD                        n=   2  WR= 50.0%  PF= 5.40  Sharpe= 7.71  MaxDD=  0.27%  AvgP=+0.600%
+  JPM                       n=   2  WR=  0.0%  PF= 0.00  Sharpe=-15.48  MaxDD=  0.40%  AvgP=-0.200% ✗
+  DIS                       n=   1  WR=  0.0%  PF= 0.00  Sharpe= 0.00  MaxDD=  1.09%  AvgP=-1.094% ✗
+  HON                       n=   1  WR=100.0%  PF=999.00  Sharpe= 0.00  MaxDD=  0.00%  AvgP=+0.209% ✓
+  JNJ                       n=   1  WR=100.0%  PF=999.00  Sharpe= 0.00  MaxDD=  0.00%  AvgP=+0.287% ✓
+
+========================================================================
+ VERDICT: FAIL — no confirmed OOS edge  (PF 0.93  Sharpe -0.49  WR 46.4%)
+ OOS MaxDD=23.04%  AvgP=-0.040%/trade  n=168
+ Total runtime: 2m 23s  (fetch 1s + walk 143s)
+========================================================================
+[31mdj30         15m        168   46.4%    0.93     -0.49[0m
+========================================================================
+ INTRADAY BACKTEST 2YR  |  30 symbols  |  threshold=90  |  CALLS only
+ Data: IBKR 15-min bars × 2 years  (Yahoo 60-day fallback if unavailable)
+ Slippage: 0.10% RT  |  MaxHold: 26 bars (6h)  |  Cooldown: 8 bars (2h)
+ Primary window: 130 15-min bars  |  HTF: 1-hour (aggregated)
+ Cache: 0 hits / 31 need fetch
+ Estimated runtime: ~41m 35s  (fetch 155s + walk 2340s)
+========================================================================
+  0/31 cached  |  31 need IBKR/Yahoo fetch
+  Fetching 31 symbols in parallel (5 workers)…
+    [  1/31] AXP     12954 bars  (IBKR)
+    [  2/31] BA      12954 bars  (IBKR)
+    [  3/31] AMGN    12954 bars  (IBKR)
+    [  4/31] AAPL    12932 bars  (IBKR)
+    [  5/31] SPY     12931 bars  (IBKR)
+    [  6/31] CAT     12954 bars  (IBKR)
+    [  7/31] CRM     12932 bars  (IBKR)
+    [  8/31] CSCO    12954 bars  (IBKR)
+    [  9/31] CVX     12933 bars  (IBKR)
+    [ 10/31] DIS     12954 bars  (IBKR)
+    [ 11/31] DOW     12954 bars  (IBKR)
+    [ 12/31] GS      12933 bars  (IBKR)
+    [ 13/31] HD      12954 bars  (IBKR)
+    [ 14/31] HON     12954 bars  (IBKR)
+    [ 15/31] IBM     12954 bars  (IBKR)
+    [ 16/31] JNJ     12954 bars  (IBKR)
+    [ 17/31] INTC    12954 bars  (IBKR)
+    [ 18/31] JPM     12933 bars  (IBKR)
+    [ 19/31] MMM     12954 bars  (IBKR)
+    [ 20/31] MCD     12954 bars  (IBKR)
+    [ 21/31] KO      12954 bars  (IBKR)
+    [ 22/31] MRK     12954 bars  (IBKR)
+    [ 23/31] MSFT    12932 bars  (IBKR)
+    [ 24/31] NKE     12954 bars  (IBKR)
+    [ 25/31] PG      12953 bars  (IBKR)
+    [ 26/31] V       12932 bars  (IBKR)
+    [ 27/31] TRV      1560 bars  (IBKR)
+    [ 28/31] WBA       no data  (Yahoo)
+    [ 29/31] VZ       1560 bars  (IBKR)
+    [ 30/31] UNH      1560 bars  (IBKR)
+    [ 31/31] WMT      1560 bars  (IBKR)
+  Done: 30/31 symbols returned data
+
+ Date range : 2024-05-15 → 2026-05-15  (730 days)
+ IS cutoff  : 2024-05-15 → 2025-09-15
+ OOS period : 2025-09-16 → 2026-05-15
+
+ Fetch done in 1s
+ Running walk-forward on 30 symbols…
+   AAPL     13 trades  (4 OOS)
+   AMGN      7 trades  (4 OOS)
+   AXP      13 trades  (8 OOS)
+   BA       40 trades  (12 OOS)
+   CAT      16 trades  (13 OOS)
+   CRM      26 trades  (12 OOS)
+   CSCO      7 trades  (3 OOS)
+   CVX       2 trades  (0 OOS)
+   DIS       6 trades  (1 OOS)
+   DOW      43 trades  (24 OOS)
+   GS       26 trades  (14 OOS)
+   HD        5 trades  (2 OOS)
+   HON       5 trades  (1 OOS)
+   IBM      16 trades  (9 OOS)
+   INTC     89 trades  (35 OOS)
+   JNJ       2 trades  (1 OOS)
+   JPM       6 trades  (2 OOS)
+   KO        1 trades  (0 OOS)
+   MCD       2 trades  (0 OOS)
+   MMM      13 trades  (6 OOS)
+   MRK      13 trades  (6 OOS)
+   MSFT      6 trades  (3 OOS)
+   NKE      14 trades  (8 OOS)
+   PG        1 trades  (0 OOS)
+   V         1 trades  (0 OOS)
+
+ Total trades: 373   IS: 205   OOS: 168
+
+────────────────────────────────────────────────────────────────────────
+ OVERALL
+────────────────────────────────────────────────────────────────────────
+  In-sample                 n= 205  WR= 42.9%  PF= 1.03  Sharpe= 0.21  MaxDD= 23.25%  AvgP=+0.025% ✗
+  Out-of-sample             n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Combined                  n= 373  WR= 44.5%  PF= 0.99  Sharpe=-0.04  MaxDD= 24.67%  AvgP=-0.005% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY GRADE
+────────────────────────────────────────────────────────────────────────
+  Grade S                   n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Grade A                   —
+  Grade B                   —
+  Grade C                   —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY REGIME
+────────────────────────────────────────────────────────────────────────
+  Bull (CALL only)          n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Bear (PUT only)           —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY DIRECTION
+────────────────────────────────────────────────────────────────────────
+  CALL                      n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  PUT                       —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY SIGNAL HOUR (ET)
+────────────────────────────────────────────────────────────────────────
+  10:xx ET                  n= 100  WR= 46.0%  PF= 0.85  Sharpe=-1.11  MaxDD= 21.97%  AvgP=-0.102% ✗
+  11:xx ET                  n=  16  WR= 43.8%  PF= 0.88  Sharpe=-0.74  MaxDD=  7.36%  AvgP=-0.068% ✗
+  12:xx ET                  n=  17  WR= 58.8%  PF= 2.62  Sharpe= 5.92  MaxDD=  1.66%  AvgP=+0.292% ✓
+  13:xx ET                  n=   4  WR= 75.0%  PF= 2.55  Sharpe= 6.57  MaxDD=  2.13%  AvgP=+0.827% ✓
+  14:xx ET                  n=  13  WR= 46.2%  PF= 0.87  Sharpe=-0.80  MaxDD=  3.31%  AvgP=-0.043% ✗
+  15:xx ET                  n=  18  WR= 33.3%  PF= 0.29  Sharpe=-6.69  MaxDD=  3.22%  AvgP=-0.179% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY EXIT TYPE
+────────────────────────────────────────────────────────────────────────
+  target                    n=  20  WR=100.0%  PF=999.00  Sharpe=49.43  MaxDD=  0.00%  AvgP=+2.057% ✓
+  stop                      n=  41  WR=  0.0%  PF= 0.00  Sharpe=-48.41  MaxDD= 67.42%  AvgP=-1.644% ✗
+  timeout                   n= 107  WR= 54.2%  PF= 1.83  Sharpe= 3.69  MaxDD=  4.91%  AvgP=+0.182%
+
+────────────────────────────────────────────────────────────────────────
+ OOS TOP SYMBOLS (by trade count)
+────────────────────────────────────────────────────────────────────────
+  INTC                      n=  35  WR= 42.9%  PF= 0.79  Sharpe=-1.63  MaxDD= 11.32%  AvgP=-0.193% ✗
+  DOW                       n=  24  WR= 41.7%  PF= 0.62  Sharpe=-3.04  MaxDD=  7.57%  AvgP=-0.256% ✗
+  GS                        n=  14  WR= 35.7%  PF= 0.37  Sharpe=-6.70  MaxDD=  5.78%  AvgP=-0.396% ✗
+  CAT                       n=  13  WR= 53.8%  PF= 2.20  Sharpe= 4.85  MaxDD=  1.68%  AvgP=+0.292%
+  BA                        n=  12  WR= 50.0%  PF= 3.37  Sharpe= 7.61  MaxDD=  1.51%  AvgP=+0.683%
+  CRM                       n=  12  WR= 58.3%  PF= 0.91  Sharpe=-0.64  MaxDD=  2.45%  AvgP=-0.038%
+  IBM                       n=   9  WR= 66.7%  PF= 1.45  Sharpe= 2.45  MaxDD=  1.38%  AvgP=+0.157% ✓
+  AXP                       n=   8  WR= 37.5%  PF= 0.99  Sharpe=-0.04  MaxDD=  1.69%  AvgP=-0.002% ✗
+  NKE                       n=   8  WR= 37.5%  PF= 0.44  Sharpe=-5.01  MaxDD=  4.62%  AvgP=-0.447% ✗
+  MMM                       n=   6  WR= 50.0%  PF= 1.66  Sharpe= 3.15  MaxDD=  1.01%  AvgP=+0.180%
+  MRK                       n=   6  WR= 66.7%  PF= 2.37  Sharpe= 6.01  MaxDD=  1.12%  AvgP=+0.441% ✓
+  AAPL                      n=   4  WR= 50.0%  PF= 0.74  Sharpe=-1.79  MaxDD=  1.62%  AvgP=-0.183% ✗
+  AMGN                      n=   4  WR= 50.0%  PF= 9.28  Sharpe=11.02  MaxDD=  0.16%  AvgP=+0.446%
+  CSCO                      n=   3  WR= 66.7%  PF= 2.20  Sharpe= 4.06  MaxDD=  0.32%  AvgP=+0.129% ✓
+  MSFT                      n=   3  WR=  0.0%  PF= 0.00  Sharpe=-78.68  MaxDD=  3.08%  AvgP=-1.025% ✗
+  HD                        n=   2  WR= 50.0%  PF= 5.40  Sharpe= 7.71  MaxDD=  0.27%  AvgP=+0.600%
+  JPM                       n=   2  WR=  0.0%  PF= 0.00  Sharpe=-15.48  MaxDD=  0.40%  AvgP=-0.200% ✗
+  DIS                       n=   1  WR=  0.0%  PF= 0.00  Sharpe= 0.00  MaxDD=  1.09%  AvgP=-1.094% ✗
+  HON                       n=   1  WR=100.0%  PF=999.00  Sharpe= 0.00  MaxDD=  0.00%  AvgP=+0.209% ✓
+  JNJ                       n=   1  WR=100.0%  PF=999.00  Sharpe= 0.00  MaxDD=  0.00%  AvgP=+0.287% ✓
+
+========================================================================
+ VERDICT: FAIL — no confirmed OOS edge  (PF 0.93  Sharpe -0.49  WR 46.4%)
+ OOS MaxDD=23.04%  AvgP=-0.040%/trade  n=168
+ Total runtime: 2m 25s  (fetch 1s + walk 145s)
+========================================================================
+[31mdj30         1h         168   46.4%    0.93     -0.49[0m
+========================================================================
+ INTRADAY BACKTEST 2YR  |  30 symbols  |  threshold=90  |  CALLS only
+ Data: IBKR 15-min bars × 2 years  (Yahoo 60-day fallback if unavailable)
+ Slippage: 0.10% RT  |  MaxHold: 26 bars (6h)  |  Cooldown: 8 bars (2h)
+ Primary window: 130 15-min bars  |  HTF: 1-hour (aggregated)
+ Cache: 0 hits / 31 need fetch
+ Estimated runtime: ~41m 35s  (fetch 155s + walk 2340s)
+========================================================================
+  0/31 cached  |  31 need IBKR/Yahoo fetch
+  Fetching 31 symbols in parallel (5 workers)…
+    [  1/31] SPY     12931 bars  (IBKR)
+    [  2/31] AAPL    12932 bars  (IBKR)
+    [  3/31] AXP     12954 bars  (IBKR)
+    [  4/31] BA      12954 bars  (IBKR)
+    [  5/31] CAT     12954 bars  (IBKR)
+    [  6/31] AMGN    12954 bars  (IBKR)
+    [  7/31] CRM     12932 bars  (IBKR)
+    [  8/31] DOW     12954 bars  (IBKR)
+    [  9/31] CSCO    12954 bars  (IBKR)
+    [ 10/31] CVX     12933 bars  (IBKR)
+    [ 11/31] DIS     12954 bars  (IBKR)
+    [ 12/31] GS      12933 bars  (IBKR)
+    [ 13/31] HON     12954 bars  (IBKR)
+    [ 14/31] HD      12954 bars  (IBKR)
+    [ 15/31] IBM     12954 bars  (IBKR)
+    [ 16/31] INTC    12954 bars  (IBKR)
+    [ 17/31] JNJ     12954 bars  (IBKR)
+    [ 18/31] KO      12954 bars  (IBKR)
+    [ 19/31] JPM     12933 bars  (IBKR)
+    [ 20/31] MMM     12954 bars  (IBKR)
+    [ 21/31] MCD     12954 bars  (IBKR)
+    [ 22/31] NKE     12954 bars  (IBKR)
+    [ 23/31] MRK     12954 bars  (IBKR)
+    [ 24/31] MSFT    12932 bars  (IBKR)
+    [ 25/31] PG      12953 bars  (IBKR)
+    [ 26/31] V       12932 bars  (IBKR)
+    [ 27/31] WBA       no data  (Yahoo)
+    [ 28/31] TRV      1560 bars  (IBKR)
+    [ 29/31] UNH      1560 bars  (IBKR)
+    [ 30/31] WMT      1560 bars  (IBKR)
+    [ 31/31] VZ       1560 bars  (IBKR)
+  Done: 30/31 symbols returned data
+
+ Date range : 2024-05-15 → 2026-05-15  (730 days)
+ IS cutoff  : 2024-05-15 → 2025-09-15
+ OOS period : 2025-09-16 → 2026-05-15
+
+ Fetch done in 1s
+ Running walk-forward on 30 symbols…
+   AAPL     13 trades  (4 OOS)
+   AMGN      7 trades  (4 OOS)
+   AXP      13 trades  (8 OOS)
+   BA       40 trades  (12 OOS)
+   CAT      16 trades  (13 OOS)
+   CRM      26 trades  (12 OOS)
+   CSCO      7 trades  (3 OOS)
+   CVX       2 trades  (0 OOS)
+   DIS       6 trades  (1 OOS)
+   DOW      43 trades  (24 OOS)
+   GS       26 trades  (14 OOS)
+   HD        5 trades  (2 OOS)
+   HON       5 trades  (1 OOS)
+   IBM      16 trades  (9 OOS)
+   INTC     89 trades  (35 OOS)
+   JNJ       2 trades  (1 OOS)
+   JPM       6 trades  (2 OOS)
+   KO        1 trades  (0 OOS)
+   MCD       2 trades  (0 OOS)
+   MMM      13 trades  (6 OOS)
+   MRK      13 trades  (6 OOS)
+   MSFT      6 trades  (3 OOS)
+   NKE      14 trades  (8 OOS)
+   PG        1 trades  (0 OOS)
+   V         1 trades  (0 OOS)
+
+ Total trades: 373   IS: 205   OOS: 168
+
+────────────────────────────────────────────────────────────────────────
+ OVERALL
+────────────────────────────────────────────────────────────────────────
+  In-sample                 n= 205  WR= 42.9%  PF= 1.03  Sharpe= 0.21  MaxDD= 23.25%  AvgP=+0.025% ✗
+  Out-of-sample             n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Combined                  n= 373  WR= 44.5%  PF= 0.99  Sharpe=-0.04  MaxDD= 24.67%  AvgP=-0.005% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY GRADE
+────────────────────────────────────────────────────────────────────────
+  Grade S                   n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Grade A                   —
+  Grade B                   —
+  Grade C                   —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY REGIME
+────────────────────────────────────────────────────────────────────────
+  Bull (CALL only)          n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Bear (PUT only)           —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY DIRECTION
+────────────────────────────────────────────────────────────────────────
+  CALL                      n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  PUT                       —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY SIGNAL HOUR (ET)
+────────────────────────────────────────────────────────────────────────
+  10:xx ET                  n= 100  WR= 46.0%  PF= 0.85  Sharpe=-1.11  MaxDD= 21.97%  AvgP=-0.102% ✗
+  11:xx ET                  n=  16  WR= 43.8%  PF= 0.88  Sharpe=-0.74  MaxDD=  7.36%  AvgP=-0.068% ✗
+  12:xx ET                  n=  17  WR= 58.8%  PF= 2.62  Sharpe= 5.92  MaxDD=  1.66%  AvgP=+0.292% ✓
+  13:xx ET                  n=   4  WR= 75.0%  PF= 2.55  Sharpe= 6.57  MaxDD=  2.13%  AvgP=+0.827% ✓
+  14:xx ET                  n=  13  WR= 46.2%  PF= 0.87  Sharpe=-0.80  MaxDD=  3.31%  AvgP=-0.043% ✗
+  15:xx ET                  n=  18  WR= 33.3%  PF= 0.29  Sharpe=-6.69  MaxDD=  3.22%  AvgP=-0.179% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY EXIT TYPE
+────────────────────────────────────────────────────────────────────────
+  target                    n=  20  WR=100.0%  PF=999.00  Sharpe=49.43  MaxDD=  0.00%  AvgP=+2.057% ✓
+  stop                      n=  41  WR=  0.0%  PF= 0.00  Sharpe=-48.41  MaxDD= 67.42%  AvgP=-1.644% ✗
+  timeout                   n= 107  WR= 54.2%  PF= 1.83  Sharpe= 3.69  MaxDD=  4.91%  AvgP=+0.182%
+
+────────────────────────────────────────────────────────────────────────
+ OOS TOP SYMBOLS (by trade count)
+────────────────────────────────────────────────────────────────────────
+  INTC                      n=  35  WR= 42.9%  PF= 0.79  Sharpe=-1.63  MaxDD= 11.32%  AvgP=-0.193% ✗
+  DOW                       n=  24  WR= 41.7%  PF= 0.62  Sharpe=-3.04  MaxDD=  7.57%  AvgP=-0.256% ✗
+  GS                        n=  14  WR= 35.7%  PF= 0.37  Sharpe=-6.70  MaxDD=  5.78%  AvgP=-0.396% ✗
+  CAT                       n=  13  WR= 53.8%  PF= 2.20  Sharpe= 4.85  MaxDD=  1.68%  AvgP=+0.292%
+  BA                        n=  12  WR= 50.0%  PF= 3.37  Sharpe= 7.61  MaxDD=  1.51%  AvgP=+0.683%
+  CRM                       n=  12  WR= 58.3%  PF= 0.91  Sharpe=-0.64  MaxDD=  2.45%  AvgP=-0.038%
+  IBM                       n=   9  WR= 66.7%  PF= 1.45  Sharpe= 2.45  MaxDD=  1.38%  AvgP=+0.157% ✓
+  AXP                       n=   8  WR= 37.5%  PF= 0.99  Sharpe=-0.04  MaxDD=  1.69%  AvgP=-0.002% ✗
+  NKE                       n=   8  WR= 37.5%  PF= 0.44  Sharpe=-5.01  MaxDD=  4.62%  AvgP=-0.447% ✗
+  MMM                       n=   6  WR= 50.0%  PF= 1.66  Sharpe= 3.15  MaxDD=  1.01%  AvgP=+0.180%
+  MRK                       n=   6  WR= 66.7%  PF= 2.37  Sharpe= 6.01  MaxDD=  1.12%  AvgP=+0.441% ✓
+  AAPL                      n=   4  WR= 50.0%  PF= 0.74  Sharpe=-1.79  MaxDD=  1.62%  AvgP=-0.183% ✗
+  AMGN                      n=   4  WR= 50.0%  PF= 9.28  Sharpe=11.02  MaxDD=  0.16%  AvgP=+0.446%
+  CSCO                      n=   3  WR= 66.7%  PF= 2.20  Sharpe= 4.06  MaxDD=  0.32%  AvgP=+0.129% ✓
+  MSFT                      n=   3  WR=  0.0%  PF= 0.00  Sharpe=-78.68  MaxDD=  3.08%  AvgP=-1.025% ✗
+  HD                        n=   2  WR= 50.0%  PF= 5.40  Sharpe= 7.71  MaxDD=  0.27%  AvgP=+0.600%
+  JPM                       n=   2  WR=  0.0%  PF= 0.00  Sharpe=-15.48  MaxDD=  0.40%  AvgP=-0.200% ✗
+  DIS                       n=   1  WR=  0.0%  PF= 0.00  Sharpe= 0.00  MaxDD=  1.09%  AvgP=-1.094% ✗
+  HON                       n=   1  WR=100.0%  PF=999.00  Sharpe= 0.00  MaxDD=  0.00%  AvgP=+0.209% ✓
+  JNJ                       n=   1  WR=100.0%  PF=999.00  Sharpe= 0.00  MaxDD=  0.00%  AvgP=+0.287% ✓
+
+========================================================================
+ VERDICT: FAIL — no confirmed OOS edge  (PF 0.93  Sharpe -0.49  WR 46.4%)
+ OOS MaxDD=23.04%  AvgP=-0.040%/trade  n=168
+ Total runtime: 2m 24s  (fetch 1s + walk 143s)
+========================================================================
+[31mdj30         2h         168   46.4%    0.93     -0.49[0m
+========================================================================
+ INTRADAY BACKTEST 2YR  |  30 symbols  |  threshold=90  |  CALLS only
+ Data: IBKR 15-min bars × 2 years  (Yahoo 60-day fallback if unavailable)
+ Slippage: 0.10% RT  |  MaxHold: 26 bars (6h)  |  Cooldown: 8 bars (2h)
+ Primary window: 130 15-min bars  |  HTF: 1-hour (aggregated)
+ Cache: 0 hits / 31 need fetch
+ Estimated runtime: ~41m 35s  (fetch 155s + walk 2340s)
+========================================================================
+  0/31 cached  |  31 need IBKR/Yahoo fetch
+  Fetching 31 symbols in parallel (5 workers)…
+    [  1/31] SPY     12931 bars  (IBKR)
+    [  2/31] AMGN    12954 bars  (IBKR)
+    [  3/31] BA      12954 bars  (IBKR)
+    [  4/31] AAPL    12932 bars  (IBKR)
+    [  5/31] AXP     12954 bars  (IBKR)
+    [  6/31] CAT     12954 bars  (IBKR)
+    [  7/31] CRM     12932 bars  (IBKR)
+    [  8/31] CSCO    12954 bars  (IBKR)
+    [  9/31] DIS     12954 bars  (IBKR)
+    [ 10/31] CVX     12933 bars  (IBKR)
+    [ 11/31] DOW     12954 bars  (IBKR)
+    [ 12/31] HD      12954 bars  (IBKR)
+    [ 13/31] IBM     12954 bars  (IBKR)
+    [ 14/31] GS      12933 bars  (IBKR)
+    [ 15/31] HON     12954 bars  (IBKR)
+    [ 16/31] INTC    12954 bars  (IBKR)
+    [ 17/31] JPM     12933 bars  (IBKR)
+    [ 18/31] JNJ     12954 bars  (IBKR)
+    [ 19/31] KO      12954 bars  (IBKR)
+    [ 20/31] MCD     12954 bars  (IBKR)
+    [ 21/31] MMM     12954 bars  (IBKR)
+    [ 22/31] MRK     12954 bars  (IBKR)
+    [ 23/31] NKE     12954 bars  (IBKR)
+    [ 24/31] MSFT    12932 bars  (IBKR)
+    [ 25/31] PG      12953 bars  (IBKR)
+    [ 26/31] V       12932 bars  (IBKR)
+    [ 27/31] WBA       no data  (Yahoo)
+    [ 28/31] WMT      1560 bars  (IBKR)
+    [ 29/31] TRV      1560 bars  (IBKR)
+    [ 30/31] VZ       1560 bars  (IBKR)
+    [ 31/31] UNH      1560 bars  (IBKR)
+  Done: 30/31 symbols returned data
+
+ Date range : 2024-05-15 → 2026-05-15  (730 days)
+ IS cutoff  : 2024-05-15 → 2025-09-15
+ OOS period : 2025-09-16 → 2026-05-15
+
+ Fetch done in 1s
+ Running walk-forward on 30 symbols…
+   AAPL     13 trades  (4 OOS)
+   AMGN      7 trades  (4 OOS)
+   AXP      13 trades  (8 OOS)
+   BA       40 trades  (12 OOS)
+   CAT      16 trades  (13 OOS)
+   CRM      26 trades  (12 OOS)
+   CSCO      7 trades  (3 OOS)
+   CVX       2 trades  (0 OOS)
+   DIS       6 trades  (1 OOS)
+   DOW      43 trades  (24 OOS)
+   GS       26 trades  (14 OOS)
+   HD        5 trades  (2 OOS)
+   HON       5 trades  (1 OOS)
+   IBM      16 trades  (9 OOS)
+   INTC     89 trades  (35 OOS)
+   JNJ       2 trades  (1 OOS)
+   JPM       6 trades  (2 OOS)
+   KO        1 trades  (0 OOS)
+   MCD       2 trades  (0 OOS)
+   MMM      13 trades  (6 OOS)
+   MRK      13 trades  (6 OOS)
+   MSFT      6 trades  (3 OOS)
+   NKE      14 trades  (8 OOS)
+   PG        1 trades  (0 OOS)
+   V         1 trades  (0 OOS)
+
+ Total trades: 373   IS: 205   OOS: 168
+
+────────────────────────────────────────────────────────────────────────
+ OVERALL
+────────────────────────────────────────────────────────────────────────
+  In-sample                 n= 205  WR= 42.9%  PF= 1.03  Sharpe= 0.21  MaxDD= 23.25%  AvgP=+0.025% ✗
+  Out-of-sample             n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Combined                  n= 373  WR= 44.5%  PF= 0.99  Sharpe=-0.04  MaxDD= 24.67%  AvgP=-0.005% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY GRADE
+────────────────────────────────────────────────────────────────────────
+  Grade S                   n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Grade A                   —
+  Grade B                   —
+  Grade C                   —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY REGIME
+────────────────────────────────────────────────────────────────────────
+  Bull (CALL only)          n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  Bear (PUT only)           —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY DIRECTION
+────────────────────────────────────────────────────────────────────────
+  CALL                      n= 168  WR= 46.4%  PF= 0.93  Sharpe=-0.49  MaxDD= 23.04%  AvgP=-0.040%
+  PUT                       —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY SIGNAL HOUR (ET)
+────────────────────────────────────────────────────────────────────────
+  10:xx ET                  n= 100  WR= 46.0%  PF= 0.85  Sharpe=-1.11  MaxDD= 21.97%  AvgP=-0.102% ✗
+  11:xx ET                  n=  16  WR= 43.8%  PF= 0.88  Sharpe=-0.74  MaxDD=  7.36%  AvgP=-0.068% ✗
+  12:xx ET                  n=  17  WR= 58.8%  PF= 2.62  Sharpe= 5.92  MaxDD=  1.66%  AvgP=+0.292% ✓
+  13:xx ET                  n=   4  WR= 75.0%  PF= 2.55  Sharpe= 6.57  MaxDD=  2.13%  AvgP=+0.827% ✓
+  14:xx ET                  n=  13  WR= 46.2%  PF= 0.87  Sharpe=-0.80  MaxDD=  3.31%  AvgP=-0.043% ✗
+  15:xx ET                  n=  18  WR= 33.3%  PF= 0.29  Sharpe=-6.69  MaxDD=  3.22%  AvgP=-0.179% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY EXIT TYPE
+────────────────────────────────────────────────────────────────────────
+  target                    n=  20  WR=100.0%  PF=999.00  Sharpe=49.43  MaxDD=  0.00%  AvgP=+2.057% ✓
+  stop                      n=  41  WR=  0.0%  PF= 0.00  Sharpe=-48.41  MaxDD= 67.42%  AvgP=-1.644% ✗
+  timeout                   n= 107  WR= 54.2%  PF= 1.83  Sharpe= 3.69  MaxDD=  4.91%  AvgP=+0.182%
+
+────────────────────────────────────────────────────────────────────────
+ OOS TOP SYMBOLS (by trade count)
+────────────────────────────────────────────────────────────────────────
+  INTC                      n=  35  WR= 42.9%  PF= 0.79  Sharpe=-1.63  MaxDD= 11.32%  AvgP=-0.193% ✗
+  DOW                       n=  24  WR= 41.7%  PF= 0.62  Sharpe=-3.04  MaxDD=  7.57%  AvgP=-0.256% ✗
+  GS                        n=  14  WR= 35.7%  PF= 0.37  Sharpe=-6.70  MaxDD=  5.78%  AvgP=-0.396% ✗
+  CAT                       n=  13  WR= 53.8%  PF= 2.20  Sharpe= 4.85  MaxDD=  1.68%  AvgP=+0.292%
+  BA                        n=  12  WR= 50.0%  PF= 3.37  Sharpe= 7.61  MaxDD=  1.51%  AvgP=+0.683%
+  CRM                       n=  12  WR= 58.3%  PF= 0.91  Sharpe=-0.64  MaxDD=  2.45%  AvgP=-0.038%
+  IBM                       n=   9  WR= 66.7%  PF= 1.45  Sharpe= 2.45  MaxDD=  1.38%  AvgP=+0.157% ✓
+  AXP                       n=   8  WR= 37.5%  PF= 0.99  Sharpe=-0.04  MaxDD=  1.69%  AvgP=-0.002% ✗
+  NKE                       n=   8  WR= 37.5%  PF= 0.44  Sharpe=-5.01  MaxDD=  4.62%  AvgP=-0.447% ✗
+  MMM                       n=   6  WR= 50.0%  PF= 1.66  Sharpe= 3.15  MaxDD=  1.01%  AvgP=+0.180%
+  MRK                       n=   6  WR= 66.7%  PF= 2.37  Sharpe= 6.01  MaxDD=  1.12%  AvgP=+0.441% ✓
+  AAPL                      n=   4  WR= 50.0%  PF= 0.74  Sharpe=-1.79  MaxDD=  1.62%  AvgP=-0.183% ✗
+  AMGN                      n=   4  WR= 50.0%  PF= 9.28  Sharpe=11.02  MaxDD=  0.16%  AvgP=+0.446%
+  CSCO                      n=   3  WR= 66.7%  PF= 2.20  Sharpe= 4.06  MaxDD=  0.32%  AvgP=+0.129% ✓
+  MSFT                      n=   3  WR=  0.0%  PF= 0.00  Sharpe=-78.68  MaxDD=  3.08%  AvgP=-1.025% ✗
+  HD                        n=   2  WR= 50.0%  PF= 5.40  Sharpe= 7.71  MaxDD=  0.27%  AvgP=+0.600%
+  JPM                       n=   2  WR=  0.0%  PF= 0.00  Sharpe=-15.48  MaxDD=  0.40%  AvgP=-0.200% ✗
+  DIS                       n=   1  WR=  0.0%  PF= 0.00  Sharpe= 0.00  MaxDD=  1.09%  AvgP=-1.094% ✗
+  HON                       n=   1  WR=100.0%  PF=999.00  Sharpe= 0.00  MaxDD=  0.00%  AvgP=+0.209% ✓
+  JNJ                       n=   1  WR=100.0%  PF=999.00  Sharpe= 0.00  MaxDD=  0.00%  AvgP=+0.287% ✓
+
+========================================================================
+ VERDICT: FAIL — no confirmed OOS edge  (PF 0.93  Sharpe -0.49  WR 46.4%)
+ OOS MaxDD=23.04%  AvgP=-0.040%/trade  n=168
+ Total runtime: 2m 25s  (fetch 1s + walk 145s)
+========================================================================
+[31mdj30         EOD        168   46.4%    0.93     -0.49[0m
+
+========================================================================
+ INTRADAY BACKTEST 2YR  |  100 symbols  |  threshold=90  |  CALLS only
+ Data: IBKR 15-min bars × 2 years  (Yahoo 60-day fallback if unavailable)
+ Slippage: 0.10% RT  |  MaxHold: 26 bars (6h)  |  Cooldown: 8 bars (2h)
+ Primary window: 130 15-min bars  |  HTF: 1-hour (aggregated)
+ Cache: 0 hits / 101 need fetch
+ Estimated runtime: ~138m 25s  (fetch 505s + walk 7800s)
+========================================================================
+  0/101 cached  |  101 need IBKR/Yahoo fetch
+  Fetching 101 symbols in parallel (5 workers)…
+    [  1/101] AMZN    12932 bars  (IBKR)
+    [  2/101] SPY     12931 bars  (IBKR)
+    [  3/101] MSFT    12932 bars  (IBKR)
+    [  4/101] NVDA    12932 bars  (IBKR)
+    [  5/101] AAPL    12932 bars  (IBKR)
+    [  6/101] META    12932 bars  (IBKR)
+    [  7/101] GOOGL   12932 bars  (IBKR)
+    [  8/101] TSLA    12932 bars  (IBKR)
+    [  9/101] NFLX    12932 bars  (IBKR)
+    [ 10/101] ADBE    12932 bars  (IBKR)
+    [ 11/101] AMD     12932 bars  (IBKR)
+    [ 12/101] QCOM    12932 bars  (IBKR)
+    [ 13/101] INTC    12954 bars  (IBKR)
+    [ 14/101] CSCO    12954 bars  (IBKR)
+    [ 15/101] AVGO     1560 bars  (IBKR)
+    [ 16/101] AMGN    12954 bars  (IBKR)
+    [ 17/101] COST     1560 bars  (IBKR)
+    [ 18/101] AMAT    12933 bars  (IBKR)
+    [ 19/101] MU      12933 bars  (IBKR)
+    [ 20/101] TXN      1560 bars  (IBKR)
+    [ 21/101] INTU     1560 bars  (IBKR)
+    [ 22/101] GOOG     1560 bars  (IBKR)
+    [ 23/101] ISRG     1560 bars  (IBKR)
+    [ 24/101] MRVL    12932 bars  (IBKR)
+    [ 25/101] KLAC     1560 bars  (IBKR)
+    [ 26/101] LRCX     1560 bars  (IBKR)
+    [ 27/101] SBUX     1560 bars  (IBKR)
+    [ 28/101] ADI      1560 bars  (IBKR)
+    [ 29/101] REGN     1560 bars  (IBKR)
+    [ 30/101] CRWD     1560 bars  (IBKR)
+    [ 31/101] SNPS     1560 bars  (IBKR)
+    [ 32/101] ABNB    12933 bars  (IBKR)
+    [ 33/101] PANW     1560 bars  (IBKR)
+    [ 34/101] CDNS     1560 bars  (IBKR)
+    [ 35/101] ASML     1560 bars  (IBKR)
+    [ 36/101] MCHP     1560 bars  (IBKR)
+    [ 37/101] FTNT     1560 bars  (IBKR)
+    [ 38/101] MNST     1560 bars  (IBKR)
+    [ 39/101] ORLY     1560 bars  (IBKR)
+    [ 40/101] PCAR     1560 bars  (IBKR)
+    [ 41/101] PAYX     1560 bars  (IBKR)
+    [ 42/101] BIIB    12933 bars  (IBKR)
+    [ 43/101] KDP      1560 bars  (IBKR)
+    [ 44/101] CSGP     1560 bars  (IBKR)
+    [ 45/101] EXC      1560 bars  (IBKR)
+    [ 46/101] DXCM     1560 bars  (IBKR)
+    [ 47/101] IDXX     1560 bars  (IBKR)
+    [ 48/101] GEHC     1560 bars  (IBKR)
+    [ 49/101] ODFL     1560 bars  (IBKR)
+    [ 50/101] VRSK     1560 bars  (IBKR)
+    [ 51/101] FAST     1560 bars  (IBKR)
+    [ 52/101] GFS      1560 bars  (IBKR)
+    [ 53/101] ON       1560 bars  (IBKR)
+    [ 54/101] ILMN     1560 bars  (IBKR)
+    [ 55/101] SPLK      no data  (Yahoo)
+    [ 56/101] ZS       1560 bars  (IBKR)
+    [ 57/101] WDAY     1560 bars  (IBKR)
+    [ 58/101] ANSS      no data  (Yahoo)
+    [ 59/101] TEAM     1560 bars  (IBKR)
+    [ 60/101] SGEN      no data  (Yahoo)
+    [ 61/101] DLTR     1560 bars  (IBKR)
+    [ 62/101] FANG     1560 bars  (IBKR)
+    [ 63/101] CEG      1560 bars  (IBKR)
+    [ 64/101] CTSH     1560 bars  (IBKR)
+    [ 65/101] MTCH     1560 bars  (IBKR)
+    [ 66/101] XEL      1560 bars  (IBKR)
+    [ 67/101] VRSN     1560 bars  (IBKR)
+    [ 68/101] CPRT     1560 bars  (IBKR)
+    [ 69/101] EA       1560 bars  (IBKR)
+    [ 70/101] WBD      1560 bars  (IBKR)
+    [ 71/101] GILD     1560 bars  (IBKR)
+    [ 72/101] HON     12954 bars  (IBKR)
+    [ 73/101] SIRI     1560 bars  (IBKR)
+    [ 74/101] LULU     1560 bars  (IBKR)
+    [ 75/101] TTD      1560 bars  (IBKR)
+    [ 76/101] EBAY     1560 bars  (IBKR)
+    [ 77/101] AEP      1560 bars  (IBKR)
+    [ 78/101] ALGN     1560 bars  (IBKR)
+    [ 79/101] TTWO     1560 bars  (IBKR)
+    [ 80/101] MDB      1560 bars  (IBKR)
+    [ 81/101] DDOG     1560 bars  (IBKR)
+    [ 82/101] NET      1560 bars  (IBKR)
+    [ 83/101] DOCU     1560 bars  (IBKR)
+    [ 84/101] LYFT    12934 bars  (IBKR)
+    [ 85/101] ROKU     1560 bars  (IBKR)
+    [ 86/101] UBER    12932 bars  (IBKR)
+    [ 87/101] DASH    12933 bars  (IBKR)
+    [ 88/101] SNOW     1560 bars  (IBKR)
+    [ 89/101] ZM       1560 bars  (IBKR)
+    [ 90/101] PLTR    12954 bars  (IBKR)
+    [ 91/101] RBLX     1560 bars  (IBKR)
+    [ 92/101] SMCI    12954 bars  (IBKR)
+    [ 93/101] PTON     1560 bars  (IBKR)
+    [ 94/101] HOOD     1560 bars  (IBKR)
+    [ 95/101] COIN     1560 bars  (IBKR)
+    [ 96/101] IONQ     1560 bars  (IBKR)
+    [ 97/101] MSTR     1560 bars  (IBKR)
+    [ 98/101] ASTS     1560 bars  (IBKR)
+    [ 99/101] ARM      1560 bars  (IBKR)
+    [100/101] RDDT     1560 bars  (IBKR)
+    [101/101] APP      1560 bars  (IBKR)
+  Done: 98/101 symbols returned data
+
+ Date range : 2024-05-14 → 2026-05-15  (731 days)
+ IS cutoff  : 2024-05-14 → 2025-09-14
+ OOS period : 2025-09-15 → 2026-05-15
+
+ Fetch done in 6s
+ Running walk-forward on 100 symbols…
+   AAPL     13 trades  (4 OOS)
+   MSFT      6 trades  (3 OOS)
+   NVDA     60 trades  (21 OOS)
+   AMZN     28 trades  (12 OOS)
+   META     36 trades  (7 OOS)
+   GOOGL    18 trades  (8 OOS)
+   TSLA     99 trades  (30 OOS)
+   AVGO     13 trades  (13 OOS)
+   NFLX     24 trades  (7 OOS)
+   AMD      89 trades  (33 OOS)
+   ADBE     21 trades  (12 OOS)
+   QCOM     24 trades  (8 OOS)
+   INTC     89 trades  (36 OOS)
+   CSCO      7 trades  (3 OOS)
+   TXN       5 trades  (5 OOS)
+   INTU     10 trades  (10 OOS)
+   AMGN      7 trades  (4 OOS)
+   SBUX      2 trades  (2 OOS)
+   AMAT     46 trades  (28 OOS)
+   MU       78 trades  (35 OOS)
+   ISRG      1 trades  (1 OOS)
+   LRCX      3 trades  (3 OOS)
+   KLAC      5 trades  (5 OOS)
+   ADI       6 trades  (6 OOS)
+   MRVL     68 trades  (30 OOS)
+   REGN      4 trades  (4 OOS)
+   PANW     10 trades  (10 OOS)
+   CRWD      9 trades  (9 OOS)
+   SNPS     11 trades  (11 OOS)
+   CDNS     11 trades  (11 OOS)
+   ASML     12 trades  (12 OOS)
+   MCHP     10 trades  (10 OOS)
+   ABNB     28 trades  (13 OOS)
+   FTNT      3 trades  (3 OOS)
+   MNST      2 trades  (2 OOS)
+   PCAR      3 trades  (3 OOS)
+   PAYX      1 trades  (1 OOS)
+   DXCM      5 trades  (5 OOS)
+   CSGP      2 trades  (2 OOS)
+   BIIB     28 trades  (18 OOS)
+   IDXX      3 trades  (3 OOS)
+   GEHC      4 trades  (4 OOS)
+   ODFL     10 trades  (10 OOS)
+   FAST      2 trades  (2 OOS)
+   VRSK      4 trades  (4 OOS)
+   ON        9 trades  (9 OOS)
+   GFS       9 trades  (9 OOS)
+   ILMN     12 trades  (12 OOS)
+   ZS       11 trades  (11 OOS)
+   WDAY     13 trades  (13 OOS)
+   TEAM      6 trades  (6 OOS)
+   DLTR      7 trades  (7 OOS)
+   FANG      4 trades  (4 OOS)
+   CEG       7 trades  (7 OOS)
+   XEL       1 trades  (1 OOS)
+   CTSH      4 trades  (4 OOS)
+   MTCH      8 trades  (8 OOS)
+   VRSN      3 trades  (3 OOS)
+   CPRT      3 trades  (3 OOS)
+   SIRI      5 trades  (5 OOS)
+   LULU      5 trades  (5 OOS)
+   HON       5 trades  (1 OOS)
+   TTD       7 trades  (7 OOS)
+   EBAY      6 trades  (6 OOS)
+   ALGN      9 trades  (9 OOS)
+   TTWO      4 trades  (4 OOS)
+   MDB      11 trades  (11 OOS)
+   DDOG      5 trades  (5 OOS)
+   NET      12 trades  (12 OOS)
+   SNOW      3 trades  (3 OOS)
+   ROKU     11 trades  (11 OOS)
+   DOCU      4 trades  (4 OOS)
+   ZM        7 trades  (7 OOS)
+   PTON     20 trades  (20 OOS)
+   LYFT     95 trades  (37 OOS)
+   UBER     47 trades  (12 OOS)
+   DASH     52 trades  (20 OOS)
+   RBLX     13 trades  (13 OOS)
+   HOOD     13 trades  (13 OOS)
+   COIN      8 trades  (8 OOS)
+   PLTR     97 trades  (35 OOS)
+   IONQ     10 trades  (10 OOS)
+   SMCI    107 trades  (34 OOS)
+   ARM      15 trades  (15 OOS)
+   MSTR     17 trades  (17 OOS)
+   ASTS     11 trades  (11 OOS)
+   RDDT      9 trades  (9 OOS)
+   APP       9 trades  (9 OOS)
+
+ Total trades: 1634   IS: 721   OOS: 913
+
+────────────────────────────────────────────────────────────────────────
+ OVERALL
+────────────────────────────────────────────────────────────────────────
+  In-sample                 n= 721  WR= 43.7%  PF= 0.81  Sharpe=-1.23  MaxDD=120.34%  AvgP=-0.152% ✗
+  Out-of-sample             n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  Combined                  n=1634  WR= 45.6%  PF= 0.88  Sharpe=-0.77  MaxDD=154.47%  AvgP=-0.082% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY GRADE
+────────────────────────────────────────────────────────────────────────
+  Grade S                   n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  Grade A                   —
+  Grade B                   —
+  Grade C                   —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY REGIME
+────────────────────────────────────────────────────────────────────────
+  Bull (CALL only)          n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  Bear (PUT only)           —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY DIRECTION
+────────────────────────────────────────────────────────────────────────
+  CALL                      n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  PUT                       —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY SIGNAL HOUR (ET)
+────────────────────────────────────────────────────────────────────────
+  10:xx ET                  n= 482  WR= 46.9%  PF= 0.98  Sharpe=-0.14  MaxDD= 30.93%  AvgP=-0.015%
+  11:xx ET                  n=  81  WR= 58.0%  PF= 1.15  Sharpe= 0.94  MaxDD=  9.06%  AvgP=+0.088%
+  12:xx ET                  n=  48  WR= 66.7%  PF= 2.11  Sharpe= 4.82  MaxDD=  5.19%  AvgP=+0.356% ✓
+  13:xx ET                  n=  40  WR= 52.5%  PF= 1.15  Sharpe= 0.90  MaxDD=  5.46%  AvgP=+0.073%
+  14:xx ET                  n=  89  WR= 39.3%  PF= 0.51  Sharpe=-4.08  MaxDD= 23.43%  AvgP=-0.222% ✗
+  15:xx ET                  n= 173  WR= 39.9%  PF= 0.58  Sharpe=-3.27  MaxDD= 28.48%  AvgP=-0.144% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY EXIT TYPE
+────────────────────────────────────────────────────────────────────────
+  target                    n=  97  WR=100.0%  PF=999.00  Sharpe=46.86  MaxDD=  0.00%  AvgP=+2.496% ✓
+  stop                      n= 208  WR=  0.0%  PF= 0.00  Sharpe=-52.23  MaxDD=369.53%  AvgP=-1.777% ✗
+  timeout                   n= 608  WR= 54.8%  PF= 1.69  Sharpe= 3.10  MaxDD=  7.46%  AvgP=+0.169%
+
+────────────────────────────────────────────────────────────────────────
+ OOS TOP SYMBOLS (by trade count)
+────────────────────────────────────────────────────────────────────────
+  LYFT                      n=  37  WR= 48.6%  PF= 0.89  Sharpe=-0.69  MaxDD=  8.05%  AvgP=-0.050% ✗
+  INTC                      n=  36  WR= 41.7%  PF= 0.75  Sharpe=-1.98  MaxDD= 12.95%  AvgP=-0.233% ✗
+  MU                        n=  35  WR= 60.0%  PF= 1.16  Sharpe= 0.95  MaxDD= 10.21%  AvgP=+0.098%
+  PLTR                      n=  35  WR= 37.1%  PF= 0.42  Sharpe=-5.44  MaxDD= 15.68%  AvgP=-0.430% ✗
+  SMCI                      n=  34  WR= 50.0%  PF= 0.93  Sharpe=-0.46  MaxDD= 12.14%  AvgP=-0.057%
+  AMD                       n=  33  WR= 48.5%  PF= 1.30  Sharpe= 1.75  MaxDD= 12.96%  AvgP=+0.176%
+  TSLA                      n=  30  WR= 53.3%  PF= 0.96  Sharpe=-0.28  MaxDD= 13.01%  AvgP=-0.024%
+  MRVL                      n=  30  WR= 50.0%  PF= 1.18  Sharpe= 0.99  MaxDD=  7.21%  AvgP=+0.092%
+  AMAT                      n=  28  WR= 67.9%  PF= 5.55  Sharpe= 8.50  MaxDD=  1.37%  AvgP=+0.487% ✓
+  NVDA                      n=  21  WR= 42.9%  PF= 0.73  Sharpe=-2.10  MaxDD=  7.52%  AvgP=-0.143% ✗
+  PTON                      n=  20  WR= 30.0%  PF= 0.99  Sharpe=-0.08  MaxDD=  6.57%  AvgP=-0.013% ✗
+  DASH                      n=  20  WR= 35.0%  PF= 0.42  Sharpe=-5.53  MaxDD=  9.65%  AvgP=-0.406% ✗
+  BIIB                      n=  18  WR= 33.3%  PF= 0.47  Sharpe=-5.09  MaxDD=  7.08%  AvgP=-0.368% ✗
+  MSTR                      n=  17  WR= 47.1%  PF= 1.07  Sharpe= 0.42  MaxDD=  6.40%  AvgP=+0.047%
+  ARM                       n=  15  WR= 33.3%  PF= 0.52  Sharpe=-4.25  MaxDD=  9.63%  AvgP=-0.516% ✗
+  AVGO                      n=  13  WR= 46.2%  PF= 1.04  Sharpe= 0.24  MaxDD=  2.83%  AvgP=+0.011%
+  ABNB                      n=  13  WR= 30.8%  PF= 0.22  Sharpe=-10.01  MaxDD=  8.44%  AvgP=-0.592% ✗
+  WDAY                      n=  13  WR= 38.5%  PF= 1.23  Sharpe= 1.22  MaxDD=  6.37%  AvgP=+0.113% ✗
+  RBLX                      n=  13  WR= 46.2%  PF= 0.73  Sharpe=-2.02  MaxDD=  6.86%  AvgP=-0.217% ✗
+  HOOD                      n=  13  WR= 61.5%  PF= 2.23  Sharpe= 5.10  MaxDD=  4.78%  AvgP=+0.552% ✓
+
+========================================================================
+ VERDICT: FAIL — no confirmed OOS edge  (PF 0.95  Sharpe -0.30  WR 47.1%)
+ OOS MaxDD=56.62%  AvgP=-0.027%/trade  n=913
+ Total runtime: 3m 11s  (fetch 6s + walk 186s)
+========================================================================
+[31mnasdaq100    15m        913   47.1%    0.95     -0.30[0m
+========================================================================
+ INTRADAY BACKTEST 2YR  |  100 symbols  |  threshold=90  |  CALLS only
+ Data: IBKR 15-min bars × 2 years  (Yahoo 60-day fallback if unavailable)
+ Slippage: 0.10% RT  |  MaxHold: 26 bars (6h)  |  Cooldown: 8 bars (2h)
+ Primary window: 130 15-min bars  |  HTF: 1-hour (aggregated)
+ Cache: 0 hits / 101 need fetch
+ Estimated runtime: ~138m 25s  (fetch 505s + walk 7800s)
+========================================================================
+  0/101 cached  |  101 need IBKR/Yahoo fetch
+  Fetching 101 symbols in parallel (5 workers)…
+    [  1/101] AMZN    12932 bars  (IBKR)
+    [  2/101] MSFT    12932 bars  (IBKR)
+    [  3/101] SPY     12931 bars  (IBKR)
+    [  4/101] NVDA    12932 bars  (IBKR)
+    [  5/101] AAPL    12932 bars  (IBKR)
+    [  6/101] GOOGL   12932 bars  (IBKR)
+    [  7/101] META    12932 bars  (IBKR)
+    [  8/101] TSLA    12932 bars  (IBKR)
+    [  9/101] NFLX    12932 bars  (IBKR)
+    [ 10/101] AMD     12932 bars  (IBKR)
+    [ 11/101] ADBE    12932 bars  (IBKR)
+    [ 12/101] QCOM    12932 bars  (IBKR)
+    [ 13/101] INTC    12954 bars  (IBKR)
+    [ 14/101] CSCO    12954 bars  (IBKR)
+    [ 15/101] TXN      1560 bars  (IBKR)
+    [ 16/101] INTU     1560 bars  (IBKR)
+    [ 17/101] AMGN    12954 bars  (IBKR)
+    [ 18/101] AMAT    12933 bars  (IBKR)
+    [ 19/101] MU      12933 bars  (IBKR)
+    [ 20/101] GOOG     1560 bars  (IBKR)
+    [ 21/101] AVGO     1560 bars  (IBKR)
+    [ 22/101] COST     1560 bars  (IBKR)
+    [ 23/101] SBUX     1560 bars  (IBKR)
+    [ 24/101] MRVL    12932 bars  (IBKR)
+    [ 25/101] LRCX     1560 bars  (IBKR)
+    [ 26/101] ISRG     1560 bars  (IBKR)
+    [ 27/101] KLAC     1560 bars  (IBKR)
+    [ 28/101] ADI      1560 bars  (IBKR)
+    [ 29/101] CRWD     1560 bars  (IBKR)
+    [ 30/101] REGN     1560 bars  (IBKR)
+    [ 31/101] PANW     1560 bars  (IBKR)
+    [ 32/101] ABNB    12933 bars  (IBKR)
+    [ 33/101] SNPS     1560 bars  (IBKR)
+    [ 34/101] CDNS     1560 bars  (IBKR)
+    [ 35/101] ASML     1560 bars  (IBKR)
+    [ 36/101] MCHP     1560 bars  (IBKR)
+    [ 37/101] MNST     1560 bars  (IBKR)
+    [ 38/101] FTNT     1560 bars  (IBKR)
+    [ 39/101] PCAR     1560 bars  (IBKR)
+    [ 40/101] ORLY     1560 bars  (IBKR)
+    [ 41/101] BIIB    12933 bars  (IBKR)
+    [ 42/101] PAYX     1560 bars  (IBKR)
+    [ 43/101] KDP      1560 bars  (IBKR)
+    [ 44/101] IDXX     1560 bars  (IBKR)
+    [ 45/101] EXC      1560 bars  (IBKR)
+    [ 46/101] DXCM     1560 bars  (IBKR)
+    [ 47/101] CSGP     1560 bars  (IBKR)
+    [ 48/101] GEHC     1560 bars  (IBKR)
+    [ 49/101] ON       1560 bars  (IBKR)
+    [ 50/101] FAST     1560 bars  (IBKR)
+    [ 51/101] VRSK     1560 bars  (IBKR)
+    [ 52/101] ODFL     1560 bars  (IBKR)
+    [ 53/101] GFS      1560 bars  (IBKR)
+    [ 54/101] ILMN     1560 bars  (IBKR)
+    [ 55/101] WDAY     1560 bars  (IBKR)
+    [ 56/101] ZS       1560 bars  (IBKR)
+    [ 57/101] TEAM     1560 bars  (IBKR)
+    [ 58/101] SPLK      no data  (Yahoo)
+    [ 59/101] ANSS      no data  (Yahoo)
+    [ 60/101] SGEN      no data  (Yahoo)
+    [ 61/101] DLTR     1560 bars  (IBKR)
+    [ 62/101] FANG     1560 bars  (IBKR)
+    [ 63/101] CEG      1560 bars  (IBKR)
+    [ 64/101] XEL      1560 bars  (IBKR)
+    [ 65/101] CTSH     1560 bars  (IBKR)
+    [ 66/101] VRSN     1560 bars  (IBKR)
+    [ 67/101] MTCH     1560 bars  (IBKR)
+    [ 68/101] GILD     1560 bars  (IBKR)
+    [ 69/101] CPRT     1560 bars  (IBKR)
+    [ 70/101] WBD      1560 bars  (IBKR)
+    [ 71/101] HON     12954 bars  (IBKR)
+    [ 72/101] SIRI     1560 bars  (IBKR)
+    [ 73/101] AEP      1560 bars  (IBKR)
+    [ 74/101] EA       1560 bars  (IBKR)
+    [ 75/101] LULU     1560 bars  (IBKR)
+    [ 76/101] TTD      1560 bars  (IBKR)
+    [ 77/101] EBAY     1560 bars  (IBKR)
+    [ 78/101] ALGN     1560 bars  (IBKR)
+    [ 79/101] MDB      1560 bars  (IBKR)
+    [ 80/101] TTWO     1560 bars  (IBKR)
+    [ 81/101] DDOG     1560 bars  (IBKR)
+    [ 82/101] NET      1560 bars  (IBKR)
+    [ 83/101] SNOW     1560 bars  (IBKR)
+    [ 84/101] LYFT    12934 bars  (IBKR)
+    [ 85/101] UBER    12932 bars  (IBKR)
+    [ 86/101] DASH    12933 bars  (IBKR)
+    [ 87/101] DOCU     1560 bars  (IBKR)
+    [ 88/101] ROKU     1560 bars  (IBKR)
+    [ 89/101] ZM       1560 bars  (IBKR)
+    [ 90/101] PTON     1560 bars  (IBKR)
+    [ 91/101] RBLX     1560 bars  (IBKR)
+    [ 92/101] PLTR    12954 bars  (IBKR)
+    [ 93/101] SMCI    12954 bars  (IBKR)
+    [ 94/101] HOOD     1560 bars  (IBKR)
+    [ 95/101] COIN     1560 bars  (IBKR)
+    [ 96/101] ARM      1560 bars  (IBKR)
+    [ 97/101] IONQ     1560 bars  (IBKR)
+    [ 98/101] MSTR     1560 bars  (IBKR)
+    [ 99/101] RDDT     1560 bars  (IBKR)
+    [100/101] APP      1560 bars  (IBKR)
+    [101/101] ASTS     1560 bars  (IBKR)
+  Done: 98/101 symbols returned data
+
+ Date range : 2024-05-14 → 2026-05-15  (731 days)
+ IS cutoff  : 2024-05-14 → 2025-09-14
+ OOS period : 2025-09-15 → 2026-05-15
+
+ Fetch done in 5s
+ Running walk-forward on 100 symbols…
+   AAPL     13 trades  (4 OOS)
+   MSFT      6 trades  (3 OOS)
+   NVDA     60 trades  (21 OOS)
+   AMZN     28 trades  (12 OOS)
+   META     36 trades  (7 OOS)
+   GOOGL    18 trades  (8 OOS)
+   TSLA     99 trades  (30 OOS)
+   AVGO     13 trades  (13 OOS)
+   NFLX     24 trades  (7 OOS)
+   AMD      89 trades  (33 OOS)
+   ADBE     21 trades  (12 OOS)
+   QCOM     24 trades  (8 OOS)
+   INTC     89 trades  (36 OOS)
+   CSCO      7 trades  (3 OOS)
+   TXN       5 trades  (5 OOS)
+   INTU     10 trades  (10 OOS)
+   AMGN      7 trades  (4 OOS)
+   SBUX      2 trades  (2 OOS)
+   AMAT     46 trades  (28 OOS)
+   MU       78 trades  (35 OOS)
+   ISRG      1 trades  (1 OOS)
+   LRCX      3 trades  (3 OOS)
+   KLAC      5 trades  (5 OOS)
+   ADI       6 trades  (6 OOS)
+   MRVL     68 trades  (30 OOS)
+   REGN      4 trades  (4 OOS)
+   PANW     10 trades  (10 OOS)
+   CRWD      9 trades  (9 OOS)
+   SNPS     11 trades  (11 OOS)
+   CDNS     11 trades  (11 OOS)
+   ASML     12 trades  (12 OOS)
+   MCHP     10 trades  (10 OOS)
+   ABNB     28 trades  (13 OOS)
+   FTNT      3 trades  (3 OOS)
+   MNST      2 trades  (2 OOS)
+   PCAR      3 trades  (3 OOS)
+   PAYX      1 trades  (1 OOS)
+   DXCM      5 trades  (5 OOS)
+   CSGP      2 trades  (2 OOS)
+   BIIB     28 trades  (18 OOS)
+   IDXX      3 trades  (3 OOS)
+   GEHC      4 trades  (4 OOS)
+   ODFL     10 trades  (10 OOS)
+   FAST      2 trades  (2 OOS)
+   VRSK      4 trades  (4 OOS)
+   ON        9 trades  (9 OOS)
+   GFS       9 trades  (9 OOS)
+   ILMN     12 trades  (12 OOS)
+   ZS       11 trades  (11 OOS)
+   WDAY     13 trades  (13 OOS)
+   TEAM      6 trades  (6 OOS)
+   DLTR      7 trades  (7 OOS)
+   FANG      4 trades  (4 OOS)
+   CEG       7 trades  (7 OOS)
+   XEL       1 trades  (1 OOS)
+   CTSH      4 trades  (4 OOS)
+   MTCH      8 trades  (8 OOS)
+   VRSN      3 trades  (3 OOS)
+   CPRT      3 trades  (3 OOS)
+   SIRI      5 trades  (5 OOS)
+   LULU      5 trades  (5 OOS)
+   HON       5 trades  (1 OOS)
+   TTD       7 trades  (7 OOS)
+   EBAY      6 trades  (6 OOS)
+   ALGN      9 trades  (9 OOS)
+   TTWO      4 trades  (4 OOS)
+   MDB      11 trades  (11 OOS)
+   DDOG      5 trades  (5 OOS)
+   NET      12 trades  (12 OOS)
+   SNOW      3 trades  (3 OOS)
+   ROKU     11 trades  (11 OOS)
+   DOCU      4 trades  (4 OOS)
+   ZM        7 trades  (7 OOS)
+   PTON     20 trades  (20 OOS)
+   LYFT     95 trades  (37 OOS)
+   UBER     47 trades  (12 OOS)
+   DASH     52 trades  (20 OOS)
+   RBLX     13 trades  (13 OOS)
+   HOOD     13 trades  (13 OOS)
+   COIN      8 trades  (8 OOS)
+   PLTR     97 trades  (35 OOS)
+   IONQ     10 trades  (10 OOS)
+   SMCI    107 trades  (34 OOS)
+   ARM      15 trades  (15 OOS)
+   MSTR     17 trades  (17 OOS)
+   ASTS     11 trades  (11 OOS)
+   RDDT      9 trades  (9 OOS)
+   APP       9 trades  (9 OOS)
+
+ Total trades: 1634   IS: 721   OOS: 913
+
+────────────────────────────────────────────────────────────────────────
+ OVERALL
+────────────────────────────────────────────────────────────────────────
+  In-sample                 n= 721  WR= 43.7%  PF= 0.81  Sharpe=-1.23  MaxDD=120.34%  AvgP=-0.152% ✗
+  Out-of-sample             n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  Combined                  n=1634  WR= 45.6%  PF= 0.88  Sharpe=-0.77  MaxDD=154.47%  AvgP=-0.082% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY GRADE
+────────────────────────────────────────────────────────────────────────
+  Grade S                   n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  Grade A                   —
+  Grade B                   —
+  Grade C                   —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY REGIME
+────────────────────────────────────────────────────────────────────────
+  Bull (CALL only)          n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  Bear (PUT only)           —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY DIRECTION
+────────────────────────────────────────────────────────────────────────
+  CALL                      n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  PUT                       —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY SIGNAL HOUR (ET)
+────────────────────────────────────────────────────────────────────────
+  10:xx ET                  n= 482  WR= 46.9%  PF= 0.98  Sharpe=-0.14  MaxDD= 30.93%  AvgP=-0.015%
+  11:xx ET                  n=  81  WR= 58.0%  PF= 1.15  Sharpe= 0.94  MaxDD=  9.06%  AvgP=+0.088%
+  12:xx ET                  n=  48  WR= 66.7%  PF= 2.11  Sharpe= 4.82  MaxDD=  5.19%  AvgP=+0.356% ✓
+  13:xx ET                  n=  40  WR= 52.5%  PF= 1.15  Sharpe= 0.90  MaxDD=  5.46%  AvgP=+0.073%
+  14:xx ET                  n=  89  WR= 39.3%  PF= 0.51  Sharpe=-4.08  MaxDD= 23.43%  AvgP=-0.222% ✗
+  15:xx ET                  n= 173  WR= 39.9%  PF= 0.58  Sharpe=-3.27  MaxDD= 28.48%  AvgP=-0.144% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY EXIT TYPE
+────────────────────────────────────────────────────────────────────────
+  target                    n=  97  WR=100.0%  PF=999.00  Sharpe=46.86  MaxDD=  0.00%  AvgP=+2.496% ✓
+  stop                      n= 208  WR=  0.0%  PF= 0.00  Sharpe=-52.23  MaxDD=369.53%  AvgP=-1.777% ✗
+  timeout                   n= 608  WR= 54.8%  PF= 1.69  Sharpe= 3.10  MaxDD=  7.46%  AvgP=+0.169%
+
+────────────────────────────────────────────────────────────────────────
+ OOS TOP SYMBOLS (by trade count)
+────────────────────────────────────────────────────────────────────────
+  LYFT                      n=  37  WR= 48.6%  PF= 0.89  Sharpe=-0.69  MaxDD=  8.05%  AvgP=-0.050% ✗
+  INTC                      n=  36  WR= 41.7%  PF= 0.75  Sharpe=-1.98  MaxDD= 12.95%  AvgP=-0.233% ✗
+  MU                        n=  35  WR= 60.0%  PF= 1.16  Sharpe= 0.95  MaxDD= 10.21%  AvgP=+0.098%
+  PLTR                      n=  35  WR= 37.1%  PF= 0.42  Sharpe=-5.44  MaxDD= 15.68%  AvgP=-0.430% ✗
+  SMCI                      n=  34  WR= 50.0%  PF= 0.93  Sharpe=-0.46  MaxDD= 12.14%  AvgP=-0.057%
+  AMD                       n=  33  WR= 48.5%  PF= 1.30  Sharpe= 1.75  MaxDD= 12.96%  AvgP=+0.176%
+  TSLA                      n=  30  WR= 53.3%  PF= 0.96  Sharpe=-0.28  MaxDD= 13.01%  AvgP=-0.024%
+  MRVL                      n=  30  WR= 50.0%  PF= 1.18  Sharpe= 0.99  MaxDD=  7.21%  AvgP=+0.092%
+  AMAT                      n=  28  WR= 67.9%  PF= 5.55  Sharpe= 8.50  MaxDD=  1.37%  AvgP=+0.487% ✓
+  NVDA                      n=  21  WR= 42.9%  PF= 0.73  Sharpe=-2.10  MaxDD=  7.52%  AvgP=-0.143% ✗
+  PTON                      n=  20  WR= 30.0%  PF= 0.99  Sharpe=-0.08  MaxDD=  6.57%  AvgP=-0.013% ✗
+  DASH                      n=  20  WR= 35.0%  PF= 0.42  Sharpe=-5.53  MaxDD=  9.65%  AvgP=-0.406% ✗
+  BIIB                      n=  18  WR= 33.3%  PF= 0.47  Sharpe=-5.09  MaxDD=  7.08%  AvgP=-0.368% ✗
+  MSTR                      n=  17  WR= 47.1%  PF= 1.07  Sharpe= 0.42  MaxDD=  6.40%  AvgP=+0.047%
+  ARM                       n=  15  WR= 33.3%  PF= 0.52  Sharpe=-4.25  MaxDD=  9.63%  AvgP=-0.516% ✗
+  AVGO                      n=  13  WR= 46.2%  PF= 1.04  Sharpe= 0.24  MaxDD=  2.83%  AvgP=+0.011%
+  ABNB                      n=  13  WR= 30.8%  PF= 0.22  Sharpe=-10.01  MaxDD=  8.44%  AvgP=-0.592% ✗
+  WDAY                      n=  13  WR= 38.5%  PF= 1.23  Sharpe= 1.22  MaxDD=  6.37%  AvgP=+0.113% ✗
+  RBLX                      n=  13  WR= 46.2%  PF= 0.73  Sharpe=-2.02  MaxDD=  6.86%  AvgP=-0.217% ✗
+  HOOD                      n=  13  WR= 61.5%  PF= 2.23  Sharpe= 5.10  MaxDD=  4.78%  AvgP=+0.552% ✓
+
+========================================================================
+ VERDICT: FAIL — no confirmed OOS edge  (PF 0.95  Sharpe -0.30  WR 47.1%)
+ OOS MaxDD=56.62%  AvgP=-0.027%/trade  n=913
+ Total runtime: 3m 11s  (fetch 5s + walk 187s)
+========================================================================
+[31mnasdaq100    1h         913   47.1%    0.95     -0.30[0m
+========================================================================
+ INTRADAY BACKTEST 2YR  |  100 symbols  |  threshold=90  |  CALLS only
+ Data: IBKR 15-min bars × 2 years  (Yahoo 60-day fallback if unavailable)
+ Slippage: 0.10% RT  |  MaxHold: 26 bars (6h)  |  Cooldown: 8 bars (2h)
+ Primary window: 130 15-min bars  |  HTF: 1-hour (aggregated)
+ Cache: 0 hits / 101 need fetch
+ Estimated runtime: ~138m 25s  (fetch 505s + walk 7800s)
+========================================================================
+  0/101 cached  |  101 need IBKR/Yahoo fetch
+  Fetching 101 symbols in parallel (5 workers)…
+    [  1/101] SPY     12931 bars  (IBKR)
+    [  2/101] MSFT    12932 bars  (IBKR)
+    [  3/101] AMZN    12932 bars  (IBKR)
+    [  4/101] AAPL    12932 bars  (IBKR)
+    [  5/101] META    12932 bars  (IBKR)
+    [  6/101] GOOGL   12932 bars  (IBKR)
+    [  7/101] NVDA    12932 bars  (IBKR)
+    [  8/101] TSLA    12932 bars  (IBKR)
+    [  9/101] NFLX    12932 bars  (IBKR)
+    [ 10/101] AMD     12932 bars  (IBKR)
+    [ 11/101] ADBE    12932 bars  (IBKR)
+    [ 12/101] QCOM    12932 bars  (IBKR)
+    [ 13/101] INTC    12954 bars  (IBKR)
+    [ 14/101] CSCO    12954 bars  (IBKR)
+    [ 15/101] GOOG     1560 bars  (IBKR)
+    [ 16/101] AMGN    12954 bars  (IBKR)
+    [ 17/101] INTU     1560 bars  (IBKR)
+    [ 18/101] AMAT    12933 bars  (IBKR)
+    [ 19/101] MU      12933 bars  (IBKR)
+    [ 20/101] COST     1560 bars  (IBKR)
+    [ 21/101] TXN      1560 bars  (IBKR)
+    [ 22/101] AVGO     1560 bars  (IBKR)
+    [ 23/101] SBUX     1560 bars  (IBKR)
+    [ 24/101] MRVL    12932 bars  (IBKR)
+    [ 25/101] ISRG     1560 bars  (IBKR)
+    [ 26/101] LRCX     1560 bars  (IBKR)
+    [ 27/101] KLAC     1560 bars  (IBKR)
+    [ 28/101] ADI      1560 bars  (IBKR)
+    [ 29/101] REGN     1560 bars  (IBKR)
+    [ 30/101] CRWD     1560 bars  (IBKR)
+    [ 31/101] PANW     1560 bars  (IBKR)
+    [ 32/101] ABNB    12933 bars  (IBKR)
+    [ 33/101] SNPS     1560 bars  (IBKR)
+    [ 34/101] CDNS     1560 bars  (IBKR)
+    [ 35/101] MNST     1560 bars  (IBKR)
+    [ 36/101] MCHP     1560 bars  (IBKR)
+    [ 37/101] FTNT     1560 bars  (IBKR)
+    [ 38/101] ASML     1560 bars  (IBKR)
+    [ 39/101] PAYX     1560 bars  (IBKR)
+    [ 40/101] KDP      1560 bars  (IBKR)
+    [ 41/101] BIIB    12933 bars  (IBKR)
+    [ 42/101] PCAR     1560 bars  (IBKR)
+    [ 43/101] ORLY     1560 bars  (IBKR)
+    [ 44/101] DXCM     1560 bars  (IBKR)
+    [ 45/101] IDXX     1560 bars  (IBKR)
+    [ 46/101] GEHC     1560 bars  (IBKR)
+    [ 47/101] CSGP     1560 bars  (IBKR)
+    [ 48/101] EXC      1560 bars  (IBKR)
+    [ 49/101] ODFL     1560 bars  (IBKR)
+    [ 50/101] ON       1560 bars  (IBKR)
+    [ 51/101] VRSK     1560 bars  (IBKR)
+    [ 52/101] ILMN     1560 bars  (IBKR)
+    [ 53/101] FAST     1560 bars  (IBKR)
+    [ 54/101] GFS      1560 bars  (IBKR)
+    [ 55/101] ZS       1560 bars  (IBKR)
+    [ 56/101] WDAY     1560 bars  (IBKR)
+    [ 57/101] ANSS      no data  (Yahoo)
+    [ 58/101] SPLK      no data  (Yahoo)
+    [ 59/101] TEAM     1560 bars  (IBKR)
+    [ 60/101] SGEN      no data  (Yahoo)
+    [ 61/101] DLTR     1560 bars  (IBKR)
+    [ 62/101] CEG      1560 bars  (IBKR)
+    [ 63/101] FANG     1560 bars  (IBKR)
+    [ 64/101] XEL      1560 bars  (IBKR)
+    [ 65/101] CTSH     1560 bars  (IBKR)
+    [ 66/101] MTCH     1560 bars  (IBKR)
+    [ 67/101] CPRT     1560 bars  (IBKR)
+    [ 68/101] GILD     1560 bars  (IBKR)
+    [ 69/101] VRSN     1560 bars  (IBKR)
+    [ 70/101] WBD      1560 bars  (IBKR)
+    [ 71/101] HON     12954 bars  (IBKR)
+    [ 72/101] EA       1560 bars  (IBKR)
+    [ 73/101] SIRI     1560 bars  (IBKR)
+    [ 74/101] LULU     1560 bars  (IBKR)
+    [ 75/101] AEP      1560 bars  (IBKR)
+    [ 76/101] TTD      1560 bars  (IBKR)
+    [ 77/101] ALGN     1560 bars  (IBKR)
+    [ 78/101] EBAY     1560 bars  (IBKR)
+    [ 79/101] TTWO     1560 bars  (IBKR)
+    [ 80/101] MDB      1560 bars  (IBKR)
+    [ 81/101] NET      1560 bars  (IBKR)
+    [ 82/101] DDOG     1560 bars  (IBKR)
+    [ 83/101] ROKU     1560 bars  (IBKR)
+    [ 84/101] LYFT    12934 bars  (IBKR)
+    [ 85/101] UBER    12932 bars  (IBKR)
+    [ 86/101] DASH    12933 bars  (IBKR)
+    [ 87/101] SNOW     1560 bars  (IBKR)
+    [ 88/101] DOCU     1560 bars  (IBKR)
+    [ 89/101] ZM       1560 bars  (IBKR)
+    [ 90/101] PLTR    12954 bars  (IBKR)
+    [ 91/101] PTON     1560 bars  (IBKR)
+    [ 92/101] SMCI    12954 bars  (IBKR)
+    [ 93/101] HOOD     1560 bars  (IBKR)
+    [ 94/101] COIN     1560 bars  (IBKR)
+    [ 95/101] RBLX     1560 bars  (IBKR)
+    [ 96/101] ARM      1560 bars  (IBKR)
+    [ 97/101] IONQ     1560 bars  (IBKR)
+    [ 98/101] MSTR     1560 bars  (IBKR)
+    [ 99/101] RDDT     1560 bars  (IBKR)
+    [100/101] APP      1560 bars  (IBKR)
+    [101/101] ASTS     1560 bars  (IBKR)
+  Done: 98/101 symbols returned data
+
+ Date range : 2024-05-14 → 2026-05-15  (731 days)
+ IS cutoff  : 2024-05-14 → 2025-09-14
+ OOS period : 2025-09-15 → 2026-05-15
+
+ Fetch done in 5s
+ Running walk-forward on 100 symbols…
+   AAPL     13 trades  (4 OOS)
+   MSFT      6 trades  (3 OOS)
+   NVDA     60 trades  (21 OOS)
+   AMZN     28 trades  (12 OOS)
+   META     36 trades  (7 OOS)
+   GOOGL    18 trades  (8 OOS)
+   TSLA     99 trades  (30 OOS)
+   AVGO     13 trades  (13 OOS)
+   NFLX     24 trades  (7 OOS)
+   AMD      89 trades  (33 OOS)
+   ADBE     21 trades  (12 OOS)
+   QCOM     24 trades  (8 OOS)
+   INTC     89 trades  (36 OOS)
+   CSCO      7 trades  (3 OOS)
+   TXN       5 trades  (5 OOS)
+   INTU     10 trades  (10 OOS)
+   AMGN      7 trades  (4 OOS)
+   SBUX      2 trades  (2 OOS)
+   AMAT     46 trades  (28 OOS)
+   MU       78 trades  (35 OOS)
+   ISRG      1 trades  (1 OOS)
+   LRCX      3 trades  (3 OOS)
+   KLAC      5 trades  (5 OOS)
+   ADI       6 trades  (6 OOS)
+   MRVL     68 trades  (30 OOS)
+   REGN      4 trades  (4 OOS)
+   PANW     10 trades  (10 OOS)
+   CRWD      9 trades  (9 OOS)
+   SNPS     11 trades  (11 OOS)
+   CDNS     11 trades  (11 OOS)
+   ASML     12 trades  (12 OOS)
+   MCHP     10 trades  (10 OOS)
+   ABNB     28 trades  (13 OOS)
+   FTNT      3 trades  (3 OOS)
+   MNST      2 trades  (2 OOS)
+   PCAR      3 trades  (3 OOS)
+   PAYX      1 trades  (1 OOS)
+   DXCM      5 trades  (5 OOS)
+   CSGP      2 trades  (2 OOS)
+   BIIB     28 trades  (18 OOS)
+   IDXX      3 trades  (3 OOS)
+   GEHC      4 trades  (4 OOS)
+   ODFL     10 trades  (10 OOS)
+   FAST      2 trades  (2 OOS)
+   VRSK      4 trades  (4 OOS)
+   ON        9 trades  (9 OOS)
+   GFS       9 trades  (9 OOS)
+   ILMN     12 trades  (12 OOS)
+   ZS       11 trades  (11 OOS)
+   WDAY     13 trades  (13 OOS)
+   TEAM      6 trades  (6 OOS)
+   DLTR      7 trades  (7 OOS)
+   FANG      4 trades  (4 OOS)
+   CEG       7 trades  (7 OOS)
+   XEL       1 trades  (1 OOS)
+   CTSH      4 trades  (4 OOS)
+   MTCH      8 trades  (8 OOS)
+   VRSN      3 trades  (3 OOS)
+   CPRT      3 trades  (3 OOS)
+   SIRI      5 trades  (5 OOS)
+   LULU      5 trades  (5 OOS)
+   HON       5 trades  (1 OOS)
+   TTD       7 trades  (7 OOS)
+   EBAY      6 trades  (6 OOS)
+   ALGN      9 trades  (9 OOS)
+   TTWO      4 trades  (4 OOS)
+   MDB      11 trades  (11 OOS)
+   DDOG      5 trades  (5 OOS)
+   NET      12 trades  (12 OOS)
+   SNOW      3 trades  (3 OOS)
+   ROKU     11 trades  (11 OOS)
+   DOCU      4 trades  (4 OOS)
+   ZM        7 trades  (7 OOS)
+   PTON     20 trades  (20 OOS)
+   LYFT     95 trades  (37 OOS)
+   UBER     47 trades  (12 OOS)
+   DASH     52 trades  (20 OOS)
+   RBLX     13 trades  (13 OOS)
+   HOOD     13 trades  (13 OOS)
+   COIN      8 trades  (8 OOS)
+   PLTR     97 trades  (35 OOS)
+   IONQ     10 trades  (10 OOS)
+   SMCI    107 trades  (34 OOS)
+   ARM      15 trades  (15 OOS)
+   MSTR     17 trades  (17 OOS)
+   ASTS     11 trades  (11 OOS)
+   RDDT      9 trades  (9 OOS)
+   APP       9 trades  (9 OOS)
+
+ Total trades: 1634   IS: 721   OOS: 913
+
+────────────────────────────────────────────────────────────────────────
+ OVERALL
+────────────────────────────────────────────────────────────────────────
+  In-sample                 n= 721  WR= 43.7%  PF= 0.81  Sharpe=-1.23  MaxDD=120.34%  AvgP=-0.152% ✗
+  Out-of-sample             n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  Combined                  n=1634  WR= 45.6%  PF= 0.88  Sharpe=-0.77  MaxDD=154.47%  AvgP=-0.082% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY GRADE
+────────────────────────────────────────────────────────────────────────
+  Grade S                   n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  Grade A                   —
+  Grade B                   —
+  Grade C                   —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY REGIME
+────────────────────────────────────────────────────────────────────────
+  Bull (CALL only)          n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  Bear (PUT only)           —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY DIRECTION
+────────────────────────────────────────────────────────────────────────
+  CALL                      n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  PUT                       —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY SIGNAL HOUR (ET)
+────────────────────────────────────────────────────────────────────────
+  10:xx ET                  n= 482  WR= 46.9%  PF= 0.98  Sharpe=-0.14  MaxDD= 30.93%  AvgP=-0.015%
+  11:xx ET                  n=  81  WR= 58.0%  PF= 1.15  Sharpe= 0.94  MaxDD=  9.06%  AvgP=+0.088%
+  12:xx ET                  n=  48  WR= 66.7%  PF= 2.11  Sharpe= 4.82  MaxDD=  5.19%  AvgP=+0.356% ✓
+  13:xx ET                  n=  40  WR= 52.5%  PF= 1.15  Sharpe= 0.90  MaxDD=  5.46%  AvgP=+0.073%
+  14:xx ET                  n=  89  WR= 39.3%  PF= 0.51  Sharpe=-4.08  MaxDD= 23.43%  AvgP=-0.222% ✗
+  15:xx ET                  n= 173  WR= 39.9%  PF= 0.58  Sharpe=-3.27  MaxDD= 28.48%  AvgP=-0.144% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY EXIT TYPE
+────────────────────────────────────────────────────────────────────────
+  target                    n=  97  WR=100.0%  PF=999.00  Sharpe=46.86  MaxDD=  0.00%  AvgP=+2.496% ✓
+  stop                      n= 208  WR=  0.0%  PF= 0.00  Sharpe=-52.23  MaxDD=369.53%  AvgP=-1.777% ✗
+  timeout                   n= 608  WR= 54.8%  PF= 1.69  Sharpe= 3.10  MaxDD=  7.46%  AvgP=+0.169%
+
+────────────────────────────────────────────────────────────────────────
+ OOS TOP SYMBOLS (by trade count)
+────────────────────────────────────────────────────────────────────────
+  LYFT                      n=  37  WR= 48.6%  PF= 0.89  Sharpe=-0.69  MaxDD=  8.05%  AvgP=-0.050% ✗
+  INTC                      n=  36  WR= 41.7%  PF= 0.75  Sharpe=-1.98  MaxDD= 12.95%  AvgP=-0.233% ✗
+  MU                        n=  35  WR= 60.0%  PF= 1.16  Sharpe= 0.95  MaxDD= 10.21%  AvgP=+0.098%
+  PLTR                      n=  35  WR= 37.1%  PF= 0.42  Sharpe=-5.44  MaxDD= 15.68%  AvgP=-0.430% ✗
+  SMCI                      n=  34  WR= 50.0%  PF= 0.93  Sharpe=-0.46  MaxDD= 12.14%  AvgP=-0.057%
+  AMD                       n=  33  WR= 48.5%  PF= 1.30  Sharpe= 1.75  MaxDD= 12.96%  AvgP=+0.176%
+  TSLA                      n=  30  WR= 53.3%  PF= 0.96  Sharpe=-0.28  MaxDD= 13.01%  AvgP=-0.024%
+  MRVL                      n=  30  WR= 50.0%  PF= 1.18  Sharpe= 0.99  MaxDD=  7.21%  AvgP=+0.092%
+  AMAT                      n=  28  WR= 67.9%  PF= 5.55  Sharpe= 8.50  MaxDD=  1.37%  AvgP=+0.487% ✓
+  NVDA                      n=  21  WR= 42.9%  PF= 0.73  Sharpe=-2.10  MaxDD=  7.52%  AvgP=-0.143% ✗
+  PTON                      n=  20  WR= 30.0%  PF= 0.99  Sharpe=-0.08  MaxDD=  6.57%  AvgP=-0.013% ✗
+  DASH                      n=  20  WR= 35.0%  PF= 0.42  Sharpe=-5.53  MaxDD=  9.65%  AvgP=-0.406% ✗
+  BIIB                      n=  18  WR= 33.3%  PF= 0.47  Sharpe=-5.09  MaxDD=  7.08%  AvgP=-0.368% ✗
+  MSTR                      n=  17  WR= 47.1%  PF= 1.07  Sharpe= 0.42  MaxDD=  6.40%  AvgP=+0.047%
+  ARM                       n=  15  WR= 33.3%  PF= 0.52  Sharpe=-4.25  MaxDD=  9.63%  AvgP=-0.516% ✗
+  AVGO                      n=  13  WR= 46.2%  PF= 1.04  Sharpe= 0.24  MaxDD=  2.83%  AvgP=+0.011%
+  ABNB                      n=  13  WR= 30.8%  PF= 0.22  Sharpe=-10.01  MaxDD=  8.44%  AvgP=-0.592% ✗
+  WDAY                      n=  13  WR= 38.5%  PF= 1.23  Sharpe= 1.22  MaxDD=  6.37%  AvgP=+0.113% ✗
+  RBLX                      n=  13  WR= 46.2%  PF= 0.73  Sharpe=-2.02  MaxDD=  6.86%  AvgP=-0.217% ✗
+  HOOD                      n=  13  WR= 61.5%  PF= 2.23  Sharpe= 5.10  MaxDD=  4.78%  AvgP=+0.552% ✓
+
+========================================================================
+ VERDICT: FAIL — no confirmed OOS edge  (PF 0.95  Sharpe -0.30  WR 47.1%)
+ OOS MaxDD=56.62%  AvgP=-0.027%/trade  n=913
+ Total runtime: 3m 8s  (fetch 5s + walk 184s)
+========================================================================
+[31mnasdaq100    2h         913   47.1%    0.95     -0.30[0m
+========================================================================
+ INTRADAY BACKTEST 2YR  |  100 symbols  |  threshold=90  |  CALLS only
+ Data: IBKR 15-min bars × 2 years  (Yahoo 60-day fallback if unavailable)
+ Slippage: 0.10% RT  |  MaxHold: 26 bars (6h)  |  Cooldown: 8 bars (2h)
+ Primary window: 130 15-min bars  |  HTF: 1-hour (aggregated)
+ Cache: 0 hits / 101 need fetch
+ Estimated runtime: ~138m 25s  (fetch 505s + walk 7800s)
+========================================================================
+  0/101 cached  |  101 need IBKR/Yahoo fetch
+  Fetching 101 symbols in parallel (5 workers)…
+    [  1/101] AAPL    12932 bars  (IBKR)
+    [  2/101] NVDA    12932 bars  (IBKR)
+    [  3/101] MSFT    12932 bars  (IBKR)
+    [  4/101] SPY     12931 bars  (IBKR)
+    [  5/101] META    12932 bars  (IBKR)
+    [  6/101] AMZN    12932 bars  (IBKR)
+    [  7/101] GOOGL   12932 bars  (IBKR)
+    [  8/101] TSLA    12932 bars  (IBKR)
+    [  9/101] AMD     12932 bars  (IBKR)
+    [ 10/101] NFLX    12932 bars  (IBKR)
+    [ 11/101] ADBE    12932 bars  (IBKR)
+    [ 12/101] QCOM    12932 bars  (IBKR)
+    [ 13/101] INTC    12954 bars  (IBKR)
+    [ 14/101] CSCO    12954 bars  (IBKR)
+    [ 15/101] TXN      1560 bars  (IBKR)
+    [ 16/101] AMGN    12954 bars  (IBKR)
+    [ 17/101] COST     1560 bars  (IBKR)
+    [ 18/101] AMAT    12933 bars  (IBKR)
+    [ 19/101] MU      12933 bars  (IBKR)
+    [ 20/101] INTU     1560 bars  (IBKR)
+    [ 21/101] GOOG     1560 bars  (IBKR)
+    [ 22/101] AVGO     1560 bars  (IBKR)
+    [ 23/101] SBUX     1560 bars  (IBKR)
+    [ 24/101] MRVL    12932 bars  (IBKR)
+    [ 25/101] ISRG     1560 bars  (IBKR)
+    [ 26/101] ADI      1560 bars  (IBKR)
+    [ 27/101] LRCX     1560 bars  (IBKR)
+    [ 28/101] KLAC     1560 bars  (IBKR)
+    [ 29/101] REGN     1560 bars  (IBKR)
+    [ 30/101] CDNS     1560 bars  (IBKR)
+    [ 31/101] SNPS     1560 bars  (IBKR)
+    [ 32/101] ABNB    12933 bars  (IBKR)
+    [ 33/101] PANW     1560 bars  (IBKR)
+    [ 34/101] ASML     1560 bars  (IBKR)
+    [ 35/101] CRWD     1560 bars  (IBKR)
+    [ 36/101] MCHP     1560 bars  (IBKR)
+    [ 37/101] FTNT     1560 bars  (IBKR)
+    [ 38/101] MNST     1560 bars  (IBKR)
+    [ 39/101] PCAR     1560 bars  (IBKR)
+    [ 40/101] ORLY     1560 bars  (IBKR)
+    [ 41/101] BIIB    12933 bars  (IBKR)
+    [ 42/101] PAYX     1560 bars  (IBKR)
+    [ 43/101] DXCM     1560 bars  (IBKR)
+    [ 44/101] KDP      1560 bars  (IBKR)
+    [ 45/101] CSGP     1560 bars  (IBKR)
+    [ 46/101] IDXX     1560 bars  (IBKR)
+    [ 47/101] EXC      1560 bars  (IBKR)
+    [ 48/101] ODFL     1560 bars  (IBKR)
+    [ 49/101] GEHC     1560 bars  (IBKR)
+    [ 50/101] FAST     1560 bars  (IBKR)
+    [ 51/101] VRSK     1560 bars  (IBKR)
+    [ 52/101] GFS      1560 bars  (IBKR)
+    [ 53/101] ZS       1560 bars  (IBKR)
+    [ 54/101] WDAY     1560 bars  (IBKR)
+    [ 55/101] ILMN     1560 bars  (IBKR)
+    [ 56/101] SPLK      no data  (Yahoo)
+    [ 57/101] TEAM     1560 bars  (IBKR)
+    [ 58/101] ANSS      no data  (Yahoo)
+    [ 59/101] ON       1560 bars  (IBKR)
+    [ 60/101] SGEN      no data  (Yahoo)
+    [ 61/101] DLTR     1560 bars  (IBKR)
+    [ 62/101] FANG     1560 bars  (IBKR)
+    [ 64/101] CTSH     1560 bars  (IBKR)
+    [ 65/101] CEG      1560 bars  (IBKR)
+    [ 65/101] XEL      1560 bars  (IBKR)
+    [ 66/101] MTCH     1560 bars  (IBKR)
+    [ 67/101] CPRT     1560 bars  (IBKR)
+    [ 68/101] GILD     1560 bars  (IBKR)
+    [ 69/101] VRSN     1560 bars  (IBKR)
+    [ 70/101] WBD      1560 bars  (IBKR)
+    [ 71/101] HON     12954 bars  (IBKR)
+    [ 72/101] EA       1560 bars  (IBKR)
+    [ 73/101] SIRI     1560 bars  (IBKR)
+    [ 74/101] AEP      1560 bars  (IBKR)
+    [ 75/101] LULU     1560 bars  (IBKR)
+    [ 76/101] TTD      1560 bars  (IBKR)
+    [ 77/101] EBAY     1560 bars  (IBKR)
+    [ 78/101] TTWO     1560 bars  (IBKR)
+    [ 79/101] ALGN     1560 bars  (IBKR)
+    [ 80/101] DDOG     1560 bars  (IBKR)
+    [ 81/101] NET      1560 bars  (IBKR)
+    [ 82/101] SNOW     1560 bars  (IBKR)
+    [ 83/101] MDB      1560 bars  (IBKR)
+    [ 84/101] LYFT    12934 bars  (IBKR)
+    [ 85/101] UBER    12932 bars  (IBKR)
+    [ 86/101] DASH    12933 bars  (IBKR)
+    [ 87/101] ROKU     1560 bars  (IBKR)
+    [ 88/101] DOCU     1560 bars  (IBKR)
+    [ 89/101] ZM       1560 bars  (IBKR)
+    [ 90/101] PLTR    12954 bars  (IBKR)
+    [ 91/101] PTON     1560 bars  (IBKR)
+    [ 92/101] SMCI    12954 bars  (IBKR)
+    [ 93/101] HOOD     1560 bars  (IBKR)
+    [ 94/101] RBLX     1560 bars  (IBKR)
+    [ 95/101] COIN     1560 bars  (IBKR)
+    [ 96/101] IONQ     1560 bars  (IBKR)
+    [ 97/101] RDDT     1560 bars  (IBKR)
+    [ 98/101] MSTR     1560 bars  (IBKR)
+    [ 99/101] ASTS     1560 bars  (IBKR)
+    [100/101] ARM      1560 bars  (IBKR)
+    [101/101] APP      1560 bars  (IBKR)
+  Done: 98/101 symbols returned data
+
+ Date range : 2024-05-14 → 2026-05-15  (731 days)
+ IS cutoff  : 2024-05-14 → 2025-09-14
+ OOS period : 2025-09-15 → 2026-05-15
+
+ Fetch done in 7s
+ Running walk-forward on 100 symbols…
+   AAPL     13 trades  (4 OOS)
+   MSFT      6 trades  (3 OOS)
+   NVDA     60 trades  (21 OOS)
+   AMZN     28 trades  (12 OOS)
+   META     36 trades  (7 OOS)
+   GOOGL    18 trades  (8 OOS)
+   TSLA     99 trades  (30 OOS)
+   AVGO     13 trades  (13 OOS)
+   NFLX     24 trades  (7 OOS)
+   AMD      89 trades  (33 OOS)
+   ADBE     21 trades  (12 OOS)
+   QCOM     24 trades  (8 OOS)
+   INTC     89 trades  (36 OOS)
+   CSCO      7 trades  (3 OOS)
+   TXN       5 trades  (5 OOS)
+   INTU     10 trades  (10 OOS)
+   AMGN      7 trades  (4 OOS)
+   SBUX      2 trades  (2 OOS)
+   AMAT     46 trades  (28 OOS)
+   MU       78 trades  (35 OOS)
+   ISRG      1 trades  (1 OOS)
+   LRCX      3 trades  (3 OOS)
+   KLAC      5 trades  (5 OOS)
+   ADI       6 trades  (6 OOS)
+   MRVL     68 trades  (30 OOS)
+   REGN      4 trades  (4 OOS)
+   PANW     10 trades  (10 OOS)
+   CRWD      9 trades  (9 OOS)
+   SNPS     11 trades  (11 OOS)
+   CDNS     11 trades  (11 OOS)
+   ASML     12 trades  (12 OOS)
+   MCHP     10 trades  (10 OOS)
+   ABNB     28 trades  (13 OOS)
+   FTNT      3 trades  (3 OOS)
+   MNST      2 trades  (2 OOS)
+   PCAR      3 trades  (3 OOS)
+   PAYX      1 trades  (1 OOS)
+   DXCM      5 trades  (5 OOS)
+   CSGP      2 trades  (2 OOS)
+   BIIB     28 trades  (18 OOS)
+   IDXX      3 trades  (3 OOS)
+   GEHC      4 trades  (4 OOS)
+   ODFL     10 trades  (10 OOS)
+   FAST      2 trades  (2 OOS)
+   VRSK      4 trades  (4 OOS)
+   ON        9 trades  (9 OOS)
+   GFS       9 trades  (9 OOS)
+   ILMN     12 trades  (12 OOS)
+   ZS       11 trades  (11 OOS)
+   WDAY     13 trades  (13 OOS)
+   TEAM      6 trades  (6 OOS)
+   DLTR      7 trades  (7 OOS)
+   FANG      4 trades  (4 OOS)
+   CEG       7 trades  (7 OOS)
+   XEL       1 trades  (1 OOS)
+   CTSH      4 trades  (4 OOS)
+   MTCH      8 trades  (8 OOS)
+   VRSN      3 trades  (3 OOS)
+   CPRT      3 trades  (3 OOS)
+   SIRI      5 trades  (5 OOS)
+   LULU      5 trades  (5 OOS)
+   HON       5 trades  (1 OOS)
+   TTD       7 trades  (7 OOS)
+   EBAY      6 trades  (6 OOS)
+   ALGN      9 trades  (9 OOS)
+   TTWO      4 trades  (4 OOS)
+   MDB      11 trades  (11 OOS)
+   DDOG      5 trades  (5 OOS)
+   NET      12 trades  (12 OOS)
+   SNOW      3 trades  (3 OOS)
+   ROKU     11 trades  (11 OOS)
+   DOCU      4 trades  (4 OOS)
+   ZM        7 trades  (7 OOS)
+   PTON     20 trades  (20 OOS)
+   LYFT     95 trades  (37 OOS)
+   UBER     47 trades  (12 OOS)
+   DASH     52 trades  (20 OOS)
+   RBLX     13 trades  (13 OOS)
+   HOOD     13 trades  (13 OOS)
+   COIN      8 trades  (8 OOS)
+   PLTR     97 trades  (35 OOS)
+   IONQ     10 trades  (10 OOS)
+   SMCI    107 trades  (34 OOS)
+   ARM      15 trades  (15 OOS)
+   MSTR     17 trades  (17 OOS)
+   ASTS     11 trades  (11 OOS)
+   RDDT      9 trades  (9 OOS)
+   APP       9 trades  (9 OOS)
+
+ Total trades: 1634   IS: 721   OOS: 913
+
+────────────────────────────────────────────────────────────────────────
+ OVERALL
+────────────────────────────────────────────────────────────────────────
+  In-sample                 n= 721  WR= 43.7%  PF= 0.81  Sharpe=-1.23  MaxDD=120.34%  AvgP=-0.152% ✗
+  Out-of-sample             n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  Combined                  n=1634  WR= 45.6%  PF= 0.88  Sharpe=-0.77  MaxDD=154.47%  AvgP=-0.082% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY GRADE
+────────────────────────────────────────────────────────────────────────
+  Grade S                   n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  Grade A                   —
+  Grade B                   —
+  Grade C                   —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY REGIME
+────────────────────────────────────────────────────────────────────────
+  Bull (CALL only)          n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  Bear (PUT only)           —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY DIRECTION
+────────────────────────────────────────────────────────────────────────
+  CALL                      n= 913  WR= 47.1%  PF= 0.95  Sharpe=-0.30  MaxDD= 56.62%  AvgP=-0.027%
+  PUT                       —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY SIGNAL HOUR (ET)
+────────────────────────────────────────────────────────────────────────
+  10:xx ET                  n= 482  WR= 46.9%  PF= 0.98  Sharpe=-0.14  MaxDD= 30.93%  AvgP=-0.015%
+  11:xx ET                  n=  81  WR= 58.0%  PF= 1.15  Sharpe= 0.94  MaxDD=  9.06%  AvgP=+0.088%
+  12:xx ET                  n=  48  WR= 66.7%  PF= 2.11  Sharpe= 4.82  MaxDD=  5.19%  AvgP=+0.356% ✓
+  13:xx ET                  n=  40  WR= 52.5%  PF= 1.15  Sharpe= 0.90  MaxDD=  5.46%  AvgP=+0.073%
+  14:xx ET                  n=  89  WR= 39.3%  PF= 0.51  Sharpe=-4.08  MaxDD= 23.43%  AvgP=-0.222% ✗
+  15:xx ET                  n= 173  WR= 39.9%  PF= 0.58  Sharpe=-3.27  MaxDD= 28.48%  AvgP=-0.144% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY EXIT TYPE
+────────────────────────────────────────────────────────────────────────
+  target                    n=  97  WR=100.0%  PF=999.00  Sharpe=46.86  MaxDD=  0.00%  AvgP=+2.496% ✓
+  stop                      n= 208  WR=  0.0%  PF= 0.00  Sharpe=-52.23  MaxDD=369.53%  AvgP=-1.777% ✗
+  timeout                   n= 608  WR= 54.8%  PF= 1.69  Sharpe= 3.10  MaxDD=  7.46%  AvgP=+0.169%
+
+────────────────────────────────────────────────────────────────────────
+ OOS TOP SYMBOLS (by trade count)
+────────────────────────────────────────────────────────────────────────
+  LYFT                      n=  37  WR= 48.6%  PF= 0.89  Sharpe=-0.69  MaxDD=  8.05%  AvgP=-0.050% ✗
+  INTC                      n=  36  WR= 41.7%  PF= 0.75  Sharpe=-1.98  MaxDD= 12.95%  AvgP=-0.233% ✗
+  MU                        n=  35  WR= 60.0%  PF= 1.16  Sharpe= 0.95  MaxDD= 10.21%  AvgP=+0.098%
+  PLTR                      n=  35  WR= 37.1%  PF= 0.42  Sharpe=-5.44  MaxDD= 15.68%  AvgP=-0.430% ✗
+  SMCI                      n=  34  WR= 50.0%  PF= 0.93  Sharpe=-0.46  MaxDD= 12.14%  AvgP=-0.057%
+  AMD                       n=  33  WR= 48.5%  PF= 1.30  Sharpe= 1.75  MaxDD= 12.96%  AvgP=+0.176%
+  TSLA                      n=  30  WR= 53.3%  PF= 0.96  Sharpe=-0.28  MaxDD= 13.01%  AvgP=-0.024%
+  MRVL                      n=  30  WR= 50.0%  PF= 1.18  Sharpe= 0.99  MaxDD=  7.21%  AvgP=+0.092%
+  AMAT                      n=  28  WR= 67.9%  PF= 5.55  Sharpe= 8.50  MaxDD=  1.37%  AvgP=+0.487% ✓
+  NVDA                      n=  21  WR= 42.9%  PF= 0.73  Sharpe=-2.10  MaxDD=  7.52%  AvgP=-0.143% ✗
+  PTON                      n=  20  WR= 30.0%  PF= 0.99  Sharpe=-0.08  MaxDD=  6.57%  AvgP=-0.013% ✗
+  DASH                      n=  20  WR= 35.0%  PF= 0.42  Sharpe=-5.53  MaxDD=  9.65%  AvgP=-0.406% ✗
+  BIIB                      n=  18  WR= 33.3%  PF= 0.47  Sharpe=-5.09  MaxDD=  7.08%  AvgP=-0.368% ✗
+  MSTR                      n=  17  WR= 47.1%  PF= 1.07  Sharpe= 0.42  MaxDD=  6.40%  AvgP=+0.047%
+  ARM                       n=  15  WR= 33.3%  PF= 0.52  Sharpe=-4.25  MaxDD=  9.63%  AvgP=-0.516% ✗
+  AVGO                      n=  13  WR= 46.2%  PF= 1.04  Sharpe= 0.24  MaxDD=  2.83%  AvgP=+0.011%
+  ABNB                      n=  13  WR= 30.8%  PF= 0.22  Sharpe=-10.01  MaxDD=  8.44%  AvgP=-0.592% ✗
+  WDAY                      n=  13  WR= 38.5%  PF= 1.23  Sharpe= 1.22  MaxDD=  6.37%  AvgP=+0.113% ✗
+  RBLX                      n=  13  WR= 46.2%  PF= 0.73  Sharpe=-2.02  MaxDD=  6.86%  AvgP=-0.217% ✗
+  HOOD                      n=  13  WR= 61.5%  PF= 2.23  Sharpe= 5.10  MaxDD=  4.78%  AvgP=+0.552% ✓
+
+========================================================================
+ VERDICT: FAIL — no confirmed OOS edge  (PF 0.95  Sharpe -0.30  WR 47.1%)
+ OOS MaxDD=56.62%  AvgP=-0.027%/trade  n=913
+ Total runtime: 3m 9s  (fetch 7s + walk 182s)
+========================================================================
+[31mnasdaq100    EOD        913   47.1%    0.95     -0.30[0m
+
+========================================================================
+ INTRADAY BACKTEST 2YR  |  111 symbols  |  threshold=90  |  CALLS only
+ Data: IBKR 15-min bars × 2 years  (Yahoo 60-day fallback if unavailable)
+ Slippage: 0.10% RT  |  MaxHold: 26 bars (6h)  |  Cooldown: 8 bars (2h)
+ Primary window: 130 15-min bars  |  HTF: 1-hour (aggregated)
+ Cache: 0 hits / 112 need fetch
+ Estimated runtime: ~153m 38s  (fetch 560s + walk 8658s)
+========================================================================
+  0/112 cached  |  112 need IBKR/Yahoo fetch
+  Fetching 112 symbols in parallel (5 workers)…
+    [  1/112] SPY     12931 bars  (IBKR)
+    [  2/112] MSFT    12932 bars  (IBKR)
+    [  3/112] AAPL    12932 bars  (IBKR)
+    [  4/112] NVDA    12932 bars  (IBKR)
+    [  5/112] AMZN    12932 bars  (IBKR)
+    [  6/112] META    12932 bars  (IBKR)
+    [  7/112] TSLA    12932 bars  (IBKR)
+    [  8/112] GOOGL   12932 bars  (IBKR)
+    [  9/112] JPM     12933 bars  (IBKR)
+    [ 10/112] V       12932 bars  (IBKR)
+    [ 11/112] LLY     12933 bars  (IBKR)
+    [ 12/112] XOM     12932 bars  (IBKR)
+    [ 13/112] MA      12933 bars  (IBKR)
+    [ 14/112] HD      12954 bars  (IBKR)
+    [ 15/112] PG      12953 bars  (IBKR)
+    [ 16/112] JNJ     12954 bars  (IBKR)
+    [ 17/112] ORCL    12931 bars  (IBKR)
+    [ 18/112] BAC     12933 bars  (IBKR)
+    [ 19/112] BRK-B    1560 bars  (IBKR)
+    [ 20/112] UNH      1560 bars  (IBKR)
+    [ 21/112] COST     1560 bars  (IBKR)
+    [ 22/112] KO      12954 bars  (IBKR)
+    [ 23/112] MRK     12954 bars  (IBKR)
+    [ 25/112] CVX     12933 bars  (IBKR)
+    [ 25/112] CRM     12932 bars  (IBKR)
+    [ 26/112] ABBV     1560 bars  (IBKR)
+    [ 27/112] NFLX    12932 bars  (IBKR)
+    [ 28/112] AMD     12932 bars  (IBKR)
+    [ 29/112] QCOM    12932 bars  (IBKR)
+    [ 30/112] AVGO     1560 bars  (IBKR)
+    [ 31/112] TXN      1560 bars  (IBKR)
+    [ 32/112] WMT      1560 bars  (IBKR)
+    [ 33/112] ACN      1560 bars  (IBKR)
+    [ 34/112] ABT      1560 bars  (IBKR)
+    [ 35/112] TMO      1560 bars  (IBKR)
+    [ 36/112] LIN      1560 bars  (IBKR)
+    [ 37/112] CSCO    12954 bars  (IBKR)
+    [ 38/112] PM       1560 bars  (IBKR)
+    [ 39/112] IBM     12954 bars  (IBKR)
+    [ 40/112] NOW     12932 bars  (IBKR)
+    [ 41/112] INTC    12954 bars  (IBKR)
+    [ 42/112] DIS     12954 bars  (IBKR)
+    [ 43/112] GS      12933 bars  (IBKR)
+    [ 44/112] PEP      1560 bars  (IBKR)
+    [ 45/112] DHR      1560 bars  (IBKR)
+    [ 46/112] MU      12933 bars  (IBKR)
+    [ 47/112] ISRG     1560 bars  (IBKR)
+    [ 48/112] BLK      1560 bars  (IBKR)
+    [ 49/112] SPGI     1560 bars  (IBKR)
+    [ 50/112] VRTX    12933 bars  (IBKR)
+    [ 51/112] AMAT    12933 bars  (IBKR)
+    [ 52/112] GE       1560 bars  (IBKR)
+    [ 53/112] SYK      1560 bars  (IBKR)
+    [ 54/112] REGN     1560 bars  (IBKR)
+    [ 55/112] MS      12933 bars  (IBKR)
+    [ 56/112] ADP      1560 bars  (IBKR)
+    [ 57/112] AMGN    12954 bars  (IBKR)
+    [ 58/112] ADI      1560 bars  (IBKR)
+    [ 59/112] BKNG     1560 bars  (IBKR)
+    [ 60/112] KLAC     1560 bars  (IBKR)
+    [ 61/112] MMC       no data  (Yahoo)
+    [ 62/112] C        1560 bars  (IBKR)
+    [ 63/112] TJX      1560 bars  (IBKR)
+    [ 64/112] DE       1560 bars  (IBKR)
+    [ 65/112] PANW     1560 bars  (IBKR)
+    [ 66/112] LRCX     1560 bars  (IBKR)
+    [ 67/112] PLD      1560 bars  (IBKR)
+    [ 68/112] CB       1560 bars  (IBKR)
+    [ 69/112] BSX      1560 bars  (IBKR)
+    [ 70/112] FI        no data  (Yahoo)
+    [ 71/112] ZTS      1560 bars  (IBKR)
+    [ 72/112] COP      1560 bars  (IBKR)
+    [ 73/112] MO       1560 bars  (IBKR)
+    [ 74/112] MDLZ     1560 bars  (IBKR)
+    [ 75/112] ICE      1560 bars  (IBKR)
+    [ 76/112] SO       1560 bars  (IBKR)
+    [ 77/112] AON      1560 bars  (IBKR)
+    [ 78/112] CMG      1560 bars  (IBKR)
+    [ 79/112] SCHW     1560 bars  (IBKR)
+    [ 80/112] HUM      1560 bars  (IBKR)
+    [ 81/112] CI       1560 bars  (IBKR)
+    [ 82/112] WM       1560 bars  (IBKR)
+    [ 83/112] MCK      1560 bars  (IBKR)
+    [ 84/112] ITW      1560 bars  (IBKR)
+    [ 85/112] CTAS     1560 bars  (IBKR)
+    [ 86/112] SHW      1560 bars  (IBKR)
+    [ 87/112] PNC      1560 bars  (IBKR)
+    [ 88/112] TDG      1560 bars  (IBKR)
+    [ 89/112] USB      1560 bars  (IBKR)
+    [ 90/112] EOG      1560 bars  (IBKR)
+    [ 91/112] MSI      1560 bars  (IBKR)
+    [ 92/112] WCN      1560 bars  (IBKR)
+    [ 93/112] NSC      1560 bars  (IBKR)
+    [ 94/112] ECL      1560 bars  (IBKR)
+    [ 95/112] APH      1560 bars  (IBKR)
+    [ 96/112] WELL     1560 bars  (IBKR)
+    [ 97/112] OTIS     1560 bars  (IBKR)
+    [ 98/112] AJG      1560 bars  (IBKR)
+    [ 99/112] CMI      1560 bars  (IBKR)
+    [100/112] FTNT     1560 bars  (IBKR)
+    [101/112] CRWD     1560 bars  (IBKR)
+    [102/112] NET      1560 bars  (IBKR)
+    [103/112] DDOG     1560 bars  (IBKR)
+    [104/112] SNOW     1560 bars  (IBKR)
+    [105/112] UBER    12932 bars  (IBKR)
+    [107/112] DASH    12933 bars  (IBKR)
+    [107/112] ABNB    12933 bars  (IBKR)
+    [108/112] ZS       1560 bars  (IBKR)
+    [109/112] TEAM     1560 bars  (IBKR)
+    [110/112] WDAY     1560 bars  (IBKR)
+    [111/112] COIN     1560 bars  (IBKR)
+    [112/112] RBLX     1560 bars  (IBKR)
+  Done: 110/112 symbols returned data
+
+ Date range : 2024-05-15 → 2026-05-15  (730 days)
+ IS cutoff  : 2024-05-15 → 2025-09-15
+ OOS period : 2025-09-16 → 2026-05-15
+
+ Fetch done in 5s
+ Running walk-forward on 111 symbols…
+   AAPL     13 trades  (4 OOS)
+   MSFT      6 trades  (3 OOS)
+   NVDA     60 trades  (21 OOS)
+   AMZN     28 trades  (12 OOS)
+   META     36 trades  (7 OOS)
+   GOOGL    18 trades  (8 OOS)
+   TSLA     99 trades  (30 OOS)
+   AVGO     13 trades  (13 OOS)
+   JPM       6 trades  (2 OOS)
+   LLY      33 trades  (16 OOS)
+   V         1 trades  (0 OOS)
+   XOM       8 trades  (5 OOS)
+   MA        3 trades  (2 OOS)
+   HD        5 trades  (2 OOS)
+   PG        1 trades  (0 OOS)
+   JNJ       2 trades  (1 OOS)
+   ORCL     44 trades  (23 OOS)
+   BAC       9 trades  (5 OOS)
+   KO        1 trades  (0 OOS)
+   MRK      13 trades  (6 OOS)
+   CVX       2 trades  (0 OOS)
+   CRM      26 trades  (12 OOS)
+   NFLX     24 trades  (7 OOS)
+   AMD      89 trades  (32 OOS)
+   ACN       6 trades  (6 OOS)
+   QCOM     24 trades  (8 OOS)
+   TXN       5 trades  (5 OOS)
+   TMO       3 trades  (3 OOS)
+   PM        2 trades  (2 OOS)
+   DHR       1 trades  (1 OOS)
+   ISRG      1 trades  (1 OOS)
+   CSCO      7 trades  (3 OOS)
+   GE        1 trades  (1 OOS)
+   IBM      16 trades  (9 OOS)
+   NOW      24 trades  (12 OOS)
+   INTC     89 trades  (35 OOS)
+   DIS       6 trades  (1 OOS)
+   GS       26 trades  (14 OOS)
+   BLK       3 trades  (3 OOS)
+   SPGI      3 trades  (3 OOS)
+   MU       78 trades  (35 OOS)
+   SYK       1 trades  (1 OOS)
+   REGN      4 trades  (4 OOS)
+   ADP       2 trades  (2 OOS)
+   VRTX     13 trades  (10 OOS)
+   AMAT     46 trades  (28 OOS)
+   ADI       6 trades  (6 OOS)
+   BKNG      7 trades  (7 OOS)
+   KLAC      5 trades  (5 OOS)
+   MS       13 trades  (6 OOS)
+   C         4 trades  (4 OOS)
+   AMGN      7 trades  (4 OOS)
+   DE        1 trades  (1 OOS)
+   PANW     10 trades  (10 OOS)
+   LRCX      3 trades  (3 OOS)
+   BSX       2 trades  (2 OOS)
+   PLD       1 trades  (1 OOS)
+   COP       4 trades  (4 OOS)
+   MDLZ      1 trades  (1 OOS)
+   CMG       7 trades  (7 OOS)
+   HUM       7 trades  (7 OOS)
+   CI        1 trades  (1 OOS)
+   MCK       2 trades  (2 OOS)
+   SHW       3 trades  (3 OOS)
+   PNC       1 trades  (1 OOS)
+   USB       4 trades  (4 OOS)
+   TDG       4 trades  (4 OOS)
+   EOG       1 trades  (1 OOS)
+   NSC       1 trades  (1 OOS)
+   APH       7 trades  (7 OOS)
+   ECL       1 trades  (1 OOS)
+   OTIS      2 trades  (2 OOS)
+   CMI       9 trades  (9 OOS)
+   FTNT      3 trades  (3 OOS)
+   CRWD      9 trades  (9 OOS)
+   NET      12 trades  (12 OOS)
+   SNOW      3 trades  (3 OOS)
+   DDOG      5 trades  (5 OOS)
+   ZS       11 trades  (11 OOS)
+   WDAY     13 trades  (13 OOS)
+   TEAM      6 trades  (6 OOS)
+   UBER     47 trades  (12 OOS)
+   ABNB     28 trades  (13 OOS)
+   DASH     52 trades  (20 OOS)
+   RBLX     13 trades  (13 OOS)
+   COIN      8 trades  (8 OOS)
+
+ Total trades: 1225   IS: 595   OOS: 630
+
+────────────────────────────────────────────────────────────────────────
+ OVERALL
+────────────────────────────────────────────────────────────────────────
+  In-sample                 n= 595  WR= 45.2%  PF= 0.90  Sharpe=-0.63  MaxDD= 56.49%  AvgP=-0.072%
+  Out-of-sample             n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  Combined                  n=1225  WR= 46.9%  PF= 0.93  Sharpe=-0.44  MaxDD= 66.60%  AvgP=-0.043%
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY GRADE
+────────────────────────────────────────────────────────────────────────
+  Grade S                   n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  Grade A                   —
+  Grade B                   —
+  Grade C                   —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY REGIME
+────────────────────────────────────────────────────────────────────────
+  Bull (CALL only)          n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  Bear (PUT only)           —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY DIRECTION
+────────────────────────────────────────────────────────────────────────
+  CALL                      n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  PUT                       —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY SIGNAL HOUR (ET)
+────────────────────────────────────────────────────────────────────────
+  10:xx ET                  n= 366  WR= 47.3%  PF= 0.96  Sharpe=-0.24  MaxDD= 23.92%  AvgP=-0.022%
+  11:xx ET                  n=  53  WR= 58.5%  PF= 1.55  Sharpe= 2.80  MaxDD=  9.67%  AvgP=+0.243% ✓
+  12:xx ET                  n=  40  WR= 67.5%  PF= 1.57  Sharpe= 2.89  MaxDD=  3.54%  AvgP=+0.191% ✓
+  13:xx ET                  n=  21  WR= 47.6%  PF= 0.85  Sharpe=-1.07  MaxDD=  5.58%  AvgP=-0.078% ✗
+  14:xx ET                  n=  43  WR= 37.2%  PF= 0.32  Sharpe=-7.30  MaxDD= 13.87%  AvgP=-0.305% ✗
+  15:xx ET                  n= 107  WR= 44.9%  PF= 0.72  Sharpe=-1.96  MaxDD=  8.07%  AvgP=-0.067% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY EXIT TYPE
+────────────────────────────────────────────────────────────────────────
+  target                    n=  72  WR=100.0%  PF=999.00  Sharpe=53.76  MaxDD=  0.00%  AvgP=+2.193% ✓
+  stop                      n= 139  WR=  0.0%  PF= 0.00  Sharpe=-54.35  MaxDD=222.03%  AvgP=-1.597% ✗
+  timeout                   n= 419  WR= 55.6%  PF= 1.57  Sharpe= 2.74  MaxDD=  7.29%  AvgP=+0.130% ✓
+
+────────────────────────────────────────────────────────────────────────
+ OOS TOP SYMBOLS (by trade count)
+────────────────────────────────────────────────────────────────────────
+  INTC                      n=  35  WR= 42.9%  PF= 0.79  Sharpe=-1.63  MaxDD= 11.32%  AvgP=-0.193% ✗
+  MU                        n=  35  WR= 60.0%  PF= 1.16  Sharpe= 0.95  MaxDD= 10.21%  AvgP=+0.098%
+  AMD                       n=  32  WR= 46.9%  PF= 1.26  Sharpe= 1.58  MaxDD= 12.96%  AvgP=+0.161%
+  TSLA                      n=  30  WR= 53.3%  PF= 0.96  Sharpe=-0.28  MaxDD= 13.01%  AvgP=-0.024%
+  AMAT                      n=  28  WR= 67.9%  PF= 5.55  Sharpe= 8.50  MaxDD=  1.37%  AvgP=+0.487% ✓
+  ORCL                      n=  23  WR= 56.5%  PF= 1.53  Sharpe= 2.81  MaxDD=  9.69%  AvgP=+0.302% ✓
+  NVDA                      n=  21  WR= 42.9%  PF= 0.73  Sharpe=-2.10  MaxDD=  7.52%  AvgP=-0.143% ✗
+  DASH                      n=  20  WR= 35.0%  PF= 0.42  Sharpe=-5.53  MaxDD=  9.65%  AvgP=-0.406% ✗
+  LLY                       n=  16  WR= 56.2%  PF= 1.47  Sharpe= 2.47  MaxDD=  3.41%  AvgP=+0.194% ✓
+  GS                        n=  14  WR= 35.7%  PF= 0.37  Sharpe=-6.70  MaxDD=  5.78%  AvgP=-0.396% ✗
+  AVGO                      n=  13  WR= 46.2%  PF= 1.04  Sharpe= 0.24  MaxDD=  2.83%  AvgP=+0.011%
+  WDAY                      n=  13  WR= 38.5%  PF= 1.23  Sharpe= 1.22  MaxDD=  6.37%  AvgP=+0.113% ✗
+  ABNB                      n=  13  WR= 30.8%  PF= 0.22  Sharpe=-10.01  MaxDD=  8.44%  AvgP=-0.592% ✗
+  RBLX                      n=  13  WR= 46.2%  PF= 0.73  Sharpe=-2.02  MaxDD=  6.86%  AvgP=-0.217% ✗
+  AMZN                      n=  12  WR= 41.7%  PF= 1.10  Sharpe= 0.55  MaxDD=  3.36%  AvgP=+0.047% ✗
+  CRM                       n=  12  WR= 58.3%  PF= 0.91  Sharpe=-0.64  MaxDD=  2.45%  AvgP=-0.038%
+  NOW                       n=  12  WR= 25.0%  PF= 0.37  Sharpe=-6.23  MaxDD=  6.80%  AvgP=-0.441% ✗
+  NET                       n=  12  WR= 50.0%  PF= 0.66  Sharpe=-2.45  MaxDD=  4.59%  AvgP=-0.209% ✗
+  UBER                      n=  12  WR= 33.3%  PF= 0.22  Sharpe=-10.15  MaxDD=  6.50%  AvgP=-0.536% ✗
+  ZS                        n=  11  WR= 63.6%  PF= 3.69  Sharpe= 7.44  MaxDD=  2.55%  AvgP=+0.665% ✓
+
+========================================================================
+ VERDICT: FAIL — no confirmed OOS edge  (PF 0.97  Sharpe -0.19  WR 48.4%)
+ OOS MaxDD=33.97%  AvgP=-0.015%/trade  n=630
+ Total runtime: 4m 26s  (fetch 5s + walk 261s)
+========================================================================
+[31msp500        15m        630   48.4%    0.97     -0.19[0m
+========================================================================
+ INTRADAY BACKTEST 2YR  |  111 symbols  |  threshold=90  |  CALLS only
+ Data: IBKR 15-min bars × 2 years  (Yahoo 60-day fallback if unavailable)
+ Slippage: 0.10% RT  |  MaxHold: 26 bars (6h)  |  Cooldown: 8 bars (2h)
+ Primary window: 130 15-min bars  |  HTF: 1-hour (aggregated)
+ Cache: 0 hits / 112 need fetch
+ Estimated runtime: ~153m 38s  (fetch 560s + walk 8658s)
+========================================================================
+  0/112 cached  |  112 need IBKR/Yahoo fetch
+  Fetching 112 symbols in parallel (5 workers)…
+    [  1/112] AAPL    12932 bars  (IBKR)
+    [  2/112] SPY     12931 bars  (IBKR)
+    [  3/112] MSFT    12932 bars  (IBKR)
+    [  4/112] AMZN    12932 bars  (IBKR)
+    [  5/112] NVDA    12932 bars  (IBKR)
+    [  6/112] GOOGL   12932 bars  (IBKR)
+    [  7/112] META    12932 bars  (IBKR)
+    [  8/112] TSLA    12932 bars  (IBKR)
+    [  9/112] JPM     12933 bars  (IBKR)
+    [ 10/112] LLY     12933 bars  (IBKR)
+    [ 11/112] V       12932 bars  (IBKR)
+    [ 12/112] XOM     12932 bars  (IBKR)
+    [ 13/112] MA      12933 bars  (IBKR)
+    [ 14/112] HD      12954 bars  (IBKR)
+    [ 15/112] PG      12953 bars  (IBKR)
+    [ 16/112] JNJ     12954 bars  (IBKR)
+    [ 17/112] ORCL    12931 bars  (IBKR)
+    [ 18/112] BAC     12933 bars  (IBKR)
+    [ 19/112] UNH      1560 bars  (IBKR)
+    [ 20/112] KO      12954 bars  (IBKR)
+    [ 21/112] MRK     12954 bars  (IBKR)
+    [ 22/112] CVX     12933 bars  (IBKR)
+    [ 23/112] COST     1560 bars  (IBKR)
+    [ 24/112] CRM     12932 bars  (IBKR)
+    [ 25/112] BRK-B    1560 bars  (IBKR)
+    [ 26/112] NFLX    12932 bars  (IBKR)
+    [ 27/112] AMD     12932 bars  (IBKR)
+    [ 28/112] AVGO     1560 bars  (IBKR)
+    [ 29/112] QCOM    12932 bars  (IBKR)
+    [ 30/112] ABBV     1560 bars  (IBKR)
+    [ 31/112] TMO      1560 bars  (IBKR)
+    [ 32/112] ACN      1560 bars  (IBKR)
+    [ 33/112] ABT      1560 bars  (IBKR)
+    [ 34/112] WMT      1560 bars  (IBKR)
+    [ 35/112] TXN      1560 bars  (IBKR)
+    [ 36/112] PEP      1560 bars  (IBKR)
+    [ 37/112] CSCO    12954 bars  (IBKR)
+    [ 38/112] ISRG     1560 bars  (IBKR)
+    [ 39/112] IBM     12954 bars  (IBKR)
+    [ 40/112] NOW     12932 bars  (IBKR)
+    [ 41/112] PM       1560 bars  (IBKR)
+    [ 42/112] INTC    12954 bars  (IBKR)
+    [ 43/112] DIS     12954 bars  (IBKR)
+    [ 44/112] GS      12933 bars  (IBKR)
+    [ 45/112] DHR      1560 bars  (IBKR)
+    [ 46/112] MU      12933 bars  (IBKR)
+    [ 47/112] LIN      1560 bars  (IBKR)
+    [ 48/112] BLK      1560 bars  (IBKR)
+    [ 49/112] GE       1560 bars  (IBKR)
+    [ 50/112] VRTX    12933 bars  (IBKR)
+    [ 51/112] AMAT    12933 bars  (IBKR)
+    [ 52/112] SYK      1560 bars  (IBKR)
+    [ 53/112] SPGI     1560 bars  (IBKR)
+    [ 54/112] REGN     1560 bars  (IBKR)
+    [ 55/112] MS      12933 bars  (IBKR)
+    [ 56/112] ADP      1560 bars  (IBKR)
+    [ 57/112] AMGN    12954 bars  (IBKR)
+    [ 58/112] ADI      1560 bars  (IBKR)
+    [ 59/112] C        1560 bars  (IBKR)
+    [ 60/112] BKNG     1560 bars  (IBKR)
+    [ 61/112] MMC       no data  (Yahoo)
+    [ 62/112] KLAC     1560 bars  (IBKR)
+    [ 63/112] TJX      1560 bars  (IBKR)
+    [ 64/112] DE       1560 bars  (IBKR)
+    [ 65/112] PANW     1560 bars  (IBKR)
+    [ 66/112] BSX      1560 bars  (IBKR)
+    [ 67/112] LRCX     1560 bars  (IBKR)
+    [ 68/112] FI        no data  (Yahoo)
+    [ 69/112] CB       1560 bars  (IBKR)
+    [ 70/112] PLD      1560 bars  (IBKR)
+    [ 71/112] MO       1560 bars  (IBKR)
+    [ 72/112] COP      1560 bars  (IBKR)
+    [ 73/112] ZTS      1560 bars  (IBKR)
+    [ 74/112] MDLZ     1560 bars  (IBKR)
+    [ 75/112] ICE      1560 bars  (IBKR)
+    [ 76/112] SO       1560 bars  (IBKR)
+    [ 77/112] SCHW     1560 bars  (IBKR)
+    [ 78/112] CMG      1560 bars  (IBKR)
+    [ 79/112] CI       1560 bars  (IBKR)
+    [ 80/112] AON      1560 bars  (IBKR)
+    [ 81/112] HUM      1560 bars  (IBKR)
+    [ 82/112] WM       1560 bars  (IBKR)
+    [ 83/112] MCK      1560 bars  (IBKR)
+    [ 84/112] CTAS     1560 bars  (IBKR)
+    [ 85/112] SHW      1560 bars  (IBKR)
+    [ 86/112] ITW      1560 bars  (IBKR)
+    [ 87/112] PNC      1560 bars  (IBKR)
+    [ 88/112] USB      1560 bars  (IBKR)
+    [ 89/112] TDG      1560 bars  (IBKR)
+    [ 90/112] MSI      1560 bars  (IBKR)
+    [ 91/112] EOG      1560 bars  (IBKR)
+    [ 92/112] WCN      1560 bars  (IBKR)
+    [ 93/112] APH      1560 bars  (IBKR)
+    [ 94/112] NSC      1560 bars  (IBKR)
+    [ 95/112] ECL      1560 bars  (IBKR)
+    [ 96/112] WELL     1560 bars  (IBKR)
+    [ 97/112] AJG      1560 bars  (IBKR)
+    [ 98/112] OTIS     1560 bars  (IBKR)
+    [ 99/112] CRWD     1560 bars  (IBKR)
+    [100/112] CMI      1560 bars  (IBKR)
+    [101/112] FTNT     1560 bars  (IBKR)
+    [102/112] NET      1560 bars  (IBKR)
+    [103/112] SNOW     1560 bars  (IBKR)
+    [104/112] UBER    12932 bars  (IBKR)
+    [105/112] ABNB    12933 bars  (IBKR)
+    [106/112] DASH    12933 bars  (IBKR)
+    [107/112] ZS       1560 bars  (IBKR)
+    [108/112] TEAM     1560 bars  (IBKR)
+    [109/112] DDOG     1560 bars  (IBKR)
+    [110/112] WDAY     1560 bars  (IBKR)
+    [111/112] COIN     1560 bars  (IBKR)
+    [112/112] RBLX     1560 bars  (IBKR)
+  Done: 110/112 symbols returned data
+
+ Date range : 2024-05-15 → 2026-05-15  (730 days)
+ IS cutoff  : 2024-05-15 → 2025-09-15
+ OOS period : 2025-09-16 → 2026-05-15
+
+ Fetch done in 6s
+ Running walk-forward on 111 symbols…
+   AAPL     13 trades  (4 OOS)
+   MSFT      6 trades  (3 OOS)
+   NVDA     60 trades  (21 OOS)
+   AMZN     28 trades  (12 OOS)
+   META     36 trades  (7 OOS)
+   GOOGL    18 trades  (8 OOS)
+   TSLA     99 trades  (30 OOS)
+   AVGO     13 trades  (13 OOS)
+   JPM       6 trades  (2 OOS)
+   LLY      33 trades  (16 OOS)
+   V         1 trades  (0 OOS)
+   XOM       8 trades  (5 OOS)
+   MA        3 trades  (2 OOS)
+   HD        5 trades  (2 OOS)
+   PG        1 trades  (0 OOS)
+   JNJ       2 trades  (1 OOS)
+   ORCL     44 trades  (23 OOS)
+   BAC       9 trades  (5 OOS)
+   KO        1 trades  (0 OOS)
+   MRK      13 trades  (6 OOS)
+   CVX       2 trades  (0 OOS)
+   CRM      26 trades  (12 OOS)
+   NFLX     24 trades  (7 OOS)
+   AMD      89 trades  (32 OOS)
+   ACN       6 trades  (6 OOS)
+   QCOM     24 trades  (8 OOS)
+   TXN       5 trades  (5 OOS)
+   TMO       3 trades  (3 OOS)
+   PM        2 trades  (2 OOS)
+   DHR       1 trades  (1 OOS)
+   ISRG      1 trades  (1 OOS)
+   CSCO      7 trades  (3 OOS)
+   GE        1 trades  (1 OOS)
+   IBM      16 trades  (9 OOS)
+   NOW      24 trades  (12 OOS)
+   INTC     89 trades  (35 OOS)
+   DIS       6 trades  (1 OOS)
+   GS       26 trades  (14 OOS)
+   BLK       3 trades  (3 OOS)
+   SPGI      3 trades  (3 OOS)
+   MU       78 trades  (35 OOS)
+   SYK       1 trades  (1 OOS)
+   REGN      4 trades  (4 OOS)
+   ADP       2 trades  (2 OOS)
+   VRTX     13 trades  (10 OOS)
+   AMAT     46 trades  (28 OOS)
+   ADI       6 trades  (6 OOS)
+   BKNG      7 trades  (7 OOS)
+   KLAC      5 trades  (5 OOS)
+   MS       13 trades  (6 OOS)
+   C         4 trades  (4 OOS)
+   AMGN      7 trades  (4 OOS)
+   DE        1 trades  (1 OOS)
+   PANW     10 trades  (10 OOS)
+   LRCX      3 trades  (3 OOS)
+   BSX       2 trades  (2 OOS)
+   PLD       1 trades  (1 OOS)
+   COP       4 trades  (4 OOS)
+   MDLZ      1 trades  (1 OOS)
+   CMG       7 trades  (7 OOS)
+   HUM       7 trades  (7 OOS)
+   CI        1 trades  (1 OOS)
+   MCK       2 trades  (2 OOS)
+   SHW       3 trades  (3 OOS)
+   PNC       1 trades  (1 OOS)
+   USB       4 trades  (4 OOS)
+   TDG       4 trades  (4 OOS)
+   EOG       1 trades  (1 OOS)
+   NSC       1 trades  (1 OOS)
+   APH       7 trades  (7 OOS)
+   ECL       1 trades  (1 OOS)
+   OTIS      2 trades  (2 OOS)
+   CMI       9 trades  (9 OOS)
+   FTNT      3 trades  (3 OOS)
+   CRWD      9 trades  (9 OOS)
+   NET      12 trades  (12 OOS)
+   SNOW      3 trades  (3 OOS)
+   DDOG      5 trades  (5 OOS)
+   ZS       11 trades  (11 OOS)
+   WDAY     13 trades  (13 OOS)
+   TEAM      6 trades  (6 OOS)
+   UBER     47 trades  (12 OOS)
+   ABNB     28 trades  (13 OOS)
+   DASH     52 trades  (20 OOS)
+   RBLX     13 trades  (13 OOS)
+   COIN      8 trades  (8 OOS)
+
+ Total trades: 1225   IS: 595   OOS: 630
+
+────────────────────────────────────────────────────────────────────────
+ OVERALL
+────────────────────────────────────────────────────────────────────────
+  In-sample                 n= 595  WR= 45.2%  PF= 0.90  Sharpe=-0.63  MaxDD= 56.49%  AvgP=-0.072%
+  Out-of-sample             n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  Combined                  n=1225  WR= 46.9%  PF= 0.93  Sharpe=-0.44  MaxDD= 66.60%  AvgP=-0.043%
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY GRADE
+────────────────────────────────────────────────────────────────────────
+  Grade S                   n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  Grade A                   —
+  Grade B                   —
+  Grade C                   —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY REGIME
+────────────────────────────────────────────────────────────────────────
+  Bull (CALL only)          n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  Bear (PUT only)           —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY DIRECTION
+────────────────────────────────────────────────────────────────────────
+  CALL                      n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  PUT                       —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY SIGNAL HOUR (ET)
+────────────────────────────────────────────────────────────────────────
+  10:xx ET                  n= 366  WR= 47.3%  PF= 0.96  Sharpe=-0.24  MaxDD= 23.92%  AvgP=-0.022%
+  11:xx ET                  n=  53  WR= 58.5%  PF= 1.55  Sharpe= 2.80  MaxDD=  9.67%  AvgP=+0.243% ✓
+  12:xx ET                  n=  40  WR= 67.5%  PF= 1.57  Sharpe= 2.89  MaxDD=  3.54%  AvgP=+0.191% ✓
+  13:xx ET                  n=  21  WR= 47.6%  PF= 0.85  Sharpe=-1.07  MaxDD=  5.58%  AvgP=-0.078% ✗
+  14:xx ET                  n=  43  WR= 37.2%  PF= 0.32  Sharpe=-7.30  MaxDD= 13.87%  AvgP=-0.305% ✗
+  15:xx ET                  n= 107  WR= 44.9%  PF= 0.72  Sharpe=-1.96  MaxDD=  8.07%  AvgP=-0.067% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY EXIT TYPE
+────────────────────────────────────────────────────────────────────────
+  target                    n=  72  WR=100.0%  PF=999.00  Sharpe=53.76  MaxDD=  0.00%  AvgP=+2.193% ✓
+  stop                      n= 139  WR=  0.0%  PF= 0.00  Sharpe=-54.35  MaxDD=222.03%  AvgP=-1.597% ✗
+  timeout                   n= 419  WR= 55.6%  PF= 1.57  Sharpe= 2.74  MaxDD=  7.29%  AvgP=+0.130% ✓
+
+────────────────────────────────────────────────────────────────────────
+ OOS TOP SYMBOLS (by trade count)
+────────────────────────────────────────────────────────────────────────
+  INTC                      n=  35  WR= 42.9%  PF= 0.79  Sharpe=-1.63  MaxDD= 11.32%  AvgP=-0.193% ✗
+  MU                        n=  35  WR= 60.0%  PF= 1.16  Sharpe= 0.95  MaxDD= 10.21%  AvgP=+0.098%
+  AMD                       n=  32  WR= 46.9%  PF= 1.26  Sharpe= 1.58  MaxDD= 12.96%  AvgP=+0.161%
+  TSLA                      n=  30  WR= 53.3%  PF= 0.96  Sharpe=-0.28  MaxDD= 13.01%  AvgP=-0.024%
+  AMAT                      n=  28  WR= 67.9%  PF= 5.55  Sharpe= 8.50  MaxDD=  1.37%  AvgP=+0.487% ✓
+  ORCL                      n=  23  WR= 56.5%  PF= 1.53  Sharpe= 2.81  MaxDD=  9.69%  AvgP=+0.302% ✓
+  NVDA                      n=  21  WR= 42.9%  PF= 0.73  Sharpe=-2.10  MaxDD=  7.52%  AvgP=-0.143% ✗
+  DASH                      n=  20  WR= 35.0%  PF= 0.42  Sharpe=-5.53  MaxDD=  9.65%  AvgP=-0.406% ✗
+  LLY                       n=  16  WR= 56.2%  PF= 1.47  Sharpe= 2.47  MaxDD=  3.41%  AvgP=+0.194% ✓
+  GS                        n=  14  WR= 35.7%  PF= 0.37  Sharpe=-6.70  MaxDD=  5.78%  AvgP=-0.396% ✗
+  AVGO                      n=  13  WR= 46.2%  PF= 1.04  Sharpe= 0.24  MaxDD=  2.83%  AvgP=+0.011%
+  WDAY                      n=  13  WR= 38.5%  PF= 1.23  Sharpe= 1.22  MaxDD=  6.37%  AvgP=+0.113% ✗
+  ABNB                      n=  13  WR= 30.8%  PF= 0.22  Sharpe=-10.01  MaxDD=  8.44%  AvgP=-0.592% ✗
+  RBLX                      n=  13  WR= 46.2%  PF= 0.73  Sharpe=-2.02  MaxDD=  6.86%  AvgP=-0.217% ✗
+  AMZN                      n=  12  WR= 41.7%  PF= 1.10  Sharpe= 0.55  MaxDD=  3.36%  AvgP=+0.047% ✗
+  CRM                       n=  12  WR= 58.3%  PF= 0.91  Sharpe=-0.64  MaxDD=  2.45%  AvgP=-0.038%
+  NOW                       n=  12  WR= 25.0%  PF= 0.37  Sharpe=-6.23  MaxDD=  6.80%  AvgP=-0.441% ✗
+  NET                       n=  12  WR= 50.0%  PF= 0.66  Sharpe=-2.45  MaxDD=  4.59%  AvgP=-0.209% ✗
+  UBER                      n=  12  WR= 33.3%  PF= 0.22  Sharpe=-10.15  MaxDD=  6.50%  AvgP=-0.536% ✗
+  ZS                        n=  11  WR= 63.6%  PF= 3.69  Sharpe= 7.44  MaxDD=  2.55%  AvgP=+0.665% ✓
+
+========================================================================
+ VERDICT: FAIL — no confirmed OOS edge  (PF 0.97  Sharpe -0.19  WR 48.4%)
+ OOS MaxDD=33.97%  AvgP=-0.015%/trade  n=630
+ Total runtime: 4m 23s  (fetch 6s + walk 258s)
+========================================================================
+[31msp500        1h         630   48.4%    0.97     -0.19[0m
+========================================================================
+ INTRADAY BACKTEST 2YR  |  111 symbols  |  threshold=90  |  CALLS only
+ Data: IBKR 15-min bars × 2 years  (Yahoo 60-day fallback if unavailable)
+ Slippage: 0.10% RT  |  MaxHold: 26 bars (6h)  |  Cooldown: 8 bars (2h)
+ Primary window: 130 15-min bars  |  HTF: 1-hour (aggregated)
+ Cache: 0 hits / 112 need fetch
+ Estimated runtime: ~153m 38s  (fetch 560s + walk 8658s)
+========================================================================
+  0/112 cached  |  112 need IBKR/Yahoo fetch
+  Fetching 112 symbols in parallel (5 workers)…
+    [  1/112] MSFT    12932 bars  (IBKR)
+    [  2/112] NVDA    12932 bars  (IBKR)
+    [  4/112] SPY     12931 bars  (IBKR)
+    [  4/112] AAPL    12932 bars  (IBKR)
+    [  5/112] AMZN    12932 bars  (IBKR)
+    [  6/112] META    12932 bars  (IBKR)
+    [  7/112] TSLA    12932 bars  (IBKR)
+    [  8/112] GOOGL   12932 bars  (IBKR)
+    [  9/112] JPM     12933 bars  (IBKR)
+    [ 10/112] LLY     12933 bars  (IBKR)
+    [ 11/112] V       12932 bars  (IBKR)
+    [ 12/112] XOM     12932 bars  (IBKR)
+    [ 13/112] MA      12933 bars  (IBKR)
+    [ 14/112] HD      12954 bars  (IBKR)
+    [ 15/112] PG      12953 bars  (IBKR)
+    [ 16/112] JNJ     12954 bars  (IBKR)
+    [ 17/112] ORCL    12931 bars  (IBKR)
+    [ 18/112] BAC     12933 bars  (IBKR)
+    [ 19/112] BRK-B    1560 bars  (IBKR)
+    [ 20/112] KO      12954 bars  (IBKR)
+    [ 21/112] MRK     12954 bars  (IBKR)
+    [ 22/112] CVX     12933 bars  (IBKR)
+    [ 23/112] UNH      1560 bars  (IBKR)
+    [ 24/112] CRM     12932 bars  (IBKR)
+    [ 25/112] NFLX    12932 bars  (IBKR)
+    [ 26/112] AMD     12932 bars  (IBKR)
+    [ 27/112] AVGO     1560 bars  (IBKR)
+    [ 28/112] COST     1560 bars  (IBKR)
+    [ 29/112] QCOM    12932 bars  (IBKR)
+    [ 30/112] ABBV     1560 bars  (IBKR)
+    [ 31/112] WMT      1560 bars  (IBKR)
+    [ 32/112] TXN      1560 bars  (IBKR)
+    [ 33/112] ABT      1560 bars  (IBKR)
+    [ 34/112] ACN      1560 bars  (IBKR)
+    [ 35/112] TMO      1560 bars  (IBKR)
+    [ 36/112] PEP      1560 bars  (IBKR)
+    [ 37/112] CSCO    12954 bars  (IBKR)
+    [ 38/112] PM       1560 bars  (IBKR)
+    [ 39/112] IBM     12954 bars  (IBKR)
+    [ 40/112] NOW     12932 bars  (IBKR)
+    [ 41/112] INTC    12954 bars  (IBKR)
+    [ 42/112] DIS     12954 bars  (IBKR)
+    [ 43/112] GS      12933 bars  (IBKR)
+    [ 44/112] LIN      1560 bars  (IBKR)
+    [ 45/112] ISRG     1560 bars  (IBKR)
+    [ 46/112] MU      12933 bars  (IBKR)
+    [ 47/112] DHR      1560 bars  (IBKR)
+    [ 48/112] BLK      1560 bars  (IBKR)
+    [ 49/112] GE       1560 bars  (IBKR)
+    [ 50/112] VRTX    12933 bars  (IBKR)
+    [ 51/112] AMAT    12933 bars  (IBKR)
+    [ 52/112] SPGI     1560 bars  (IBKR)
+    [ 53/112] SYK      1560 bars  (IBKR)
+    [ 54/112] REGN     1560 bars  (IBKR)
+    [ 55/112] MS      12933 bars  (IBKR)
+    [ 56/112] ADP      1560 bars  (IBKR)
+    [ 57/112] AMGN    12954 bars  (IBKR)
+    [ 58/112] ADI      1560 bars  (IBKR)
+    [ 59/112] BKNG     1560 bars  (IBKR)
+    [ 60/112] C        1560 bars  (IBKR)
+    [ 61/112] KLAC     1560 bars  (IBKR)
+    [ 62/112] MMC       no data  (Yahoo)
+    [ 63/112] TJX      1560 bars  (IBKR)
+    [ 64/112] LRCX     1560 bars  (IBKR)
+    [ 65/112] PANW     1560 bars  (IBKR)
+    [ 66/112] DE       1560 bars  (IBKR)
+    [ 67/112] BSX      1560 bars  (IBKR)
+    [ 68/112] FI        no data  (Yahoo)
+    [ 69/112] CB       1560 bars  (IBKR)
+    [ 70/112] MO       1560 bars  (IBKR)
+    [ 71/112] PLD      1560 bars  (IBKR)
+    [ 72/112] ZTS      1560 bars  (IBKR)
+    [ 73/112] MDLZ     1560 bars  (IBKR)
+    [ 74/112] COP      1560 bars  (IBKR)
+    [ 75/112] SO       1560 bars  (IBKR)
+    [ 76/112] ICE      1560 bars  (IBKR)
+    [ 77/112] AON      1560 bars  (IBKR)
+    [ 78/112] CMG      1560 bars  (IBKR)
+    [ 79/112] SCHW     1560 bars  (IBKR)
+    [ 80/112] HUM      1560 bars  (IBKR)
+    [ 81/112] MCK      1560 bars  (IBKR)
+    [ 82/112] CI       1560 bars  (IBKR)
+    [ 83/112] WM       1560 bars  (IBKR)
+    [ 84/112] CTAS     1560 bars  (IBKR)
+    [ 85/112] ITW      1560 bars  (IBKR)
+    [ 86/112] SHW      1560 bars  (IBKR)
+    [ 87/112] PNC      1560 bars  (IBKR)
+    [ 88/112] TDG      1560 bars  (IBKR)
+    [ 89/112] USB      1560 bars  (IBKR)
+    [ 90/112] EOG      1560 bars  (IBKR)
+    [ 91/112] MSI      1560 bars  (IBKR)
+    [ 92/112] NSC      1560 bars  (IBKR)
+    [ 93/112] APH      1560 bars  (IBKR)
+    [ 94/112] WCN      1560 bars  (IBKR)
+    [ 95/112] ECL      1560 bars  (IBKR)
+    [ 96/112] AJG      1560 bars  (IBKR)
+    [ 97/112] CMI      1560 bars  (IBKR)
+    [ 98/112] WELL     1560 bars  (IBKR)
+    [ 99/112] OTIS     1560 bars  (IBKR)
+    [100/112] FTNT     1560 bars  (IBKR)
+    [101/112] SNOW     1560 bars  (IBKR)
+    [102/112] CRWD     1560 bars  (IBKR)
+    [103/112] DDOG     1560 bars  (IBKR)
+    [104/112] UBER    12932 bars  (IBKR)
+    [105/112] ABNB    12933 bars  (IBKR)
+    [106/112] DASH    12933 bars  (IBKR)
+    [107/112] NET      1560 bars  (IBKR)
+    [108/112] ZS       1560 bars  (IBKR)
+    [109/112] TEAM     1560 bars  (IBKR)
+    [110/112] WDAY     1560 bars  (IBKR)
+    [111/112] RBLX     1560 bars  (IBKR)
+    [112/112] COIN     1560 bars  (IBKR)
+  Done: 110/112 symbols returned data
+
+ Date range : 2024-05-15 → 2026-05-15  (730 days)
+ IS cutoff  : 2024-05-15 → 2025-09-15
+ OOS period : 2025-09-16 → 2026-05-15
+
+ Fetch done in 5s
+ Running walk-forward on 111 symbols…
+   AAPL     13 trades  (4 OOS)
+   MSFT      6 trades  (3 OOS)
+   NVDA     60 trades  (21 OOS)
+   AMZN     28 trades  (12 OOS)
+   META     36 trades  (7 OOS)
+   GOOGL    18 trades  (8 OOS)
+   TSLA     99 trades  (30 OOS)
+   AVGO     13 trades  (13 OOS)
+   JPM       6 trades  (2 OOS)
+   LLY      33 trades  (16 OOS)
+   V         1 trades  (0 OOS)
+   XOM       8 trades  (5 OOS)
+   MA        3 trades  (2 OOS)
+   HD        5 trades  (2 OOS)
+   PG        1 trades  (0 OOS)
+   JNJ       2 trades  (1 OOS)
+   ORCL     44 trades  (23 OOS)
+   BAC       9 trades  (5 OOS)
+   KO        1 trades  (0 OOS)
+   MRK      13 trades  (6 OOS)
+   CVX       2 trades  (0 OOS)
+   CRM      26 trades  (12 OOS)
+   NFLX     24 trades  (7 OOS)
+   AMD      89 trades  (32 OOS)
+   ACN       6 trades  (6 OOS)
+   QCOM     24 trades  (8 OOS)
+   TXN       5 trades  (5 OOS)
+   TMO       3 trades  (3 OOS)
+   PM        2 trades  (2 OOS)
+   DHR       1 trades  (1 OOS)
+   ISRG      1 trades  (1 OOS)
+   CSCO      7 trades  (3 OOS)
+   GE        1 trades  (1 OOS)
+   IBM      16 trades  (9 OOS)
+   NOW      24 trades  (12 OOS)
+   INTC     89 trades  (35 OOS)
+   DIS       6 trades  (1 OOS)
+   GS       26 trades  (14 OOS)
+   BLK       3 trades  (3 OOS)
+   SPGI      3 trades  (3 OOS)
+   MU       78 trades  (35 OOS)
+   SYK       1 trades  (1 OOS)
+   REGN      4 trades  (4 OOS)
+   ADP       2 trades  (2 OOS)
+   VRTX     13 trades  (10 OOS)
+   AMAT     46 trades  (28 OOS)
+   ADI       6 trades  (6 OOS)
+   BKNG      7 trades  (7 OOS)
+   KLAC      5 trades  (5 OOS)
+   MS       13 trades  (6 OOS)
+   C         4 trades  (4 OOS)
+   AMGN      7 trades  (4 OOS)
+   DE        1 trades  (1 OOS)
+   PANW     10 trades  (10 OOS)
+   LRCX      3 trades  (3 OOS)
+   BSX       2 trades  (2 OOS)
+   PLD       1 trades  (1 OOS)
+   COP       4 trades  (4 OOS)
+   MDLZ      1 trades  (1 OOS)
+   CMG       7 trades  (7 OOS)
+   HUM       7 trades  (7 OOS)
+   CI        1 trades  (1 OOS)
+   MCK       2 trades  (2 OOS)
+   SHW       3 trades  (3 OOS)
+   PNC       1 trades  (1 OOS)
+   USB       4 trades  (4 OOS)
+   TDG       4 trades  (4 OOS)
+   EOG       1 trades  (1 OOS)
+   NSC       1 trades  (1 OOS)
+   APH       7 trades  (7 OOS)
+   ECL       1 trades  (1 OOS)
+   OTIS      2 trades  (2 OOS)
+   CMI       9 trades  (9 OOS)
+   FTNT      3 trades  (3 OOS)
+   CRWD      9 trades  (9 OOS)
+   NET      12 trades  (12 OOS)
+   SNOW      3 trades  (3 OOS)
+   DDOG      5 trades  (5 OOS)
+   ZS       11 trades  (11 OOS)
+   WDAY     13 trades  (13 OOS)
+   TEAM      6 trades  (6 OOS)
+   UBER     47 trades  (12 OOS)
+   ABNB     28 trades  (13 OOS)
+   DASH     52 trades  (20 OOS)
+   RBLX     13 trades  (13 OOS)
+   COIN      8 trades  (8 OOS)
+
+ Total trades: 1225   IS: 595   OOS: 630
+
+────────────────────────────────────────────────────────────────────────
+ OVERALL
+────────────────────────────────────────────────────────────────────────
+  In-sample                 n= 595  WR= 45.2%  PF= 0.90  Sharpe=-0.63  MaxDD= 56.49%  AvgP=-0.072%
+  Out-of-sample             n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  Combined                  n=1225  WR= 46.9%  PF= 0.93  Sharpe=-0.44  MaxDD= 66.60%  AvgP=-0.043%
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY GRADE
+────────────────────────────────────────────────────────────────────────
+  Grade S                   n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  Grade A                   —
+  Grade B                   —
+  Grade C                   —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY REGIME
+────────────────────────────────────────────────────────────────────────
+  Bull (CALL only)          n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  Bear (PUT only)           —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY DIRECTION
+────────────────────────────────────────────────────────────────────────
+  CALL                      n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  PUT                       —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY SIGNAL HOUR (ET)
+────────────────────────────────────────────────────────────────────────
+  10:xx ET                  n= 366  WR= 47.3%  PF= 0.96  Sharpe=-0.24  MaxDD= 23.92%  AvgP=-0.022%
+  11:xx ET                  n=  53  WR= 58.5%  PF= 1.55  Sharpe= 2.80  MaxDD=  9.67%  AvgP=+0.243% ✓
+  12:xx ET                  n=  40  WR= 67.5%  PF= 1.57  Sharpe= 2.89  MaxDD=  3.54%  AvgP=+0.191% ✓
+  13:xx ET                  n=  21  WR= 47.6%  PF= 0.85  Sharpe=-1.07  MaxDD=  5.58%  AvgP=-0.078% ✗
+  14:xx ET                  n=  43  WR= 37.2%  PF= 0.32  Sharpe=-7.30  MaxDD= 13.87%  AvgP=-0.305% ✗
+  15:xx ET                  n= 107  WR= 44.9%  PF= 0.72  Sharpe=-1.96  MaxDD=  8.07%  AvgP=-0.067% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY EXIT TYPE
+────────────────────────────────────────────────────────────────────────
+  target                    n=  72  WR=100.0%  PF=999.00  Sharpe=53.76  MaxDD=  0.00%  AvgP=+2.193% ✓
+  stop                      n= 139  WR=  0.0%  PF= 0.00  Sharpe=-54.35  MaxDD=222.03%  AvgP=-1.597% ✗
+  timeout                   n= 419  WR= 55.6%  PF= 1.57  Sharpe= 2.74  MaxDD=  7.29%  AvgP=+0.130% ✓
+
+────────────────────────────────────────────────────────────────────────
+ OOS TOP SYMBOLS (by trade count)
+────────────────────────────────────────────────────────────────────────
+  INTC                      n=  35  WR= 42.9%  PF= 0.79  Sharpe=-1.63  MaxDD= 11.32%  AvgP=-0.193% ✗
+  MU                        n=  35  WR= 60.0%  PF= 1.16  Sharpe= 0.95  MaxDD= 10.21%  AvgP=+0.098%
+  AMD                       n=  32  WR= 46.9%  PF= 1.26  Sharpe= 1.58  MaxDD= 12.96%  AvgP=+0.161%
+  TSLA                      n=  30  WR= 53.3%  PF= 0.96  Sharpe=-0.28  MaxDD= 13.01%  AvgP=-0.024%
+  AMAT                      n=  28  WR= 67.9%  PF= 5.55  Sharpe= 8.50  MaxDD=  1.37%  AvgP=+0.487% ✓
+  ORCL                      n=  23  WR= 56.5%  PF= 1.53  Sharpe= 2.81  MaxDD=  9.69%  AvgP=+0.302% ✓
+  NVDA                      n=  21  WR= 42.9%  PF= 0.73  Sharpe=-2.10  MaxDD=  7.52%  AvgP=-0.143% ✗
+  DASH                      n=  20  WR= 35.0%  PF= 0.42  Sharpe=-5.53  MaxDD=  9.65%  AvgP=-0.406% ✗
+  LLY                       n=  16  WR= 56.2%  PF= 1.47  Sharpe= 2.47  MaxDD=  3.41%  AvgP=+0.194% ✓
+  GS                        n=  14  WR= 35.7%  PF= 0.37  Sharpe=-6.70  MaxDD=  5.78%  AvgP=-0.396% ✗
+  AVGO                      n=  13  WR= 46.2%  PF= 1.04  Sharpe= 0.24  MaxDD=  2.83%  AvgP=+0.011%
+  WDAY                      n=  13  WR= 38.5%  PF= 1.23  Sharpe= 1.22  MaxDD=  6.37%  AvgP=+0.113% ✗
+  ABNB                      n=  13  WR= 30.8%  PF= 0.22  Sharpe=-10.01  MaxDD=  8.44%  AvgP=-0.592% ✗
+  RBLX                      n=  13  WR= 46.2%  PF= 0.73  Sharpe=-2.02  MaxDD=  6.86%  AvgP=-0.217% ✗
+  AMZN                      n=  12  WR= 41.7%  PF= 1.10  Sharpe= 0.55  MaxDD=  3.36%  AvgP=+0.047% ✗
+  CRM                       n=  12  WR= 58.3%  PF= 0.91  Sharpe=-0.64  MaxDD=  2.45%  AvgP=-0.038%
+  NOW                       n=  12  WR= 25.0%  PF= 0.37  Sharpe=-6.23  MaxDD=  6.80%  AvgP=-0.441% ✗
+  NET                       n=  12  WR= 50.0%  PF= 0.66  Sharpe=-2.45  MaxDD=  4.59%  AvgP=-0.209% ✗
+  UBER                      n=  12  WR= 33.3%  PF= 0.22  Sharpe=-10.15  MaxDD=  6.50%  AvgP=-0.536% ✗
+  ZS                        n=  11  WR= 63.6%  PF= 3.69  Sharpe= 7.44  MaxDD=  2.55%  AvgP=+0.665% ✓
+
+========================================================================
+ VERDICT: FAIL — no confirmed OOS edge  (PF 0.97  Sharpe -0.19  WR 48.4%)
+ OOS MaxDD=33.97%  AvgP=-0.015%/trade  n=630
+ Total runtime: 4m 20s  (fetch 5s + walk 255s)
+========================================================================
+[31msp500        2h         630   48.4%    0.97     -0.19[0m
+========================================================================
+ INTRADAY BACKTEST 2YR  |  111 symbols  |  threshold=90  |  CALLS only
+ Data: IBKR 15-min bars × 2 years  (Yahoo 60-day fallback if unavailable)
+ Slippage: 0.10% RT  |  MaxHold: 26 bars (6h)  |  Cooldown: 8 bars (2h)
+ Primary window: 130 15-min bars  |  HTF: 1-hour (aggregated)
+ Cache: 0 hits / 112 need fetch
+ Estimated runtime: ~153m 38s  (fetch 560s + walk 8658s)
+========================================================================
+  0/112 cached  |  112 need IBKR/Yahoo fetch
+  Fetching 112 symbols in parallel (5 workers)…
+    [  1/112] SPY     12931 bars  (IBKR)
+    [  2/112] MSFT    12932 bars  (IBKR)
+    [  3/112] AAPL    12932 bars  (IBKR)
+    [  4/112] AMZN    12932 bars  (IBKR)
+    [  5/112] NVDA    12932 bars  (IBKR)
+    [  6/112] META    12932 bars  (IBKR)
+    [  7/112] GOOGL   12932 bars  (IBKR)
+    [  8/112] TSLA    12932 bars  (IBKR)
+    [  9/112] LLY     12933 bars  (IBKR)
+    [ 10/112] JPM     12933 bars  (IBKR)
+    [ 11/112] XOM     12932 bars  (IBKR)
+    [ 12/112] V       12932 bars  (IBKR)
+    [ 13/112] MA      12933 bars  (IBKR)
+    [ 14/112] HD      12954 bars  (IBKR)
+    [ 15/112] PG      12953 bars  (IBKR)
+    [ 16/112] JNJ     12954 bars  (IBKR)
+    [ 17/112] ORCL    12931 bars  (IBKR)
+    [ 18/112] BAC     12933 bars  (IBKR)
+    [ 19/112] BRK-B    1560 bars  (IBKR)
+    [ 20/112] KO      12954 bars  (IBKR)
+    [ 21/112] MRK     12954 bars  (IBKR)
+    [ 22/112] CVX     12933 bars  (IBKR)
+    [ 23/112] UNH      1560 bars  (IBKR)
+    [ 24/112] CRM     12932 bars  (IBKR)
+    [ 25/112] AVGO     1560 bars  (IBKR)
+    [ 26/112] NFLX    12932 bars  (IBKR)
+    [ 27/112] AMD     12932 bars  (IBKR)
+    [ 28/112] ABBV     1560 bars  (IBKR)
+    [ 29/112] QCOM    12932 bars  (IBKR)
+    [ 30/112] COST     1560 bars  (IBKR)
+    [ 31/112] ABT      1560 bars  (IBKR)
+    [ 32/112] WMT      1560 bars  (IBKR)
+    [ 33/112] ACN      1560 bars  (IBKR)
+    [ 34/112] TXN      1560 bars  (IBKR)
+    [ 35/112] TMO      1560 bars  (IBKR)
+    [ 36/112] PEP      1560 bars  (IBKR)
+    [ 37/112] CSCO    12954 bars  (IBKR)
+    [ 38/112] PM       1560 bars  (IBKR)
+    [ 39/112] IBM     12954 bars  (IBKR)
+    [ 40/112] NOW     12932 bars  (IBKR)
+    [ 41/112] INTC    12954 bars  (IBKR)
+    [ 42/112] DIS     12954 bars  (IBKR)
+    [ 43/112] GS      12933 bars  (IBKR)
+    [ 44/112] LIN      1560 bars  (IBKR)
+    [ 45/112] ISRG     1560 bars  (IBKR)
+    [ 46/112] DHR      1560 bars  (IBKR)
+    [ 47/112] MU      12933 bars  (IBKR)
+    [ 48/112] GE       1560 bars  (IBKR)
+    [ 49/112] BLK      1560 bars  (IBKR)
+    [ 50/112] VRTX    12933 bars  (IBKR)
+    [ 51/112] REGN     1560 bars  (IBKR)
+    [ 52/112] AMAT    12933 bars  (IBKR)
+    [ 53/112] SPGI     1560 bars  (IBKR)
+    [ 54/112] ADP      1560 bars  (IBKR)
+    [ 55/112] MS      12933 bars  (IBKR)
+    [ 56/112] SYK      1560 bars  (IBKR)
+    [ 57/112] AMGN    12954 bars  (IBKR)
+    [ 58/112] KLAC     1560 bars  (IBKR)
+    [ 59/112] C        1560 bars  (IBKR)
+    [ 60/112] TJX      1560 bars  (IBKR)
+    [ 61/112] BKNG     1560 bars  (IBKR)
+    [ 62/112] ADI      1560 bars  (IBKR)
+    [ 63/112] MMC       no data  (Yahoo)
+    [ 64/112] DE       1560 bars  (IBKR)
+    [ 65/112] PANW     1560 bars  (IBKR)
+    [ 66/112] BSX      1560 bars  (IBKR)
+    [ 67/112] FI        no data  (Yahoo)
+    [ 68/112] CB       1560 bars  (IBKR)
+    [ 69/112] LRCX     1560 bars  (IBKR)
+    [ 70/112] PLD      1560 bars  (IBKR)
+    [ 71/112] ZTS      1560 bars  (IBKR)
+    [ 72/112] MO       1560 bars  (IBKR)
+    [ 73/112] COP      1560 bars  (IBKR)
+    [ 74/112] MDLZ     1560 bars  (IBKR)
+    [ 75/112] SCHW     1560 bars  (IBKR)
+    [ 76/112] ICE      1560 bars  (IBKR)
+    [ 77/112] SO       1560 bars  (IBKR)
+    [ 78/112] AON      1560 bars  (IBKR)
+    [ 79/112] CMG      1560 bars  (IBKR)
+    [ 80/112] CI       1560 bars  (IBKR)
+    [ 81/112] HUM      1560 bars  (IBKR)
+    [ 82/112] WM       1560 bars  (IBKR)
+    [ 83/112] CTAS     1560 bars  (IBKR)
+    [ 84/112] MCK      1560 bars  (IBKR)
+    [ 85/112] SHW      1560 bars  (IBKR)
+    [ 86/112] ITW      1560 bars  (IBKR)
+    [ 87/112] PNC      1560 bars  (IBKR)
+    [ 88/112] USB      1560 bars  (IBKR)
+    [ 89/112] TDG      1560 bars  (IBKR)
+    [ 90/112] WCN      1560 bars  (IBKR)
+    [ 91/112] MSI      1560 bars  (IBKR)
+    [ 92/112] EOG      1560 bars  (IBKR)
+    [ 93/112] APH      1560 bars  (IBKR)
+    [ 94/112] ECL      1560 bars  (IBKR)
+    [ 95/112] NSC      1560 bars  (IBKR)
+    [ 96/112] WELL     1560 bars  (IBKR)
+    [ 97/112] AJG      1560 bars  (IBKR)
+    [ 98/112] CRWD     1560 bars  (IBKR)
+    [ 99/112] CMI      1560 bars  (IBKR)
+    [100/112] OTIS     1560 bars  (IBKR)
+    [101/112] FTNT     1560 bars  (IBKR)
+    [102/112] NET      1560 bars  (IBKR)
+    [103/112] SNOW     1560 bars  (IBKR)
+    [104/112] UBER    12932 bars  (IBKR)
+    [105/112] ABNB    12933 bars  (IBKR)
+    [106/112] DASH    12933 bars  (IBKR)
+    [107/112] ZS       1560 bars  (IBKR)
+    [108/112] WDAY     1560 bars  (IBKR)
+    [109/112] DDOG     1560 bars  (IBKR)
+    [110/112] TEAM     1560 bars  (IBKR)
+    [111/112] RBLX     1560 bars  (IBKR)
+    [112/112] COIN     1560 bars  (IBKR)
+  Done: 110/112 symbols returned data
+
+ Date range : 2024-05-15 → 2026-05-15  (730 days)
+ IS cutoff  : 2024-05-15 → 2025-09-15
+ OOS period : 2025-09-16 → 2026-05-15
+
+ Fetch done in 5s
+ Running walk-forward on 111 symbols…
+   AAPL     13 trades  (4 OOS)
+   MSFT      6 trades  (3 OOS)
+   NVDA     60 trades  (21 OOS)
+   AMZN     28 trades  (12 OOS)
+   META     36 trades  (7 OOS)
+   GOOGL    18 trades  (8 OOS)
+   TSLA     99 trades  (30 OOS)
+   AVGO     13 trades  (13 OOS)
+   JPM       6 trades  (2 OOS)
+   LLY      33 trades  (16 OOS)
+   V         1 trades  (0 OOS)
+   XOM       8 trades  (5 OOS)
+   MA        3 trades  (2 OOS)
+   HD        5 trades  (2 OOS)
+   PG        1 trades  (0 OOS)
+   JNJ       2 trades  (1 OOS)
+   ORCL     44 trades  (23 OOS)
+   BAC       9 trades  (5 OOS)
+   KO        1 trades  (0 OOS)
+   MRK      13 trades  (6 OOS)
+   CVX       2 trades  (0 OOS)
+   CRM      26 trades  (12 OOS)
+   NFLX     24 trades  (7 OOS)
+   AMD      89 trades  (32 OOS)
+   ACN       6 trades  (6 OOS)
+   QCOM     24 trades  (8 OOS)
+   TXN       5 trades  (5 OOS)
+   TMO       3 trades  (3 OOS)
+   PM        2 trades  (2 OOS)
+   DHR       1 trades  (1 OOS)
+   ISRG      1 trades  (1 OOS)
+   CSCO      7 trades  (3 OOS)
+   GE        1 trades  (1 OOS)
+   IBM      16 trades  (9 OOS)
+   NOW      24 trades  (12 OOS)
+   INTC     89 trades  (35 OOS)
+   DIS       6 trades  (1 OOS)
+   GS       26 trades  (14 OOS)
+   BLK       3 trades  (3 OOS)
+   SPGI      3 trades  (3 OOS)
+   MU       78 trades  (35 OOS)
+   SYK       1 trades  (1 OOS)
+   REGN      4 trades  (4 OOS)
+   ADP       2 trades  (2 OOS)
+   VRTX     13 trades  (10 OOS)
+   AMAT     46 trades  (28 OOS)
+   ADI       6 trades  (6 OOS)
+   BKNG      7 trades  (7 OOS)
+   KLAC      5 trades  (5 OOS)
+   MS       13 trades  (6 OOS)
+   C         4 trades  (4 OOS)
+   AMGN      7 trades  (4 OOS)
+   DE        1 trades  (1 OOS)
+   PANW     10 trades  (10 OOS)
+   LRCX      3 trades  (3 OOS)
+   BSX       2 trades  (2 OOS)
+   PLD       1 trades  (1 OOS)
+   COP       4 trades  (4 OOS)
+   MDLZ      1 trades  (1 OOS)
+   CMG       7 trades  (7 OOS)
+   HUM       7 trades  (7 OOS)
+   CI        1 trades  (1 OOS)
+   MCK       2 trades  (2 OOS)
+   SHW       3 trades  (3 OOS)
+   PNC       1 trades  (1 OOS)
+   USB       4 trades  (4 OOS)
+   TDG       4 trades  (4 OOS)
+   EOG       1 trades  (1 OOS)
+   NSC       1 trades  (1 OOS)
+   APH       7 trades  (7 OOS)
+   ECL       1 trades  (1 OOS)
+   OTIS      2 trades  (2 OOS)
+   CMI       9 trades  (9 OOS)
+   FTNT      3 trades  (3 OOS)
+   CRWD      9 trades  (9 OOS)
+   NET      12 trades  (12 OOS)
+   SNOW      3 trades  (3 OOS)
+   DDOG      5 trades  (5 OOS)
+   ZS       11 trades  (11 OOS)
+   WDAY     13 trades  (13 OOS)
+   TEAM      6 trades  (6 OOS)
+   UBER     47 trades  (12 OOS)
+   ABNB     28 trades  (13 OOS)
+   DASH     52 trades  (20 OOS)
+   RBLX     13 trades  (13 OOS)
+   COIN      8 trades  (8 OOS)
+
+ Total trades: 1225   IS: 595   OOS: 630
+
+────────────────────────────────────────────────────────────────────────
+ OVERALL
+────────────────────────────────────────────────────────────────────────
+  In-sample                 n= 595  WR= 45.2%  PF= 0.90  Sharpe=-0.63  MaxDD= 56.49%  AvgP=-0.072%
+  Out-of-sample             n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  Combined                  n=1225  WR= 46.9%  PF= 0.93  Sharpe=-0.44  MaxDD= 66.60%  AvgP=-0.043%
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY GRADE
+────────────────────────────────────────────────────────────────────────
+  Grade S                   n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  Grade A                   —
+  Grade B                   —
+  Grade C                   —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY REGIME
+────────────────────────────────────────────────────────────────────────
+  Bull (CALL only)          n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  Bear (PUT only)           —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY DIRECTION
+────────────────────────────────────────────────────────────────────────
+  CALL                      n= 630  WR= 48.4%  PF= 0.97  Sharpe=-0.19  MaxDD= 33.97%  AvgP=-0.015%
+  PUT                       —
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY SIGNAL HOUR (ET)
+────────────────────────────────────────────────────────────────────────
+  10:xx ET                  n= 366  WR= 47.3%  PF= 0.96  Sharpe=-0.24  MaxDD= 23.92%  AvgP=-0.022%
+  11:xx ET                  n=  53  WR= 58.5%  PF= 1.55  Sharpe= 2.80  MaxDD=  9.67%  AvgP=+0.243% ✓
+  12:xx ET                  n=  40  WR= 67.5%  PF= 1.57  Sharpe= 2.89  MaxDD=  3.54%  AvgP=+0.191% ✓
+  13:xx ET                  n=  21  WR= 47.6%  PF= 0.85  Sharpe=-1.07  MaxDD=  5.58%  AvgP=-0.078% ✗
+  14:xx ET                  n=  43  WR= 37.2%  PF= 0.32  Sharpe=-7.30  MaxDD= 13.87%  AvgP=-0.305% ✗
+  15:xx ET                  n= 107  WR= 44.9%  PF= 0.72  Sharpe=-1.96  MaxDD=  8.07%  AvgP=-0.067% ✗
+
+────────────────────────────────────────────────────────────────────────
+ OOS BY EXIT TYPE
+────────────────────────────────────────────────────────────────────────
+  target                    n=  72  WR=100.0%  PF=999.00  Sharpe=53.76  MaxDD=  0.00%  AvgP=+2.193% ✓
+  stop                      n= 139  WR=  0.0%  PF= 0.00  Sharpe=-54.35  MaxDD=222.03%  AvgP=-1.597% ✗
+  timeout                   n= 419  WR= 55.6%  PF= 1.57  Sharpe= 2.74  MaxDD=  7.29%  AvgP=+0.130% ✓
+
+────────────────────────────────────────────────────────────────────────
+ OOS TOP SYMBOLS (by trade count)
+────────────────────────────────────────────────────────────────────────
+  INTC                      n=  35  WR= 42.9%  PF= 0.79  Sharpe=-1.63  MaxDD= 11.32%  AvgP=-0.193% ✗
+  MU                        n=  35  WR= 60.0%  PF= 1.16  Sharpe= 0.95  MaxDD= 10.21%  AvgP=+0.098%
+  AMD                       n=  32  WR= 46.9%  PF= 1.26  Sharpe= 1.58  MaxDD= 12.96%  AvgP=+0.161%
+  TSLA                      n=  30  WR= 53.3%  PF= 0.96  Sharpe=-0.28  MaxDD= 13.01%  AvgP=-0.024%
+  AMAT                      n=  28  WR= 67.9%  PF= 5.55  Sharpe= 8.50  MaxDD=  1.37%  AvgP=+0.487% ✓
+  ORCL                      n=  23  WR= 56.5%  PF= 1.53  Sharpe= 2.81  MaxDD=  9.69%  AvgP=+0.302% ✓
+  NVDA                      n=  21  WR= 42.9%  PF= 0.73  Sharpe=-2.10  MaxDD=  7.52%  AvgP=-0.143% ✗
+  DASH                      n=  20  WR= 35.0%  PF= 0.42  Sharpe=-5.53  MaxDD=  9.65%  AvgP=-0.406% ✗
+  LLY                       n=  16  WR= 56.2%  PF= 1.47  Sharpe= 2.47  MaxDD=  3.41%  AvgP=+0.194% ✓
+  GS                        n=  14  WR= 35.7%  PF= 0.37  Sharpe=-6.70  MaxDD=  5.78%  AvgP=-0.396% ✗
+  AVGO                      n=  13  WR= 46.2%  PF= 1.04  Sharpe= 0.24  MaxDD=  2.83%  AvgP=+0.011%
+  WDAY                      n=  13  WR= 38.5%  PF= 1.23  Sharpe= 1.22  MaxDD=  6.37%  AvgP=+0.113% ✗
+  ABNB                      n=  13  WR= 30.8%  PF= 0.22  Sharpe=-10.01  MaxDD=  8.44%  AvgP=-0.592% ✗
+  RBLX                      n=  13  WR= 46.2%  PF= 0.73  Sharpe=-2.02  MaxDD=  6.86%  AvgP=-0.217% ✗
+  AMZN                      n=  12  WR= 41.7%  PF= 1.10  Sharpe= 0.55  MaxDD=  3.36%  AvgP=+0.047% ✗
+  CRM                       n=  12  WR= 58.3%  PF= 0.91  Sharpe=-0.64  MaxDD=  2.45%  AvgP=-0.038%
+  NOW                       n=  12  WR= 25.0%  PF= 0.37  Sharpe=-6.23  MaxDD=  6.80%  AvgP=-0.441% ✗
+  NET                       n=  12  WR= 50.0%  PF= 0.66  Sharpe=-2.45  MaxDD=  4.59%  AvgP=-0.209% ✗
+  UBER                      n=  12  WR= 33.3%  PF= 0.22  Sharpe=-10.15  MaxDD=  6.50%  AvgP=-0.536% ✗
+  ZS                        n=  11  WR= 63.6%  PF= 3.69  Sharpe= 7.44  MaxDD=  2.55%  AvgP=+0.665% ✓
+
+========================================================================
+ VERDICT: FAIL — no confirmed OOS edge  (PF 0.97  Sharpe -0.19  WR 48.4%)
+ OOS MaxDD=33.97%  AvgP=-0.015%/trade  n=630
+ Total runtime: 4m 23s  (fetch 5s + walk 258s)
+========================================================================
+[31msp500        EOD        630   48.4%    0.97     -0.19[0m
+
+▶ Ranking all symbols by best OOS Sharpe across all holds (min 5 trades)...
+
+Rank  Symbol   Index        Hold       n    WR%     PF   Sharpe    MaxDD
+----------------------------------------------------------------------
+1     KLAC     sp500        1h00m      5  80.0%   8.56    15.78    0.31% ★
+2     ODFL     nasdaq100    6h30m     10  90.0%   7.16    12.94    0.62% ★
+3     BAC      sp500        1h00m      5  80.0%   9.04    10.07    0.14% ★
+4     CRWD     sp500        1h00m      9  66.7%   4.93     8.86    0.32% ★
+5     AMAT     sp500        1h00m     28  67.9%   5.55     8.50    1.37% ★
+6     ADI      sp500        1h00m      6  83.3%   3.90     8.16    1.26% ★
+7     BKNG     sp500        1h00m      7  85.7%   4.21     8.03    1.18% ★
+8     ZM       nasdaq100    6h30m      7  71.4%   3.20     7.81    2.09% ★
+9     BA       dj30         15m       12  50.0%   3.37     7.61    1.51% ★
+10    ZS       sp500        1h00m     11  63.6%   3.69     7.44    2.55% ★
+11    PANW     sp500        1h00m     10  70.0%   3.16     7.44    1.56% ★
+12    QCOM     sp500        1h00m      8  50.0%   3.29     6.89    1.33% ★
+13    ASTS     nasdaq100    6h30m     11  63.6%   2.86     6.58    6.99% ★
+14    GFS      nasdaq100    6h30m      9  77.8%   2.73     6.43    4.08% ★
+15    ROKU     nasdaq100    6h30m     11  63.6%   2.94     6.21    1.24% ★
+16    MRK      dj30         15m        6  66.7%   2.37     6.01    1.12% ★
+17    ON       nasdaq100    6h30m      9  55.6%   2.60     5.38    1.50% ★
+18    ILMN     nasdaq100    6h30m     12  58.3%   3.00     5.28    1.35% ★
+19    HOOD     nasdaq100    6h30m     13  61.5%   2.23     5.10    4.78% ★
+20    CAT      dj30         15m       13  53.8%   2.20     4.85    1.68% ★
+21    HUM      sp500        1h00m      7  71.4%   2.07     3.94    2.09% ★
+22    DXCM     nasdaq100    6h30m      5  60.0%   2.00     3.67    1.91% ★
+23    MMM      dj30         15m        6  50.0%   1.66     3.15    1.01% ★
+24    SNPS     nasdaq100    6h30m     11  54.5%   1.62     2.98    2.53% ★
+25    ORCL     sp500        1h00m     23  56.5%   1.53     2.81    9.69% ★
+26    COIN     sp500        1h00m      8  50.0%   1.64     2.77    4.58% ★
+27    LLY      sp500        1h00m     16  56.2%   1.47     2.47    3.41% ★
+28    IBM      dj30         15m        9  66.7%   1.45     2.45    1.38% ★
+29    AMD      nasdaq100    6h30m     33  48.5%   1.30     1.75   12.96%
+30    WDAY     sp500        1h00m     13  38.5%   1.23     1.22    6.37%
+
+✓ Top 30 cream-of-the-crop symbols:
+  KLAC  ODFL  BAC  CRWD  AMAT  ADI  BKNG  ZM  BA  ZS  PANW  QCOM  ASTS  GFS  ROKU  MRK  ON  ILMN  HOOD  CAT  HUM  DXCM  MMM  SNPS  ORCL  COIN  LLY  IBM  AMD  WDAY
+
+  Full ranking saved → data/cream_universe.json
+
+================================================================
+ Done. Log: data/index_sweep_20260515_171635.log
+================================================================
