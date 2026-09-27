@@ -18,10 +18,17 @@ conclusions from it.
 
 **Intraday scanner** (`day_trading.py`) — scans a watchlist every 5 minutes
 during market hours, scores each symbol on a 0–100 scale (opening range
-breakout with a volume qualifier, VWAP position, RSI momentum, an
-order-flow-imbalance proxy, key-level confluence, relative strength vs.
-SPY, and more), and logs Grade S/A/B/C setups. Stop = entry ± 2×ATR,
-target = entry ± 3×ATR, minimum 1.5 R:R.
+breakout with a volume qualifier, VWAP position and σ bands, anchored
+VWAP from prior-day high, RSI momentum and divergence, an
+order-flow-imbalance proxy, IV-rank gate, PEAD earnings-drift, key-level
+confluence, relative strength vs. SPY, and more), and logs Grade S/A/B/C
+setups (`SIGNAL_THRESHOLD = 90` for Grade S). Stop = entry ± 2×ATR,
+target = entry ± 3×ATR, minimum 1.5 R:R. **CALL-only** — PUT entries are
+permanently disabled after live data showed them performing far worse
+(see [Current Status](#current-status)). Risk management on top of the
+base signal: a breakeven stop once a trade is up 1R, a daily circuit
+breaker after 3 stop-outs, and a portfolio heat cap (max 4 concurrent
+trades, max 2 per sector).
 
 **Swing scorer** (`core_signals.py` → `evaluate_stock()`) — a longer-horizon
 version of the same idea: trend (EMA9/21), 52-week-high proximity, RSI,
@@ -75,25 +82,36 @@ Numbers below are computed directly from the actual closed-trade logs
 (`data/day_trades.json`, `data/paper_trades.json`), not copied from an
 older status doc — those go stale fast in a project like this.
 
+**Intraday scanner ran in two eras.** Early trades allowed both CALL and
+PUT signals; live data showed PUTs performed badly enough (PF ≈0.03–0.06)
+that PUT entries were permanently disabled and the scanner is now
+CALL-only. Judged on the mode it actually runs in today:
+
 | Strategy | Closed trades | Win rate | Profit factor | Avg P&L/trade | Trade dates |
 |---|---:|---:|---:|---:|---|
-| Intraday scanner | 22 | 40.9% | **0.48** | −0.35% | May 19 – Jun 4, 2026 |
+| Intraday — CALL (current mode) | 12 | 58.3% | **1.70** | — | May 19 – Jun 4, 2026 |
+| Intraday — PUT (disabled) | 10 | 20.0% | 0.06 | — | May 19 – Jun 4, 2026 |
 | Swing scorer | 12 | 66.7% | **2.16** | +3.12% | Apr 17 – May 17, 2026 |
 
-Two things worth being direct about:
+The more important thing than any of these numbers: **the last closed
+trade in the log is June 4, 2026 — but a substantial rewrite of
+`day_trading.py` happened June 12** (bug fixes to VWAP/SPY-baseline
+calculation, new signals — VWAP σ bands, anchored VWAP, IV-rank gate,
+PEAD earnings-drift, RSI divergence — plus new trade-management logic:
+breakeven stop at +1R, a 3-stop daily circuit breaker, a 4-trade /
+2-per-sector portfolio heat cap). **None of that rewritten code has a
+single closed trade against it yet.** The table above is measuring the
+pre-rewrite system, not the one currently in `day_trading.py`. Don't treat
+PF 1.70 as validating the current code — it validates a version that no
+longer exists.
 
-- **Both tracks are currently dormant.** Neither has a new closed trade
-  since early June 2026, despite scheduled tasks still touching some state
-  files (`data/cooldowns.json` was last modified Sept 12, 2026, but its
-  contents are stale May-era timestamps) — worth checking whether the
-  scheduled scan tasks are actually still finding/logging qualifying setups
-  before trusting the automation is fully live.
-- **The intraday scanner is currently unprofitable** (PF 0.48, n=22) — a
-  small sample, but not a track record to act on. The swing scorer looks
-  better (PF 2.16, n=12) but n=12 is far too small to draw a real
-  conclusion either way. Both need meaningfully more closed trades before
-  the profit factor numbers mean anything — treat everything above as "what
-  the data says today," not a performance claim.
+**Automation status (checked Sept 26, 2026):**
+
+- **Intraday scanner:** no new trades since June 4, 2026, although the scheduled tasks still run.
+- **Swing scorer:** still logging entries (25 paper trades opened since June 12, the latest on
+  Sept 16), but **none of them has closed**, some after more than three months, while the daily
+  validator keeps running. That points to the validator not applying stop/target/timeout exits.
+  It's an open bug, so the swing numbers above still only cover trades that closed by June 10.
 
 ## Setup
 
